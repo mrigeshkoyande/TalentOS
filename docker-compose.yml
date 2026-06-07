@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: talentos-web
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    # If you need to pass environment variables down to the Vite build process,
+    # you can define them here under 'args' or 'environment' if they are needed at runtime.
+    # Note: Vite env vars (VITE_*) must be available at BUILD time.
+    # build:
+    #   args:
+    #     - VITE_GEMINI_API_KEY=${VITE_GEMINI_API_KEY}
