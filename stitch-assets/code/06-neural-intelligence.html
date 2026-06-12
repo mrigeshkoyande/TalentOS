@@ -1,0 +1,258 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>TalentOS | AI-Powered Hiring Intelligence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {tertiary: "#ffffff", "surface-dim": "#11131b", "primary-fixed": "#e2e2e2", "error-container": "#93000a", "surface-tint": "#c6c6c7", "outline-variant": "#444748", background: "#11131b", "on-primary-container": "#636565", "surface-container-lowest": "#0c0e16", "secondary-fixed": "#cae6ff", "on-secondary-container": "#93bad9", "on-primary-fixed": "#1a1c1c", "surface-container-highest": "#33343d", "tertiary-fixed": "#e2e2e2", "on-surface": "#e2e1ed", "surface-container": "#1e1f27", "surface-container-high": "#282932", "inverse-primary": "#5d5f5f", "on-surface-variant": "#c4c7c8", "on-secondary-fixed-variant": "#214a66", "on-primary-fixed-variant": "#454747", "surface-container-low": "#1a1b23", "secondary-container": "#214a66", surface: "#11131b", "primary-container": "#e2e2e2", "on-error": "#690005", "on-tertiary-fixed-variant": "#454747", outline: "#8e9192", "secondary-fixed-dim": "#a4cbeb", "on-secondary-fixed": "#001e2f", "on-primary": "#2f3131", primary: "#ffffff", "surface-bright": "#373942", "inverse-on-surface": "#2f3039", "on-error-container": "#ffdad6", "on-tertiary": "#2f3131", error: "#ffb4ab", "on-background": "#e2e1ed", "primary-fixed-dim": "#c6c6c7", "on-tertiary-fixed": "#1a1c1c", "tertiary-container": "#e2e2e2", "surface-variant": "#33343d", secondary: "#a4cbeb", "on-secondary": "#01344e", "inverse-surface": "#e2e1ed", "tertiary-fixed-dim": "#c6c6c7", "on-tertiary-container": "#636565"}, borderRadius: {DEFAULT: "0.5rem", lg: "1rem", xl: "1.5rem", full: "9999px"}, spacing: {gutter: "24px", "margin-desktop": "64px", unit: "4px", "margin-mobile": "16px", "container-max": "1440px"}, fontFamily: {"headline-lg": ["Inter", "sans-serif"], "body-md": ["Inter", "sans-serif"], "body-lg": ["Inter", "sans-serif"], "headline-lg-mobile": ["Inter", "sans-serif"], "label-sm": ["Inter", "sans-serif"], "display-md": ["Instrument Serif", "serif"], "display-lg": ["Instrument Serif", "serif"], headline: ["instrumentSerif"], display: ["instrumentSerif"], body: ["Inter"], label: ["Inter"]}, fontSize: {"headline-lg": ["32px", {lineHeight: "1.3", letterSpacing: "-0.02em", fontWeight: "600"}], "body-md": ["16px", {lineHeight: "1.5", letterSpacing: "0", fontWeight: "400"}], "body-lg": ["18px", {lineHeight: "1.6", letterSpacing: "0", fontWeight: "400"}], "headline-lg-mobile": ["24px", {lineHeight: "1.3", letterSpacing: "-0.01em", fontWeight: "600"}], "label-sm": ["12px", {lineHeight: "1", letterSpacing: "0.05em", fontWeight: "500"}], "display-md": ["48px", {lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "400"}], "display-lg": ["72px", {lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "400"}]}}}};</script>
+<style>
+        :root {
+            --font-display: 'Instrument Serif', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #11131b;
+            font-family: var(--font-body);
+            color: #e2e1ed;
+            overflow-x: hidden;
+        }
+
+        .liquid-glass {
+            background: rgba(255,255,255,0.01);
+            background-blend-mode: luminosity;
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border: none;
+            box-shadow: inset 0 1px 1px rgba(255,255,255,0.1);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .liquid-glass::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 1.4px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.15) 20%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.15) 80%, rgba(255,255,255,0.45) 100%);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        .liquid-glass:hover {
+            background: rgba(255,255,255,0.05);
+            transform: scale(1.02);
+        }
+
+        .pill-navbar {
+            background: rgba(17, 19, 27, 0.4);
+            backdrop-filter: blur(24px) contrast(110%);
+            -webkit-backdrop-filter: blur(24px) contrast(110%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 
+                0 4px 30px rgba(0, 0, 0, 0.5),
+                inset 0 1px 1px rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+
+        .pill-navbar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 10%;
+            right: 10%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            pointer-events: none;
+        }
+
+        .glass-distort-overlay {
+            position: absolute;
+            inset: 0;
+            filter: url(#glass-distortion);
+            opacity: 0.15;
+            pointer-events: none;
+            z-index: -1;
+            background: rgba(255,255,255,0.05);
+        }
+
+        @keyframes fade-rise {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade-rise {
+            animation: fade-rise 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .animate-fade-rise-delay {
+            opacity: 0;
+            animation: fade-rise 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+        }
+
+        .animate-fade-rise-delay-2 {
+            opacity: 0;
+            animation: fade-rise 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
+        }
+
+        .text-hero {
+            font-family: var(--font-display);
+            line-height: 0.95;
+            letter-spacing: -2.46px;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="selection:bg-primary selection:text-surface-dim">
+<svg style="display: none">
+<filter id="glass-distortion">
+<feTurbulence baseFrequency="0.008" numOctaves="2" result="noise" type="turbulence"></feTurbulence>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="77"></feDisplacementMap>
+</filter>
+</svg>
+<!-- Shell: TopNavBar (Pill Style) -->
+<div class="fixed top-6 left-0 right-0 z-50 flex justify-center px-6">
+<nav class="pill-navbar rounded-full px-4 py-2 flex items-center gap-8 max-w-fit md:px-6">
+<div class="glass-distort-overlay rounded-full"></div>
+<div class="flex items-center gap-6">
+<button aria-label="Menu" class="flex items-center justify-center p-1 text-primary/80 hover:text-primary transition-colors cursor-pointer mr-1">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+<span class="font-display-md text-2xl tracking-tighter text-primary">
+<div class="flex items-center gap-2">
+<img alt="TalentOS Logo" class="h-6 w-auto brightness-0 invert" src="https://lh3.googleusercontent.com/aida/ADBb0ui2vg-tLxJ_JIwFUI3wjlNsmgeAFpkEBiQlLPPlhreZ8bw8NPwYxOufzPhURIWQW3_J0rLRFqgoSthwNg6foGHx_nM2RaiTqOIi09fOsyoOsAyMBbF0gEKFec1FYeZIjDdjdxLc5U3T0_91xnu9e6BxnSAAxrg_KnyaEsMYU50uNIABpLJ7LoNBtIExkqRnawykZSZe8mbVsvQhwNh_ldf_WqegvNpu3_FmiHRAo7mHfIQgxFmUD0EWhPE">
+<span class="">TalentOS&nbsp;</span>
+</div>
+</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="font-label-sm text-primary relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-px after:bg-primary" href="#">Job Analyzer</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Ranking Engine</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Hidden Gems</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Shortlists</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="liquid-glass rounded-full px-5 py-2 font-label-sm text-primary uppercase tracking-widest text-[11px] active:scale-95 transition-transform bg-white/5 border border-white/10">
+        Enter Interface →
+      </button>
+</div>
+</nav>
+</div>
+<!-- Hero Canvas -->
+<main class="relative min-h-screen flex flex-col items-center justify-center pt-20">
+<!-- Video Background -->
+<video autoplay="" class="absolute inset-0 w-full h-full object-cover z-0 opacity-60" loop="" muted="" playsinline="">
+<source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260302_085844_21a8f4b3-dea5-4ede-be16-d53f6973bb14.mp4" type="video/mp4">
+</video>
+<!-- Content Overlay -->
+<div class="relative z-10 w-full max-w-container-max px-margin-desktop text-center flex flex-col items-center">
+<h1 class="text-hero text-6xl md:text-8xl lg:text-[140px] text-primary mb-8 animate-fade-rise">
+                Hire <em class="not-italic text-on-surface-variant">beyond keywords.</em><br>
+                Discover talent <em class="not-italic text-on-surface-variant">beyond expectations.</em>
+</h1>
+<p class="max-w-3xl font-body-lg text-body-lg text-on-surface-variant mb-12 leading-relaxed animate-fade-rise-delay">
+                TalentOS analyzes skills, experience, career progression, and behavioral signals to surface the most relevant candidates instantly. Built for recruiters who need more than keyword matching.
+            </p>
+<div class="flex flex-col items-center gap-6 animate-fade-rise-delay-2">
+<button class="liquid-glass rounded-full px-14 py-5 font-label-sm text-primary text-lg uppercase tracking-[0.2em] hover:scale-105 active:scale-95 transition-all" style="--mouse-x: 125.78460693359375px; --mouse-y: 53.81304931640625px;">
+                    Start Recruiting
+                </button>
+<a class="group flex items-center gap-2 font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+                    WATCH DEMO
+                </a>
+</div>
+</div>
+<!-- Metrics Strip (Bento Pattern) -->
+<div class="relative z-10 w-full max-w-container-max px-margin-desktop mt-24 grid grid-cols-1 md:grid-cols-3 gap-gutter animate-fade-rise-delay-2">
+<div class="liquid-glass p-8 rounded-xl flex flex-col items-center text-center" style="--mouse-x: 34.14204406738281px; --mouse-y: 7.177490234375px;">
+<span class="font-display-md text-4xl text-primary mb-2">+1000</span>
+<span class="font-label-sm text-on-surface-variant uppercase tracking-widest">Candidates Ranked</span>
+</div>
+<div class="liquid-glass p-8 rounded-xl flex flex-col items-center text-center" style="--mouse-x: 337.27764892578125px; --mouse-y: 113.59716796875px;">
+<span class="font-display-md text-4xl text-primary mb-2">+92%</span>
+<span class="font-label-sm text-on-surface-variant uppercase tracking-widest">Match Accuracy</span>
+</div>
+<div class="liquid-glass p-8 rounded-xl flex flex-col items-center text-center" style="--mouse-x: 172px; --mouse-y: 128.125px;">
+<span class="font-display-md text-4xl text-primary mb-2">+70%</span>
+<span class="font-label-sm text-on-surface-variant uppercase tracking-widest">Hidden Gems Discovered</span>
+</div>
+</div>
+</main>
+<!-- Experience Section (Asymmetric) -->
+<section class="relative z-10 py-32 bg-background/80 backdrop-blur-sm">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<span class="font-label-sm text-secondary uppercase tracking-[0.3em]">Intelligence Core</span>
+<h2 class="font-display-lg text-display-lg text-primary leading-tight">The new standard for elite talent acquisition.</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-4">
+<h4 class="font-headline-lg text-primary">Behavioral Mapping</h4>
+<p class="font-body-md text-on-surface-variant">Analyze candidate trajectory beyond their current title. Our AI understands the nuance of career growth and cultural fit.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline-lg text-primary">Signal Extraction</h4>
+<p class="font-body-md text-on-surface-variant">Identify latent skills and cross-industry potential that standard ATS filters consistently overlook.</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="liquid-glass aspect-square rounded-3xl p-1 overflow-hidden" style="--mouse-x: 385px; --mouse-y: 94px;">
+<img class="w-full h-full object-cover rounded-[22px] opacity-80" data-alt="A sophisticated 3D visualization of neural networks and data points representing human talent and connections. The aesthetic is cinematic dark minimalism with glowing ethereal white threads of light against a deep obsidian background. Soft atmospheric lighting creates depth and a sense of futuristic intelligence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAC8NJ4FJfo4JFCpmNMKJUE-PHLoOiwtkGIZyGkllWOTPC5F1ysKb1p72-0quJFNqbHwZVMVW6aalerEiWr4Sr67ySlIQ95gjfWRuZKUh08626FSJDaVQYPUfgFhwOSNgJ3woa5FRIMGaOKoxKb1tnVbFx-Oih8TywpgyEuuTyCNu0egMDYHVWz2DpHMFM9LoOpe3FbMsobBSpTi-ufufsxTDaQwFxGAKlLO2kpD87l-6bDnRqZGQsvIs-iR-nLrcwEluhBNulavQ">
+</div>
+</div>
+</div>
+</section>
+<!-- Shell: Footer -->
+<footer class="w-full py-margin-desktop border-t border-white/5 bg-background relative z-10">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop max-w-container-max mx-auto gap-gutter">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-display-md text-3xl text-primary"><div class="flex items-center gap-2">
+<img alt="TalentOS Logo" class="h-6 w-auto brightness-0 invert opacity-90" src="https://lh3.googleusercontent.com/aida/ADBb0ui2vg-tLxJ_JIwFUI3wjlNsmgeAFpkEBiQlLPPlhreZ8bw8NPwYxOufzPhURIWQW3_J0rLRFqgoSthwNg6foGHx_nM2RaiTqOIi09fOsyoOsAyMBbF0gEKFec1FYeZIjDdjdxLc5U3T0_91xnu9e6BxnSAAxrg_KnyaEsMYU50uNIABpLJ7LoNBtIExkqRnawykZSZe8mbVsvQhwNh_ldf_WqegvNpu3_FmiHRAo7mHfIQgxFmUD0EWhPE">
+<span class="">TalentOS</span>
+</div></span>
+<span class="font-label-sm text-on-surface-variant uppercase tracking-widest text-[10px]">© 2024 TalentOS Intelligence. All rights reserved.</span>
+</div>
+<div class="flex gap-8">
+<a class="font-label-sm text-on-surface-variant uppercase tracking-widest hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-on-surface-variant uppercase tracking-widest hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-label-sm text-on-surface-variant uppercase tracking-widest hover:text-primary transition-colors" href="#">Security</a>
+<a class="font-label-sm text-on-surface-variant uppercase tracking-widest hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions for glass cards
+        document.querySelectorAll('.liquid-glass').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+
+        // Sticky Nav logic - refined for pill
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.pill-navbar');
+            if (window.scrollY > 50) {
+                nav.style.transform = 'scale(0.98)';
+                nav.style.backgroundColor = 'rgba(17, 19, 27, 0.7)';
+            } else {
+                nav.style.transform = 'scale(1)';
+                nav.style.backgroundColor = 'rgba(17, 19, 27, 0.4)';
+            }
+        });
+    </script>
+</body></html>

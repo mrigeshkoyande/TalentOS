@@ -1,0 +1,364 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>TalentOS | Hidden Gems</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        body {
+            background-color: #11131b;
+            color: #e2e1ed;
+            overflow-x: hidden;
+        }
+        .neural-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: radial-gradient(circle at 50% 50%, #1a1b23 0%, #11131b 100%);
+            overflow: hidden;
+        }
+        .neural-flare {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 191, 0, 0.03) 0%, rgba(255, 191, 0, 0) 70%);
+            filter: blur(80px);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .strikethrough-mono {
+            text-decoration: line-through;
+            text-decoration-thickness: 1px;
+            text-decoration-color: rgba(196, 199, 200, 0.4);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary": "#2f3131",
+                      "on-secondary": "#01344e",
+                      "primary-fixed-dim": "#c6c6c7",
+                      "on-primary-fixed-variant": "#454747",
+                      "on-primary": "#2f3131",
+                      "primary-fixed": "#e2e2e2",
+                      "secondary": "#a4cbeb",
+                      "outline": "#8e9192",
+                      "tertiary-container": "#e2e2e2",
+                      "on-secondary-fixed-variant": "#214a66",
+                      "tertiary-fixed": "#e2e2e2",
+                      "surface-bright": "#373942",
+                      "on-primary-fixed": "#1a1c1c",
+                      "on-error-container": "#ffdad6",
+                      "on-secondary-container": "#93bad9",
+                      "on-surface-variant": "#c4c7c8",
+                      "surface-variant": "#33343d",
+                      "surface-dim": "#11131b",
+                      "on-surface": "#e2e1ed",
+                      "on-tertiary-fixed": "#1a1c1c",
+                      "surface-container-highest": "#33343d",
+                      "surface-container": "#1e1f27",
+                      "inverse-on-surface": "#2f3039",
+                      "tertiary": "#ffffff",
+                      "surface-container-lowest": "#0c0e16",
+                      "surface-container-high": "#282932",
+                      "on-background": "#e2e1ed",
+                      "surface": "#11131b",
+                      "on-secondary-fixed": "#001e2f",
+                      "tertiary-fixed-dim": "#c6c6c7",
+                      "surface-tint": "#c6c6c7",
+                      "primary": "#ffffff",
+                      "surface-container-low": "#1a1b23",
+                      "outline-variant": "#444748",
+                      "error-container": "#93000a",
+                      "primary-container": "#e2e2e2",
+                      "on-error": "#690005",
+                      "on-tertiary-fixed-variant": "#454747",
+                      "secondary-fixed": "#cae6ff",
+                      "secondary-container": "#214a66",
+                      "secondary-fixed-dim": "#a4cbeb",
+                      "error": "#ffb4ab",
+                      "on-tertiary-container": "#636565",
+                      "background": "#11131b",
+                      "on-primary-container": "#636565",
+                      "inverse-surface": "#e2e1ed",
+                      "inverse-primary": "#5d5f5f",
+                      "solar": "#FFBF00"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "unit": "4px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "container-max": "1440px"
+              },
+              "fontFamily": {
+                      "display-md": ["Instrument Serif"],
+                      "body-md": ["Inter"],
+                      "mono": ["JetBrains Mono"],
+                      "label-sm": ["Inter"],
+                      "display-lg": ["Instrument Serif"]
+              },
+              "fontSize": {
+                      "display-md": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                      "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                      "display-5xl": ["3rem", {"lineHeight": "1", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- Neural Atmospheric Background -->
+<div class="neural-bg" id="neural-canvas">
+<div class="neural-flare" style="top: 10%; left: 20%;"></div>
+<div class="neural-flare" style="top: 60%; left: 70%;"></div>
+<div class="particle" style="position: absolute; width: 1px; height: 1px; background: white; top: 94.9594%; left: 6.31232%; opacity: 0.0193217; filter: blur(1px);"></div><div class="particle" style="position: absolute; width: 1px; height: 1px; background: white; top: 75.0743%; left: 98.5248%; opacity: 0.1969; filter: blur(1px);"></div><div class="particle" style="position: absolute; width: 1px; height: 1px; background: white; top: 47.7028%; left: 87.7142%; opacity: 0.174832; filter: blur(1px);"></div><div class="particle" style="position: absolute; width: 1px; height: 1px; background: white; top: 54.4694%; left: 44.7547%; opacity: 0.265492; filter: blur(1px);"></div><div class="particle" style="position: absolute; width: 1px; height: 1px; background: white; top: 36.3164%; left: 73.5404%; opacity: 0.269822; filter: blur(1px);"></div><div class="particle" style="position: absolute; width: 1px; height: 1px; background: white; top: 55.7419%; left: 82.3385%; opacity: 0.198188; filter: blur(1px);"></div><div class="particle" style="position: absolute; width: 1px; height: 1px; background: white; top: 31.7071%; left: 32.8855%; opacity: 0.114021; filter: blur(1px);"></div><div class="particle" style="position: absolute; width: 1px; height: 1px; background: white; top: 78.2968%; left: 25.8684%; opacity: 0.136957; filter: blur(1px);"></div><div class="particle" style="position: absolute; width: 1px; height: 1px; background: white; top: 10.3183%; left: 79.9277%; opacity: 0.0774543; filter: blur(1px);"></div><div class="particle" style="position: absolute; width: 1px; height: 1px; background: white; top: 28.5329%; left: 97.5676%; opacity: 0.174661; filter: blur(1px);"></div><div class="particle" style="position: absolute; width: 1px; height: 1px; background: white; top: 66.6231%; left: 64.3074%; opacity: 0.0478431; filter: blur(1px);"></div><div class="particle" style="position: absolute; width: 1px; height: 1px; background: white; top: 80.0231%; left: 43.8643%; opacity: 0.245406; filter: blur(1px);"></div><div class="particle" style="position: absolute; width: 1px; height: 1px; background: white; top: 90.8482%; left: 42.4926%; opacity: 0.225773; filter: blur(1px);"></div><div class="particle" style="position: absolute; width: 1px; height: 1px; background: white; top: 54.256%; left: 87.4812%; opacity: 0.112459; filter: blur(1px);"></div><div class="particle" style="position: absolute; width: 1px; height: 1px; background: white; top: 96.8532%; left: 13.5504%; opacity: 0.297246; filter: blur(1px);"></div></div>
+<!-- Top Navigation (Shared Component) -->
+<nav class="fixed top-6 left-0 right-0 z-50 flex justify-center px-6">
+    <div class="pill-navbar rounded-full px-4 py-2 flex items-center gap-8 max-w-fit md:px-6 relative bg-surface/40 backdrop-blur-xl border border-white/10 shadow-2xl">
+        <div class="glass-distort-overlay rounded-full absolute inset-0 -z-10 pointer-events-none"></div>
+        <div class="flex items-center gap-6">
+            <button class="md:hidden flex items-center text-on-surface">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <div class="font-display-md text-2xl tracking-tighter text-primary flex items-center gap-2">
+                <img alt="TalentOS Logo" class="h-6 w-auto brightness-0 invert" src="https://lh3.googleusercontent.com/aida/ADBb0ui2vg-tLxJ_JIwFUI3wjlNsmgeAFpkEBiQlLPPlhreZ8bw8NPwYxOufzPhURIWQW3_J0rLRFqgoSthwNg6foGHx_nM2RaiTqOIi09fOsyoOsAyMBbF0gEKFec1FYeZIjDdjdxLc5U3T0_91xnu9e6BxnSAAxrg_KnyaEsMYU50uNIABpLJ7LoNBtIExkqRnawykZSZe8mbVsvQhwNh_ldf_WqegvNpu3_FmiHRAo7mHfIQgxFmUD0EWhPE">
+                <span class="">TalentOS</span>
+            </div>
+        </div>
+        <div class="hidden md:flex gap-6 items-center">
+            <a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300 px-2 py-1" href="#">Job Analyzer</a>
+            <a class="font-label-sm text-primary relative px-2 py-1 after:absolute after:-bottom-1 after:left-0 after:w-full after:h-px after:bg-primary" href="#">Ranking Engine</a>
+            <a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300 px-2 py-1" href="#">Hidden Gems</a>
+            <a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-300 px-2 py-1" href="#">Shortlists</a>
+        </div>
+        <button class="liquid-glass rounded-full px-5 py-2 font-label-sm text-primary uppercase tracking-widest text-[11px] active:scale-95 transition-transform bg-white/5 border border-white/10">
+            Enter Interface →
+        </button>
+    </div>
+</nav>
+<main class="max-w-container-max mx-auto px-margin-desktop pt-40 pb-20">
+<!-- Header Section -->
+<header class="max-w-4xl mb-24">
+<h1 class="font-display-md text-[80px] leading-none mb-6 text-white tracking-tight">The Latent Intent Index.</h1>
+<p class="font-body-lg text-on-surface-variant max-w-2xl leading-relaxed text-xl">
+                Profiles matching underlying engineering execution intent while remaining unmapped by legacy keyword density filters. Utilizing deep semantic mapping of project outcomes over nomenclature.
+            </p>
+</header>
+<!-- Hidden Gems Registry -->
+<section class="w-full">
+<!-- Table Header -->
+<div class="grid grid-cols-12 gap-gutter pb-6 border-b border-white/5 text-on-surface-variant font-label-sm text-label-sm tracking-[0.2em] uppercase">
+<div class="col-span-3">Candidate Identity</div>
+<div class="col-span-4">Omitted Keyword Deviations</div>
+<div class="col-span-5">Latent Value Equivalents</div>
+</div>
+<!-- Registry Rows -->
+<div class="divide-y divide-white/10">
+<!-- Row 1 -->
+<div class="grid grid-cols-12 gap-gutter py-12 group transition-colors duration-500 hover:bg-white/[0.02]">
+<div class="col-span-3 flex flex-col justify-center">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high overflow-hidden border border-white/10">
+<img class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-500" data-alt="A cinematic, low-key close-up portrait of a high-end tech professional. The lighting is dramatic and moody, with warm amber highlights hitting the side of their face against a deep obsidian background. The overall aesthetic is minimalist, sleek, and futuristic, reflecting a sense of elite engineering expertise and quiet confidence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1rgPU8NnCGx7aX1JLrOjWI9ovjeHZi4HIF-BZ_XODvR7YAsReob7Qxm4XOHwU9C1WJe6vRLYxV15xlpa-EDGmTuRaCxZWjuweMIiopVyh4SpLWquoElztaAEZSJM3QfcGIB1sQu2WAbhjH__Fcgax3MjWIBLeNIeuqSWt4HZMFD3wvpmHCuUoaOY3c7uQ-z9gscJCywRxoTKOSp4Ly2gPMrdmmczuim9V6yAsJIKlCXtKm5EDlpaWHqyQZLb1XV9natFt-NJFzjY">
+</div>
+<div>
+<h3 class="text-xl font-medium text-white">Elias Thorne</h3>
+<p class="text-on-surface-variant font-label-sm text-label-sm">Distinguished Systems Architect</p>
+</div>
+</div>
+</div>
+<div class="col-span-4 flex flex-col justify-center gap-2">
+<div class="font-mono text-sm strikethrough-mono text-on-surface-variant">Kubernetes</div>
+<div class="font-mono text-sm strikethrough-mono text-on-surface-variant">Microservices</div>
+<div class="font-mono text-sm strikethrough-mono text-on-surface-variant">Cloud Native</div>
+</div>
+<div class="col-span-5 flex flex-col justify-center">
+<div class="text-solar font-label-sm text-label-sm tracking-widest uppercase mb-2">Technical Rationale</div>
+<p class="text-on-surface leading-relaxed">
+                            Engineered a custom high-availability orchestrator for a proprietary edge-compute network. While lacking 'K8s' keywords, his design handles containerized lifecycle management at scales exceeding standard enterprise deployments.
+                        </p>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="grid grid-cols-12 gap-gutter py-12 group transition-colors duration-500 hover:bg-white/[0.02]">
+<div class="col-span-3 flex flex-col justify-center">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high overflow-hidden border border-white/10">
+<img class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-500" data-alt="A professional studio portrait of a female software lead with a focused, intelligent expression. The scene is lit with cool blue and warm amber rim lighting that emphasizes sharp features against a dark, textured background. The image has a cinematic, high-contrast quality that feels both human and technologically advanced." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCutFnbqeJ87M-6-sf9juwQwFIlykSiUyemyhvqljeUqYmVPdJGipK1FuG16t1eQoT_1Kd4EbTUhlleTco8AGE9ezLPfqZpkOwFHsZZm1s_7hKptSu0DH9jRfpoQPDjTP6I46N8TmJLfNEwzHT8kpP6aFoBnsCIpP7sagK33dabh_0w2Ad5MxrSi7zE7K8pvxImh6LPfaHky5wORWKTT2ZCmYaNQVNRmS63trZ5P6kdp4FYRZL_jCXxSPQIYnxiwpw4l1FL94TYa-c">
+</div>
+<div>
+<h3 class="text-xl font-medium text-white">Sloane Varkas</h3>
+<p class="text-on-surface-variant font-label-sm text-label-sm">Backend Performance Lead</p>
+</div>
+</div>
+</div>
+<div class="col-span-4 flex flex-col justify-center gap-2">
+<div class="font-mono text-sm strikethrough-mono text-on-surface-variant">Python</div>
+<div class="font-mono text-sm strikethrough-mono text-on-surface-variant">React</div>
+<div class="font-mono text-sm strikethrough-mono text-on-surface-variant">AWS Lambda</div>
+</div>
+<div class="col-span-5 flex flex-col justify-center">
+<div class="text-solar font-label-sm text-label-sm tracking-widest uppercase mb-2">Technical Rationale</div>
+<p class="text-on-surface leading-relaxed">
+                            Deep specialization in low-latency concurrent processing using Erlang/Elixir for fintech messaging cores. Superior architectural alignment with real-time stream processing needs, despite missing common modern cloud stack buzzwords.
+                        </p>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="grid grid-cols-12 gap-gutter py-12 group transition-colors duration-500 hover:bg-white/[0.02]">
+<div class="col-span-3 flex flex-col justify-center">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high overflow-hidden border border-white/10">
+<img class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-500" data-alt="An executive-style portrait of a male tech founder in a dark, minimalist setting. Soft, diffused lighting highlights the profile with golden amber undertones. The overall aesthetic is dark and sophisticated, suggesting high-level strategic intelligence and deep industry expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYqTMx-Hjvwfy8TleZ1CkMKWJr2zbe1m9ohM99vrnnFbNmbB8suQ7mvHAnwIv9KD-Q18vKLz_cNNKchiBDn5Xo0nmjklQZpm6WdAzlASLoGeZGyMFyR_v1IwHfyw_irZ_F-6Zwb-ssaqKLxDJMAGsmkAx9VumXVGznfnRy8u-d5jOok-azeX0baoOdf8i0bUfycNqm6w0TBgLYG-f_DACXva3WwdkyRV4eyqFTdb1JPC011StPc3_VlSd0wUsQB8v6hBAOsOCdbXQ">
+</div>
+<div>
+<h3 class="text-xl font-medium text-white">Julian Mercer</h3>
+<p class="text-on-surface-variant font-label-sm text-label-sm">ML Infrastructure Engineer</p>
+</div>
+</div>
+</div>
+<div class="col-span-4 flex flex-col justify-center gap-2">
+<div class="font-mono text-sm strikethrough-mono text-on-surface-variant">PyTorch</div>
+<div class="font-mono text-sm strikethrough-mono text-on-surface-variant">NLP</div>
+<div class="font-mono text-sm strikethrough-mono text-on-surface-variant">LLM</div>
+</div>
+<div class="col-span-5 flex flex-col justify-center">
+<div class="text-solar font-label-sm text-label-sm tracking-widest uppercase mb-2">Technical Rationale</div>
+<p class="text-on-surface leading-relaxed">
+                            Led development of high-throughput linear algebra kernels in C++ for proprietary signal processing hardware. While her resume bypasses high-level AI framework labels, her foundational math-layer expertise is the core intent of ML roles.
+                        </p>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="grid grid-cols-12 gap-gutter py-12 group transition-colors duration-500 hover:bg-white/[0.02]">
+<div class="col-span-3 flex flex-col justify-center">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high overflow-hidden border border-white/10">
+<img class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-500" data-alt="A portrait of a software engineer with sharp, intellectual intensity. The lighting is cinematic, featuring warm golden flares and deep shadows that create a sense of mystery and expertise. The mood is sophisticated and authoritative, aligned with a premier high-tech hiring platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl46XYq4_sc7RBemxZ69fPGcqv5v-moUCW1ijlZ8VSrxRYW9y2t09320wVveQu_EVfmnmPoYs-BmExNW77uUKrehYcPQ82fhU3N95BFtj8nmkwEgxsC0gL2OumSjV6ijm8OkWu6iFE_QlL2I8mknegPpklNoJ8z3WLXb2v6XfSy5YfII2Lj6o8DxFmBaDqLELSkSVQcjMvjES_3jsPKZT9jdoYWhJTWBZ4Xyht61A8bXXv9L5jYI0EBOYIs7yn9jsSEmvD9AbIbS0">
+</div>
+<div>
+<h3 class="text-xl font-medium text-white">Kira Chen</h3>
+<p class="text-on-surface-variant font-label-sm text-label-sm">Security Operations Lead</p>
+</div>
+</div>
+</div>
+<div class="col-span-4 flex flex-col justify-center gap-2">
+<div class="font-mono text-sm strikethrough-mono text-on-surface-variant">Cybersecurity</div>
+<div class="font-mono text-sm strikethrough-mono text-on-surface-variant">PenTesting</div>
+<div class="font-mono text-sm strikethrough-mono text-on-surface-variant">SOC 2</div>
+</div>
+<div class="col-span-5 flex flex-col justify-center">
+<div class="text-solar font-label-sm text-label-sm tracking-widest uppercase mb-2">Technical Rationale</div>
+<p class="text-on-surface leading-relaxed">
+                            Specializes in formal verification of cryptographic protocols and zero-knowledge proofs. Legacy filters looking for 'Security Engineer' tags miss her because her contributions are categorized under 'Applied Mathematics' in academic circles.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Dynamic Insights -->
+<div class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="glass-panel bg-white/5 border border-white/10 p-8 rounded-xl">
+<div class="material-symbols-outlined text-solar mb-4">analytics</div>
+<h4 class="text-lg font-medium text-white mb-2">Semantic Coverage</h4>
+<p class="text-on-surface-variant text-sm">Registry expanded by 42% through cross-domain technical intent analysis vs. standard keyword parsing.</p>
+</div>
+<div class="glass-panel bg-white/5 border border-white/10 p-8 rounded-xl">
+<div class="material-symbols-outlined text-solar mb-4">radar</div>
+<h4 class="text-lg font-medium text-white mb-2">Deviation Drift</h4>
+<p class="text-on-surface-variant text-sm">Average profile in this view lacks 85% of standard JD keywords while maintaining 98% task-readiness.</p>
+</div>
+<div class="glass-panel bg-white/5 border border-white/10 p-8 rounded-xl">
+<div class="material-symbols-outlined text-solar mb-4">psychology</div>
+<h4 class="text-lg font-medium text-white mb-2">Neural Weighting</h4>
+<p class="text-on-surface-variant text-sm">Alignment scores derived from 12M+ lines of verified repository contributions and architectural whitepapers.</p>
+</div>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row justify-between items-center w-full py-8 border-t border-white/5 bg-transparent">
+<span class="font-display-md text-display-md text-primary">TalentOS</span>
+<div class="flex gap-8 mt-4 md:mt-0">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">API Documentation</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 md:mt-0">© 2024 TalentOS Intelligence. All rights reserved.</p>
+</footer>
+<script>
+        // Subtle background animation for the neural flares
+        const flares = document.querySelectorAll('.neural-flare');
+        
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            flares.forEach((flare, index) => {
+                const speed = (index + 1) * 20;
+                const xPos = (x * speed) - (speed / 2);
+                const yPos = (y * speed) - (speed / 2);
+                flare.style.transform = `translate(${xPos}px, ${yPos}px)`;
+            });
+        });
+
+        // Atmospheric shimmer effect
+        function createParticles() {
+            const canvas = document.getElementById('neural-canvas');
+            for(let i = 0; i < 15; i++) {
+                const p = document.createElement('div');
+                p.style.position = 'absolute';
+                p.style.width = '1px';
+                p.style.height = '1px';
+                p.style.background = 'white';
+                p.style.top = Math.random() * 100 + '%';
+                p.style.left = Math.random() * 100 + '%';
+                p.style.opacity = Math.random() * 0.3;
+                p.style.filter = 'blur(1px)';
+                p.classList.add('particle');
+                canvas.appendChild(p);
+                
+                animateParticle(p);
+            }
+        }
+
+        function animateParticle(p) {
+            const duration = 20000 + Math.random() * 40000;
+            const keyframes = [
+                { opacity: 0, transform: 'translateY(0)' },
+                { opacity: 0.3, transform: 'translateY(-100px)' },
+                { opacity: 0, transform: 'translateY(-200px)' }
+            ];
+            p.animate(keyframes, {
+                duration: duration,
+                iterations: Infinity,
+                easing: 'linear'
+            });
+        }
+
+        createParticles();
+    </script>
+
+
+</body></html>
