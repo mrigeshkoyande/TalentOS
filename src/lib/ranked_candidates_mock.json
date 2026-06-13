@@ -1,0 +1,2421 @@
+[
+  {
+    "id": "CAND_0027691",
+    "name": "Ayaan Goyal",
+    "title": "NLP Engineer",
+    "matchId": "CAND_0027691",
+    "latentSignalPercent": 96.3,
+    "matchScore": 91,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.5 YoE as a NLP Engineer. Strong technical fit with vector databases and embeddings experience (e.g. SAP, LoRA, PEFT). Based in Pune, Maharashtra. Highly available with a short 15-day notice period.",
+    "unstructured_skills_narrative": [
+      "SAP",
+      "LoRA",
+      "PEFT"
+    ],
+    "technical_projects": [
+      "NLP Engineer",
+      "Applied ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 1
+  },
+  {
+    "id": "CAND_0007009",
+    "name": "Anika Pillai",
+    "title": "Recommendation Systems Engineer",
+    "matchId": "CAND_0007009",
+    "latentSignalPercent": 82.8,
+    "matchScore": 90,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7.9 YoE as a Recommendation Systems Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Statistical Modeling, ETL, Weaviate). Based in Noida, Uttar Pradesh. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Statistical Modeling",
+      "ETL",
+      "Weaviate"
+    ],
+    "technical_projects": [
+      "Recommendation Systems Engineer",
+      "Recommendation Systems Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 2
+  },
+  {
+    "id": "CAND_0079387",
+    "name": "Sneha Arora",
+    "title": "AI Engineer",
+    "matchId": "CAND_0079387",
+    "latentSignalPercent": 90.2,
+    "matchScore": 89,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "6.9 YoE as a AI Engineer. Strong technical fit with vector databases and embeddings experience (e.g. scikit-learn, Recommendation Systems, Python). Based in Trivandrum, Kerala. Highly available with a short 30-day notice period. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "scikit-learn",
+      "Recommendation Systems",
+      "Python"
+    ],
+    "technical_projects": [
+      "AI Engineer",
+      "NLP Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 3
+  },
+  {
+    "id": "CAND_0008425",
+    "name": "Myra Krishnan",
+    "title": "Senior NLP Engineer",
+    "matchId": "CAND_0008425",
+    "latentSignalPercent": 57.2,
+    "matchScore": 86,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "7.8 YoE as a Senior NLP Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Learning to Rank, Qdrant, Weights & Biases). Based in Kolkata, West Bengal. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Learning to Rank",
+      "Qdrant",
+      "Weights & Biases"
+    ],
+    "technical_projects": [
+      "Senior NLP Engineer",
+      "Senior ML Engineer — Search & Ranking"
+    ],
+    "jobId": "mock-1",
+    "rank": 4
+  },
+  {
+    "id": "CAND_0040178",
+    "name": "Anika Bhatia",
+    "title": "ML Engineer",
+    "matchId": "CAND_0040178",
+    "latentSignalPercent": 66.7,
+    "matchScore": 85,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "5 YoE as a ML Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Weaviate, Fine-tuning LLMs, TTS). Based in Pune, Maharashtra. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Weaviate",
+      "Fine-tuning LLMs",
+      "TTS"
+    ],
+    "technical_projects": [
+      "ML Engineer",
+      "Senior Software Engineer (ML)"
+    ],
+    "jobId": "mock-1",
+    "rank": 5
+  },
+  {
+    "id": "CAND_0052328",
+    "name": "Vikram Banerjee",
+    "title": "Recommendation Systems Engineer",
+    "matchId": "CAND_0052328",
+    "latentSignalPercent": 76.7,
+    "matchScore": 85,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.5 YoE as a Recommendation Systems Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Object Detection, LoRA, OpenSearch). Based in Pune, Maharashtra. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Object Detection",
+      "LoRA",
+      "OpenSearch"
+    ],
+    "technical_projects": [
+      "Recommendation Systems Engineer",
+      "Senior Data Scientist"
+    ],
+    "jobId": "mock-1",
+    "rank": 6
+  },
+  {
+    "id": "CAND_0083307",
+    "name": "Neha Patel",
+    "title": "Search Engineer",
+    "matchId": "CAND_0083307",
+    "latentSignalPercent": 53,
+    "matchScore": 85,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7.8 YoE as a Search Engineer. Strong technical fit with vector databases and embeddings experience (e.g. OpenCV, scikit-learn, Embeddings). Based in Vizag, Andhra Pradesh. Notice period is 120 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "OpenCV",
+      "scikit-learn",
+      "Embeddings"
+    ],
+    "technical_projects": [
+      "Search Engineer",
+      "Machine Learning Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 7
+  },
+  {
+    "id": "CAND_0070398",
+    "name": "Riya Saxena",
+    "title": "Machine Learning Engineer",
+    "matchId": "CAND_0070398",
+    "latentSignalPercent": 50.3,
+    "matchScore": 84,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7.2 YoE as a Machine Learning Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Image Classification, Data Science, BM25). Based in Kochi, Kerala. Notice period is 120 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Image Classification",
+      "Data Science",
+      "BM25"
+    ],
+    "technical_projects": [
+      "Machine Learning Engineer",
+      "Applied ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 8
+  },
+  {
+    "id": "CAND_0064326",
+    "name": "Nisha Pillai",
+    "title": "Search Engineer",
+    "matchId": "CAND_0064326",
+    "latentSignalPercent": 54.1,
+    "matchScore": 83,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7.6 YoE as a Search Engineer. Strong technical fit with vector databases and embeddings experience (e.g. scikit-learn, PyTorch, Milvus). Based in Gurgaon, Haryana. Notice period is 45 days. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "scikit-learn",
+      "PyTorch",
+      "Milvus"
+    ],
+    "technical_projects": [
+      "Search Engineer",
+      "Machine Learning Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 9
+  },
+  {
+    "id": "CAND_0052682",
+    "name": "Ira Mukherjee",
+    "title": "NLP Engineer",
+    "matchId": "CAND_0052682",
+    "latentSignalPercent": 85.4,
+    "matchScore": 83,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.6 YoE as a NLP Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Statistical Modeling, QLoRA, Semantic Search). Based in Vizag, Andhra Pradesh. Highly available with a short 30-day notice period. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Statistical Modeling",
+      "QLoRA",
+      "Semantic Search"
+    ],
+    "technical_projects": [
+      "NLP Engineer",
+      "NLP Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 10
+  },
+  {
+    "id": "CAND_0018499",
+    "name": "Aarav Trivedi",
+    "title": "Senior Machine Learning Engineer",
+    "matchId": "CAND_0018499",
+    "latentSignalPercent": 98,
+    "matchScore": 82,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7.2 YoE as a Senior Machine Learning Engineer. Decent technical foundation with skills including Deep Learning, Weaviate, Recommendation Systems. Based in Noida, Uttar Pradesh. Highly available with a short 15-day notice period.",
+    "unstructured_skills_narrative": [
+      "Deep Learning",
+      "Weaviate",
+      "Recommendation Systems"
+    ],
+    "technical_projects": [
+      "Senior Machine Learning Engineer",
+      "Staff Machine Learning Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 11
+  },
+  {
+    "id": "CAND_0077337",
+    "name": "Aarav Agarwal",
+    "title": "Staff Machine Learning Engineer",
+    "matchId": "CAND_0077337",
+    "latentSignalPercent": 64.6,
+    "matchScore": 82,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7 YoE as a Staff Machine Learning Engineer. Strong technical fit with vector databases and embeddings experience (e.g. GANs, Semantic Search, QLoRA). Based in Kochi, Kerala. Notice period is 60 days. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "GANs",
+      "Semantic Search",
+      "QLoRA"
+    ],
+    "technical_projects": [
+      "Staff Machine Learning Engineer",
+      "Senior NLP Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 12
+  },
+  {
+    "id": "CAND_0081846",
+    "name": "Arjun Khanna",
+    "title": "Lead AI Engineer",
+    "matchId": "CAND_0081846",
+    "latentSignalPercent": 95.7,
+    "matchScore": 82,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.7 YoE as a Lead AI Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Data Science, Information Retrieval, LlamaIndex). Based in Jaipur, Rajasthan. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Data Science",
+      "Information Retrieval",
+      "LlamaIndex"
+    ],
+    "technical_projects": [
+      "Lead AI Engineer",
+      "Senior Machine Learning Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 13
+  },
+  {
+    "id": "CAND_0062247",
+    "name": "Saanvi Trivedi",
+    "title": "AI Engineer",
+    "matchId": "CAND_0062247",
+    "latentSignalPercent": 57.2,
+    "matchScore": 81,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7.3 YoE as a AI Engineer. Decent technical foundation with skills including Image Classification, OpenCV, Reinforcement Learning. Based in Kochi, Kerala. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Image Classification",
+      "OpenCV",
+      "Reinforcement Learning"
+    ],
+    "technical_projects": [
+      "AI Engineer",
+      "NLP Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 14
+  },
+  {
+    "id": "CAND_0075249",
+    "name": "Ishaan Arora",
+    "title": "Applied ML Engineer",
+    "matchId": "CAND_0075249",
+    "latentSignalPercent": 70.1,
+    "matchScore": 80,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.2 YoE as a Applied ML Engineer. Decent technical foundation with skills including Sentence Transformers, Milvus, Machine Learning. Based in Ahmedabad, Gujarat. Notice period is 45 days. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Sentence Transformers",
+      "Milvus",
+      "Machine Learning"
+    ],
+    "technical_projects": [
+      "Applied ML Engineer",
+      "Search Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 15
+  },
+  {
+    "id": "CAND_0071974",
+    "name": "Sai Verma",
+    "title": "Senior AI Engineer",
+    "matchId": "CAND_0071974",
+    "latentSignalPercent": 87.1,
+    "matchScore": 80,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7.8 YoE as a Senior AI Engineer. Decent technical foundation with skills including LoRA, Learning to Rank, Weaviate. Based in Vizag, Andhra Pradesh. Notice period is 45 days.",
+    "unstructured_skills_narrative": [
+      "LoRA",
+      "Learning to Rank",
+      "Weaviate"
+    ],
+    "technical_projects": [
+      "Senior AI Engineer",
+      "Staff Machine Learning Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 16
+  },
+  {
+    "id": "CAND_0032216",
+    "name": "Rahul Shetty",
+    "title": "ML Engineer",
+    "matchId": "CAND_0032216",
+    "latentSignalPercent": 67.3,
+    "matchScore": 80,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.1 YoE as a ML Engineer. Decent technical foundation with skills including OpenCV, Time Series, Object Detection. Based in Chennai, Tamil Nadu. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "OpenCV",
+      "Time Series",
+      "Object Detection"
+    ],
+    "technical_projects": [
+      "ML Engineer",
+      "Junior ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 17
+  },
+  {
+    "id": "CAND_0010149",
+    "name": "Ved Tiwari",
+    "title": "ML Engineer",
+    "matchId": "CAND_0010149",
+    "latentSignalPercent": 97.6,
+    "matchScore": 80,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "6.9 YoE as a ML Engineer. Decent technical foundation with skills including Computer Vision, Diffusion Models, Milvus. Based in Bangalore, Karnataka. Notice period is 90 days (slight concern). Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Computer Vision",
+      "Diffusion Models",
+      "Milvus"
+    ],
+    "technical_projects": [
+      "ML Engineer",
+      "Junior ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 18
+  },
+  {
+    "id": "CAND_0041610",
+    "name": "Anil Subramanian",
+    "title": "Recommendation Systems Engineer",
+    "matchId": "CAND_0041610",
+    "latentSignalPercent": 53.9,
+    "matchScore": 80,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.7 YoE as a Recommendation Systems Engineer. Decent technical foundation with skills including OpenCV, LoRA, Statistical Modeling. Based in Indore, Madhya Pradesh. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "OpenCV",
+      "LoRA",
+      "Statistical Modeling"
+    ],
+    "technical_projects": [
+      "Recommendation Systems Engineer",
+      "Applied ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 19
+  },
+  {
+    "id": "CAND_0067717",
+    "name": "Kavya Bose",
+    "title": "AI Specialist",
+    "matchId": "CAND_0067717",
+    "latentSignalPercent": 94.8,
+    "matchScore": 79,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.9 YoE as a AI Specialist. Strong technical fit with vector databases and embeddings experience (e.g. Hugging Face Transformers, Marketing, FAISS). Based in Noida, Uttar Pradesh. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Hugging Face Transformers",
+      "Marketing",
+      "FAISS"
+    ],
+    "technical_projects": [
+      "AI Specialist",
+      "Data Scientist"
+    ],
+    "jobId": "mock-1",
+    "rank": 20
+  },
+  {
+    "id": "CAND_0015581",
+    "name": "Tanvi Reddy",
+    "title": "Senior Software Engineer (ML)",
+    "matchId": "CAND_0015581",
+    "latentSignalPercent": 51.2,
+    "matchScore": 79,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6 YoE as a Senior Software Engineer (ML). Decent technical foundation with skills including Python, gRPC, TTS. Based in Coimbatore, Tamil Nadu. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Python",
+      "gRPC",
+      "TTS"
+    ],
+    "technical_projects": [
+      "Senior Software Engineer (ML)",
+      "AI Research Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 21
+  },
+  {
+    "id": "CAND_0061265",
+    "name": "Tanya Chopra",
+    "title": "Recommendation Systems Engineer",
+    "matchId": "CAND_0061265",
+    "latentSignalPercent": 86.5,
+    "matchScore": 79,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "6.6 YoE as a Recommendation Systems Engineer. Decent technical foundation with skills including Qdrant, SQL, Accounting. Based in Delhi, Delhi. Notice period is 120 days (slight concern). Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Qdrant",
+      "SQL",
+      "Accounting"
+    ],
+    "technical_projects": [
+      "Recommendation Systems Engineer",
+      "Senior Data Scientist"
+    ],
+    "jobId": "mock-1",
+    "rank": 22
+  },
+  {
+    "id": "CAND_0021491",
+    "name": "Aarohi Hegde",
+    "title": "AI Research Engineer",
+    "matchId": "CAND_0021491",
+    "latentSignalPercent": 64.9,
+    "matchScore": 79,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.1 YoE as a AI Research Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Recommendation Systems, Docker, Speech Recognition). Based in Bhubaneswar, Odisha. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Recommendation Systems",
+      "Docker",
+      "Speech Recognition"
+    ],
+    "technical_projects": [
+      "AI Research Engineer",
+      "AI Research Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 23
+  },
+  {
+    "id": "CAND_0076251",
+    "name": "Atharv Pandey",
+    "title": "Search Engineer",
+    "matchId": "CAND_0076251",
+    "latentSignalPercent": 85.5,
+    "matchScore": 79,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7.6 YoE as a Search Engineer. Decent technical foundation with skills including Fine-tuning LLMs, Reinforcement Learning, Hugging Face Transformers. Based in Bhubaneswar, Odisha. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Fine-tuning LLMs",
+      "Reinforcement Learning",
+      "Hugging Face Transformers"
+    ],
+    "technical_projects": [
+      "Search Engineer",
+      "Senior Data Scientist"
+    ],
+    "jobId": "mock-1",
+    "rank": 24
+  },
+  {
+    "id": "CAND_0002025",
+    "name": "Ira Dalal",
+    "title": "Senior AI Engineer",
+    "matchId": "CAND_0002025",
+    "latentSignalPercent": 81.8,
+    "matchScore": 79,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "5.9 YoE as a Senior AI Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Diffusion Models, FAISS, TensorFlow). Based in Trivandrum, Kerala. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Diffusion Models",
+      "FAISS",
+      "TensorFlow"
+    ],
+    "technical_projects": [
+      "Senior AI Engineer",
+      "Lead AI Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 25
+  },
+  {
+    "id": "CAND_0046064",
+    "name": "Saanvi Naidu",
+    "title": "Senior NLP Engineer",
+    "matchId": "CAND_0046064",
+    "latentSignalPercent": 75.3,
+    "matchScore": 79,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "8.9 YoE as a Senior NLP Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Python, Image Classification, OpenCV). Based in Coimbatore, Tamil Nadu. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Python",
+      "Image Classification",
+      "OpenCV"
+    ],
+    "technical_projects": [
+      "Senior NLP Engineer",
+      "Lead AI Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 26
+  },
+  {
+    "id": "CAND_0087630",
+    "name": "Aisha Rao",
+    "title": "AI Engineer",
+    "matchId": "CAND_0087630",
+    "latentSignalPercent": 60.1,
+    "matchScore": 79,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "7.2 YoE as a AI Engineer. Decent technical foundation with skills including Data Science, GANs, ASR. Based in Gurgaon, Haryana. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Data Science",
+      "GANs",
+      "ASR"
+    ],
+    "technical_projects": [
+      "AI Engineer",
+      "Applied ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 27
+  },
+  {
+    "id": "CAND_0042100",
+    "name": "Siya Trivedi",
+    "title": "Machine Learning Engineer",
+    "matchId": "CAND_0042100",
+    "latentSignalPercent": 96.7,
+    "matchScore": 78,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7.3 YoE as a Machine Learning Engineer. Decent technical foundation with skills including Elasticsearch, Statistical Modeling, Learning to Rank. Based in Singapore. Notice period is 90 days (slight concern). Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Elasticsearch",
+      "Statistical Modeling",
+      "Learning to Rank"
+    ],
+    "technical_projects": [
+      "Machine Learning Engineer",
+      "Senior Data Scientist"
+    ],
+    "jobId": "mock-1",
+    "rank": 28
+  },
+  {
+    "id": "CAND_0098952",
+    "name": "Dev Sethi",
+    "title": "AI Research Engineer",
+    "matchId": "CAND_0098952",
+    "latentSignalPercent": 63.1,
+    "matchScore": 78,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "5.5 YoE as a AI Research Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Airflow, Recommendation Systems, Statistical Modeling). Based in Gurgaon, Haryana. Notice period is 45 days.",
+    "unstructured_skills_narrative": [
+      "Airflow",
+      "Recommendation Systems",
+      "Statistical Modeling"
+    ],
+    "technical_projects": [
+      "AI Research Engineer",
+      "Senior Software Engineer (ML)"
+    ],
+    "jobId": "mock-1",
+    "rank": 29
+  },
+  {
+    "id": "CAND_0027801",
+    "name": "Anil Mittal",
+    "title": "NLP Engineer",
+    "matchId": "CAND_0027801",
+    "latentSignalPercent": 76.5,
+    "matchScore": 78,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "7.4 YoE as a NLP Engineer. Decent technical foundation with skills including Time Series, FAISS, Milvus. Based in Hyderabad, Telangana. Notice period is 120 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Time Series",
+      "FAISS",
+      "Milvus"
+    ],
+    "technical_projects": [
+      "NLP Engineer",
+      "Machine Learning Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 30
+  },
+  {
+    "id": "CAND_0030031",
+    "name": "Anil Joshi",
+    "title": "AI Engineer",
+    "matchId": "CAND_0030031",
+    "latentSignalPercent": 81.2,
+    "matchScore": 77,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "5.7 YoE as a AI Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Information Retrieval, PyTorch, Object Detection). Based in Trivandrum, Kerala. Highly available with a short 30-day notice period. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Information Retrieval",
+      "PyTorch",
+      "Object Detection"
+    ],
+    "technical_projects": [
+      "AI Engineer",
+      "Senior Data Scientist"
+    ],
+    "jobId": "mock-1",
+    "rank": 31
+  },
+  {
+    "id": "CAND_0081686",
+    "name": "Naina Tiwari",
+    "title": "Search Engineer",
+    "matchId": "CAND_0081686",
+    "latentSignalPercent": 57.2,
+    "matchScore": 77,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6 YoE as a Search Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Machine Learning, Kubeflow, Embeddings). Based in Austin. Notice period is 60 days. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Machine Learning",
+      "Kubeflow",
+      "Embeddings"
+    ],
+    "technical_projects": [
+      "Search Engineer",
+      "Recommendation Systems Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 32
+  },
+  {
+    "id": "CAND_0044855",
+    "name": "Kavya Joshi",
+    "title": "Senior Data Scientist",
+    "matchId": "CAND_0044855",
+    "latentSignalPercent": 93.5,
+    "matchScore": 77,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.6 YoE as a Senior Data Scientist. Decent technical foundation with skills including Object Detection, Learning to Rank, Hugging Face Transformers. Based in Coimbatore, Tamil Nadu. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Object Detection",
+      "Learning to Rank",
+      "Hugging Face Transformers"
+    ],
+    "technical_projects": [
+      "Senior Data Scientist",
+      "Recommendation Systems Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 33
+  },
+  {
+    "id": "CAND_0073883",
+    "name": "Zara Sen",
+    "title": "AI Specialist",
+    "matchId": "CAND_0073883",
+    "latentSignalPercent": 89.4,
+    "matchScore": 77,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "5.3 YoE as a AI Specialist. Strong technical fit with vector databases and embeddings experience (e.g. Redux, Reinforcement Learning, PEFT). Based in Chandigarh, Chandigarh. Notice period is 90 days (slight concern). Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Redux",
+      "Reinforcement Learning",
+      "PEFT"
+    ],
+    "technical_projects": [
+      "AI Specialist",
+      "AI Specialist"
+    ],
+    "jobId": "mock-1",
+    "rank": 34
+  },
+  {
+    "id": "CAND_0032179",
+    "name": "Om Hegde",
+    "title": "Computer Vision Engineer",
+    "matchId": "CAND_0032179",
+    "latentSignalPercent": 73.2,
+    "matchScore": 77,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.4 YoE as a Computer Vision Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Object Detection, Vector Search, Reinforcement Learning). Based in Sydney. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Object Detection",
+      "Vector Search",
+      "Reinforcement Learning"
+    ],
+    "technical_projects": [
+      "Computer Vision Engineer",
+      "ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 35
+  },
+  {
+    "id": "CAND_0055905",
+    "name": "Anika Rao",
+    "title": "Senior Machine Learning Engineer",
+    "matchId": "CAND_0055905",
+    "latentSignalPercent": 56.7,
+    "matchScore": 77,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "8.1 YoE as a Senior Machine Learning Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Elasticsearch, ASR, Hugging Face Transformers). Based in London. Highly available with a short 30-day notice period. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Elasticsearch",
+      "ASR",
+      "Hugging Face Transformers"
+    ],
+    "technical_projects": [
+      "Senior Machine Learning Engineer",
+      "Senior AI Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 36
+  },
+  {
+    "id": "CAND_0051630",
+    "name": "Kavya Naidu",
+    "title": "Machine Learning Engineer",
+    "matchId": "CAND_0051630",
+    "latentSignalPercent": 59.8,
+    "matchScore": 76,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "6 YoE as a Machine Learning Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Elasticsearch, Hugging Face Transformers, BentoML). Based in Kolkata, West Bengal. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Elasticsearch",
+      "Hugging Face Transformers",
+      "BentoML"
+    ],
+    "technical_projects": [
+      "Machine Learning Engineer",
+      "AI Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 37
+  },
+  {
+    "id": "CAND_0069232",
+    "name": "Nisha Arora",
+    "title": "ML Engineer",
+    "matchId": "CAND_0069232",
+    "latentSignalPercent": 78.4,
+    "matchScore": 76,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.3 YoE as a ML Engineer. Decent technical foundation with skills including Statistical Modeling, Pinecone, NLP. Based in Pune, Maharashtra. Notice period is 120 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Statistical Modeling",
+      "Pinecone",
+      "NLP"
+    ],
+    "technical_projects": [
+      "ML Engineer",
+      "AI Research Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 38
+  },
+  {
+    "id": "CAND_0033861",
+    "name": "Kabir Kapoor",
+    "title": "Senior NLP Engineer",
+    "matchId": "CAND_0033861",
+    "latentSignalPercent": 69.6,
+    "matchScore": 76,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "8 YoE as a Senior NLP Engineer. Decent technical foundation with skills including Reinforcement Learning, Weaviate, LoRA. Based in Vizag, Andhra Pradesh. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Reinforcement Learning",
+      "Weaviate",
+      "LoRA"
+    ],
+    "technical_projects": [
+      "Senior NLP Engineer",
+      "Senior NLP Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 39
+  },
+  {
+    "id": "CAND_0011162",
+    "name": "Nisha Sharma",
+    "title": "Recommendation Systems Engineer",
+    "matchId": "CAND_0011162",
+    "latentSignalPercent": 85.6,
+    "matchScore": 76,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "5.8 YoE as a Recommendation Systems Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Weights & Biases, FAISS, Vector Search). Based in Coimbatore, Tamil Nadu. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Weights & Biases",
+      "FAISS",
+      "Vector Search"
+    ],
+    "technical_projects": [
+      "Recommendation Systems Engineer",
+      "Recommendation Systems Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 40
+  },
+  {
+    "id": "CAND_0033749",
+    "name": "Atharv Chatterjee",
+    "title": "Computer Vision Engineer",
+    "matchId": "CAND_0033749",
+    "latentSignalPercent": 57.9,
+    "matchScore": 76,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "4.7 YoE as a Computer Vision Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Vector Search, Time Series, Forecasting). Based in Bhubaneswar, Odisha. Notice period is 120 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Vector Search",
+      "Time Series",
+      "Forecasting"
+    ],
+    "technical_projects": [
+      "Computer Vision Engineer",
+      "Data Scientist"
+    ],
+    "jobId": "mock-1",
+    "rank": 41
+  },
+  {
+    "id": "CAND_0007411",
+    "name": "Rahul Bansal",
+    "title": "Senior Machine Learning Engineer",
+    "matchId": "CAND_0007411",
+    "latentSignalPercent": 58.9,
+    "matchScore": 76,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "8 YoE as a Senior Machine Learning Engineer. Decent technical foundation with skills including OpenSearch, Prompt Engineering, Fine-tuning LLMs. Based in Kochi, Kerala. Highly available with a short 15-day notice period.",
+    "unstructured_skills_narrative": [
+      "OpenSearch",
+      "Prompt Engineering",
+      "Fine-tuning LLMs"
+    ],
+    "technical_projects": [
+      "Senior Machine Learning Engineer",
+      "Senior Machine Learning Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 42
+  },
+  {
+    "id": "CAND_0035653",
+    "name": "Aditya Subramanian",
+    "title": "Data Scientist",
+    "matchId": "CAND_0035653",
+    "latentSignalPercent": 54.6,
+    "matchScore": 76,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "5.6 YoE as a Data Scientist. Strong technical fit with vector databases and embeddings experience (e.g. MLflow, REST APIs, LoRA). Based in Indore, Madhya Pradesh. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "MLflow",
+      "REST APIs",
+      "LoRA"
+    ],
+    "technical_projects": [
+      "Data Scientist",
+      "AI Research Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 43
+  },
+  {
+    "id": "CAND_0067866",
+    "name": "Kiara Sethi",
+    "title": "Senior Software Engineer (ML)",
+    "matchId": "CAND_0067866",
+    "latentSignalPercent": 97,
+    "matchScore": 75,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "6.4 YoE as a Senior Software Engineer (ML). Decent technical foundation with skills including Embeddings, Illustrator, pgvector. Based in Noida, Uttar Pradesh. Notice period is 45 days.",
+    "unstructured_skills_narrative": [
+      "Embeddings",
+      "Illustrator",
+      "pgvector"
+    ],
+    "technical_projects": [
+      "Senior Software Engineer (ML)",
+      "ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 44
+  },
+  {
+    "id": "CAND_0041669",
+    "name": "Aisha Banerjee",
+    "title": "Recommendation Systems Engineer",
+    "matchId": "CAND_0041669",
+    "latentSignalPercent": 62.5,
+    "matchScore": 75,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "8 YoE as a Recommendation Systems Engineer. Decent technical foundation with skills including FAISS, Milvus, PEFT. Based in Noida, Uttar Pradesh. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "FAISS",
+      "Milvus",
+      "PEFT"
+    ],
+    "technical_projects": [
+      "Recommendation Systems Engineer",
+      "Search Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 45
+  },
+  {
+    "id": "CAND_0081053",
+    "name": "Om Chopra",
+    "title": "NLP Engineer",
+    "matchId": "CAND_0081053",
+    "latentSignalPercent": 58.3,
+    "matchScore": 75,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "5.4 YoE as a NLP Engineer. Decent technical foundation with skills including LoRA, QLoRA, Qdrant. Based in Chandigarh, Chandigarh. Notice period is 90 days (slight concern). Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "LoRA",
+      "QLoRA",
+      "Qdrant"
+    ],
+    "technical_projects": [
+      "NLP Engineer",
+      "Machine Learning Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 46
+  },
+  {
+    "id": "CAND_0088025",
+    "name": "Amit Arora",
+    "title": "Staff Machine Learning Engineer",
+    "matchId": "CAND_0088025",
+    "latentSignalPercent": 60.3,
+    "matchScore": 75,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "8.6 YoE as a Staff Machine Learning Engineer. Decent technical foundation with skills including Pinecone, QLoRA, LLMs. Based in Jaipur, Rajasthan. Notice period is 90 days (slight concern). Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "QLoRA",
+      "LLMs"
+    ],
+    "technical_projects": [
+      "Staff Machine Learning Engineer",
+      "Staff Machine Learning Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 47
+  },
+  {
+    "id": "CAND_0049538",
+    "name": "Sanjay Bose",
+    "title": "Applied ML Engineer",
+    "matchId": "CAND_0049538",
+    "latentSignalPercent": 52.9,
+    "matchScore": 75,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "5.8 YoE as a Applied ML Engineer. Decent technical foundation with skills including LlamaIndex, Feature Engineering, MLflow. Based in Jaipur, Rajasthan. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "LlamaIndex",
+      "Feature Engineering",
+      "MLflow"
+    ],
+    "technical_projects": [
+      "Applied ML Engineer",
+      "Recommendation Systems Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 48
+  },
+  {
+    "id": "CAND_0096172",
+    "name": "Meera Chowdary",
+    "title": "NLP Engineer",
+    "matchId": "CAND_0096172",
+    "latentSignalPercent": 80.9,
+    "matchScore": 75,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "5.2 YoE as a NLP Engineer. Strong technical fit with vector databases and embeddings experience (e.g. OpenSearch, Haystack, Forecasting). Based in Chennai, Tamil Nadu. Notice period is 45 days.",
+    "unstructured_skills_narrative": [
+      "OpenSearch",
+      "Haystack",
+      "Forecasting"
+    ],
+    "technical_projects": [
+      "NLP Engineer",
+      "Machine Learning Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 49
+  },
+  {
+    "id": "CAND_0036184",
+    "name": "Riya Chopra",
+    "title": "Recommendation Systems Engineer",
+    "matchId": "CAND_0036184",
+    "latentSignalPercent": 88.6,
+    "matchScore": 75,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6 YoE as a Recommendation Systems Engineer. Decent technical foundation with skills including Image Classification, QLoRA, FAISS. Based in Trivandrum, Kerala. Highly available with a short 30-day notice period. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Image Classification",
+      "QLoRA",
+      "FAISS"
+    ],
+    "technical_projects": [
+      "Recommendation Systems Engineer",
+      "AI Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 50
+  },
+  {
+    "id": "CAND_0011687",
+    "name": "Shreya Tiwari",
+    "title": "Senior NLP Engineer",
+    "matchId": "CAND_0011687",
+    "latentSignalPercent": 64.9,
+    "matchScore": 75,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7.8 YoE as a Senior NLP Engineer. Decent technical foundation with skills including TensorFlow, OpenSearch, FAISS. Based in Indore, Madhya Pradesh. Highly available with a short 15-day notice period. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "TensorFlow",
+      "OpenSearch",
+      "FAISS"
+    ],
+    "technical_projects": [
+      "Senior NLP Engineer",
+      "Senior Machine Learning Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 51
+  },
+  {
+    "id": "CAND_0024620",
+    "name": "Avni Rao",
+    "title": "AI Engineer",
+    "matchId": "CAND_0024620",
+    "latentSignalPercent": 63.9,
+    "matchScore": 75,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "5.9 YoE as a AI Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Statistical Modeling, Object Detection, Semantic Search). Based in New York. Notice period is 45 days.",
+    "unstructured_skills_narrative": [
+      "Statistical Modeling",
+      "Object Detection",
+      "Semantic Search"
+    ],
+    "technical_projects": [
+      "AI Engineer",
+      "NLP Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 52
+  },
+  {
+    "id": "CAND_0076163",
+    "name": "Nikhil Mittal",
+    "title": "NLP Engineer",
+    "matchId": "CAND_0076163",
+    "latentSignalPercent": 89.7,
+    "matchScore": 75,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.9 YoE as a NLP Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Weaviate, LangChain, YOLO). Based in Chandigarh, Chandigarh. Notice period is 60 days. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Weaviate",
+      "LangChain",
+      "YOLO"
+    ],
+    "technical_projects": [
+      "NLP Engineer",
+      "NLP Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 53
+  },
+  {
+    "id": "CAND_0066376",
+    "name": "Amit Goyal",
+    "title": "Applied ML Engineer",
+    "matchId": "CAND_0066376",
+    "latentSignalPercent": 62.8,
+    "matchScore": 75,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "5.7 YoE as a Applied ML Engineer. Decent technical foundation with skills including Recommendation Systems, LoRA, Learning to Rank. Based in Mumbai, Maharashtra. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Recommendation Systems",
+      "LoRA",
+      "Learning to Rank"
+    ],
+    "technical_projects": [
+      "Applied ML Engineer",
+      "Senior Data Scientist"
+    ],
+    "jobId": "mock-1",
+    "rank": 54
+  },
+  {
+    "id": "CAND_0069638",
+    "name": "Diya Gupta",
+    "title": "Computer Vision Engineer",
+    "matchId": "CAND_0069638",
+    "latentSignalPercent": 67.7,
+    "matchScore": 75,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.2 YoE as a Computer Vision Engineer. Decent technical foundation with skills including Time Series, Hadoop, Semantic Search. Based in Chennai, Tamil Nadu. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Time Series",
+      "Hadoop",
+      "Semantic Search"
+    ],
+    "technical_projects": [
+      "Computer Vision Engineer",
+      "AI Research Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 55
+  },
+  {
+    "id": "CAND_0043958",
+    "name": "Rajesh Kapoor",
+    "title": "AI Research Engineer",
+    "matchId": "CAND_0043958",
+    "latentSignalPercent": 71.6,
+    "matchScore": 75,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.7 YoE as a AI Research Engineer. Decent technical foundation with skills including CI/CD, Sentence Transformers, FAISS. Based in Bhubaneswar, Odisha. Notice period is 120 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "CI/CD",
+      "Sentence Transformers",
+      "FAISS"
+    ],
+    "technical_projects": [
+      "AI Research Engineer",
+      "AI Specialist"
+    ],
+    "jobId": "mock-1",
+    "rank": 56
+  },
+  {
+    "id": "CAND_0068811",
+    "name": "Krishna Mittal",
+    "title": "Applied ML Engineer",
+    "matchId": "CAND_0068811",
+    "latentSignalPercent": 71.4,
+    "matchScore": 75,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "8 YoE as a Applied ML Engineer. Decent technical foundation with skills including Data Science, Vector Search, Speech Recognition. Based in Pune, Maharashtra. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Data Science",
+      "Vector Search",
+      "Speech Recognition"
+    ],
+    "technical_projects": [
+      "Applied ML Engineer",
+      "AI Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 57
+  },
+  {
+    "id": "CAND_0098217",
+    "name": "Kavya Bansal",
+    "title": "ML Engineer",
+    "matchId": "CAND_0098217",
+    "latentSignalPercent": 62.4,
+    "matchScore": 75,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.4 YoE as a ML Engineer. Decent technical foundation with skills including Weights & Biases, PEFT, MLflow. Based in Noida, Uttar Pradesh. Notice period is 45 days. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Weights & Biases",
+      "PEFT",
+      "MLflow"
+    ],
+    "technical_projects": [
+      "ML Engineer",
+      "Junior ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 58
+  },
+  {
+    "id": "CAND_0023093",
+    "name": "Anika Ghosh",
+    "title": "ML Engineer",
+    "matchId": "CAND_0023093",
+    "latentSignalPercent": 49.8,
+    "matchScore": 74,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "5.1 YoE as a ML Engineer. Decent technical foundation with skills including Time Series, LangChain, Semantic Search. Based in Seattle. Notice period is 90 days (slight concern). Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Time Series",
+      "LangChain",
+      "Semantic Search"
+    ],
+    "technical_projects": [
+      "ML Engineer",
+      "AI Specialist"
+    ],
+    "jobId": "mock-1",
+    "rank": 59
+  },
+  {
+    "id": "CAND_0020708",
+    "name": "Kiara Patel",
+    "title": "Search Engineer",
+    "matchId": "CAND_0020708",
+    "latentSignalPercent": 89.4,
+    "matchScore": 74,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "4.2 YoE as a Search Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Tally, NLP, Data Science). Based in Indore, Madhya Pradesh. Highly available with a short 30-day notice period. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Tally",
+      "NLP",
+      "Data Science"
+    ],
+    "technical_projects": [
+      "Search Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 60
+  },
+  {
+    "id": "CAND_0017960",
+    "name": "Pari Shah",
+    "title": "Recommendation Systems Engineer",
+    "matchId": "CAND_0017960",
+    "latentSignalPercent": 71.1,
+    "matchScore": 74,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "7.7 YoE as a Recommendation Systems Engineer. Decent technical foundation with skills including LlamaIndex, QLoRA, Hugging Face Transformers. Based in Bangalore, Karnataka. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "LlamaIndex",
+      "QLoRA",
+      "Hugging Face Transformers"
+    ],
+    "technical_projects": [
+      "Recommendation Systems Engineer",
+      "NLP Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 61
+  },
+  {
+    "id": "CAND_0062413",
+    "name": "Pari Joshi",
+    "title": "AI Research Engineer",
+    "matchId": "CAND_0062413",
+    "latentSignalPercent": 55.3,
+    "matchScore": 74,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.6 YoE as a AI Research Engineer. Decent technical foundation with skills including ASR, Diffusion Models, Learning to Rank. Based in Mumbai, Maharashtra. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "ASR",
+      "Diffusion Models",
+      "Learning to Rank"
+    ],
+    "technical_projects": [
+      "AI Research Engineer",
+      "AI Research Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 62
+  },
+  {
+    "id": "CAND_0040117",
+    "name": "Aisha Sen",
+    "title": "Recommendation Systems Engineer",
+    "matchId": "CAND_0040117",
+    "latentSignalPercent": 82.8,
+    "matchScore": 74,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "6.5 YoE as a Recommendation Systems Engineer. Decent technical foundation with skills including OpenCV, LlamaIndex, Embeddings. Based in Vizag, Andhra Pradesh. Highly available with a short 15-day notice period.",
+    "unstructured_skills_narrative": [
+      "OpenCV",
+      "LlamaIndex",
+      "Embeddings"
+    ],
+    "technical_projects": [
+      "Recommendation Systems Engineer",
+      "Applied ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 63
+  },
+  {
+    "id": "CAND_0068351",
+    "name": "Aadhya Iyer",
+    "title": "Lead AI Engineer",
+    "matchId": "CAND_0068351",
+    "latentSignalPercent": 94.5,
+    "matchScore": 74,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "6.4 YoE as a Lead AI Engineer. Decent technical foundation with skills including pgvector, Deep Learning, Qdrant. Based in Delhi, Delhi. Highly available with a short 0-day notice period. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "pgvector",
+      "Deep Learning",
+      "Qdrant"
+    ],
+    "technical_projects": [
+      "Lead AI Engineer",
+      "Staff Machine Learning Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 64
+  },
+  {
+    "id": "CAND_0073982",
+    "name": "Divya Chowdary",
+    "title": "Data Scientist",
+    "matchId": "CAND_0073982",
+    "latentSignalPercent": 80.4,
+    "matchScore": 74,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7 YoE as a Data Scientist. Decent technical foundation with skills including Snowflake, Sentence Transformers, PEFT. Based in Delhi, Delhi. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Snowflake",
+      "Sentence Transformers",
+      "PEFT"
+    ],
+    "technical_projects": [
+      "Data Scientist",
+      "ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 65
+  },
+  {
+    "id": "CAND_0007567",
+    "name": "Ved Goyal",
+    "title": "AI Specialist",
+    "matchId": "CAND_0007567",
+    "latentSignalPercent": 78.8,
+    "matchScore": 74,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.1 YoE as a AI Specialist. Decent technical foundation with skills including Fine-tuning LLMs, Diffusion Models, NLP. Based in Kochi, Kerala. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Fine-tuning LLMs",
+      "Diffusion Models",
+      "NLP"
+    ],
+    "technical_projects": [
+      "AI Specialist",
+      "AI Specialist"
+    ],
+    "jobId": "mock-1",
+    "rank": 66
+  },
+  {
+    "id": "CAND_0010541",
+    "name": "Meera Krishnan",
+    "title": "AI Research Engineer",
+    "matchId": "CAND_0010541",
+    "latentSignalPercent": 75.3,
+    "matchScore": 73,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.2 YoE as a AI Research Engineer. Decent technical foundation with skills including Pinecone, GANs, Weaviate. Based in Hyderabad, Telangana. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "GANs",
+      "Weaviate"
+    ],
+    "technical_projects": [
+      "AI Research Engineer",
+      "Junior ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 67
+  },
+  {
+    "id": "CAND_0054100",
+    "name": "Aanya Patel",
+    "title": "Junior ML Engineer",
+    "matchId": "CAND_0054100",
+    "latentSignalPercent": 97.6,
+    "matchScore": 73,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6 YoE as a Junior ML Engineer. Decent technical foundation with skills including Vector Search, Reinforcement Learning, Time Series. Based in Kolkata, West Bengal. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Vector Search",
+      "Reinforcement Learning",
+      "Time Series"
+    ],
+    "technical_projects": [
+      "Junior ML Engineer",
+      "ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 68
+  },
+  {
+    "id": "CAND_0045250",
+    "name": "Priya Pandey",
+    "title": "Applied ML Engineer",
+    "matchId": "CAND_0045250",
+    "latentSignalPercent": 89.8,
+    "matchScore": 73,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.6 YoE as a Applied ML Engineer. Decent technical foundation with skills including Sentence Transformers, Milvus, LoRA. Based in Delhi, Delhi. Highly available with a short 15-day notice period.",
+    "unstructured_skills_narrative": [
+      "Sentence Transformers",
+      "Milvus",
+      "LoRA"
+    ],
+    "technical_projects": [
+      "Applied ML Engineer",
+      "Applied ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 69
+  },
+  {
+    "id": "CAND_0058688",
+    "name": "Anjali Kapoor",
+    "title": "AI Engineer",
+    "matchId": "CAND_0058688",
+    "latentSignalPercent": 68.4,
+    "matchScore": 73,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "6.7 YoE as a AI Engineer. Decent technical foundation with skills including OpenCV, CNN, scikit-learn. Based in Berlin. Highly available with a short 15-day notice period.",
+    "unstructured_skills_narrative": [
+      "OpenCV",
+      "CNN",
+      "scikit-learn"
+    ],
+    "technical_projects": [
+      "AI Engineer",
+      "Recommendation Systems Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 70
+  },
+  {
+    "id": "CAND_0094759",
+    "name": "Aditya Pillai",
+    "title": "Lead AI Engineer",
+    "matchId": "CAND_0094759",
+    "latentSignalPercent": 59.3,
+    "matchScore": 73,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "8.6 YoE as a Lead AI Engineer. Decent technical foundation with skills including Prompt Engineering, scikit-learn, Hugging Face Transformers. Based in Mumbai, Maharashtra. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Prompt Engineering",
+      "scikit-learn",
+      "Hugging Face Transformers"
+    ],
+    "technical_projects": [
+      "Lead AI Engineer",
+      "Senior NLP Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 71
+  },
+  {
+    "id": "CAND_0096104",
+    "name": "Ritu Shetty",
+    "title": "AI Specialist",
+    "matchId": "CAND_0096104",
+    "latentSignalPercent": 73.8,
+    "matchScore": 73,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7 YoE as a AI Specialist. Decent technical foundation with skills including BM25, TTS, Hugging Face Transformers. Based in Delhi, Delhi. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "BM25",
+      "TTS",
+      "Hugging Face Transformers"
+    ],
+    "technical_projects": [
+      "AI Specialist",
+      "Junior ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 72
+  },
+  {
+    "id": "CAND_0030784",
+    "name": "Ved Mukherjee",
+    "title": "Data Scientist",
+    "matchId": "CAND_0030784",
+    "latentSignalPercent": 97.3,
+    "matchScore": 73,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "4.4 YoE as a Data Scientist. Strong technical fit with vector databases and embeddings experience (e.g. Embeddings, Learning to Rank, Apache Beam). Based in Delhi, Delhi. Notice period is 90 days (slight concern). Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Embeddings",
+      "Learning to Rank",
+      "Apache Beam"
+    ],
+    "technical_projects": [
+      "Data Scientist",
+      "Junior ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 73
+  },
+  {
+    "id": "CAND_0049978",
+    "name": "Kabir Arora",
+    "title": "Senior Software Engineer (ML)",
+    "matchId": "CAND_0049978",
+    "latentSignalPercent": 93.1,
+    "matchScore": 73,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.6 YoE as a Senior Software Engineer (ML). Decent technical foundation with skills including Deep Learning, Weaviate, BM25. Based in Trivandrum, Kerala. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Deep Learning",
+      "Weaviate",
+      "BM25"
+    ],
+    "technical_projects": [
+      "Senior Software Engineer (ML)",
+      "AI Research Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 74
+  },
+  {
+    "id": "CAND_0065430",
+    "name": "Dev Singh",
+    "title": "ML Engineer",
+    "matchId": "CAND_0065430",
+    "latentSignalPercent": 65.8,
+    "matchScore": 73,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "4.4 YoE as a ML Engineer. Strong technical fit with vector databases and embeddings experience (e.g. ASR, Reinforcement Learning, Deep Learning). Based in Mumbai, Maharashtra. Notice period is 45 days.",
+    "unstructured_skills_narrative": [
+      "ASR",
+      "Reinforcement Learning",
+      "Deep Learning"
+    ],
+    "technical_projects": [
+      "ML Engineer",
+      "Junior ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 75
+  },
+  {
+    "id": "CAND_0051486",
+    "name": "Vivaan Mehta",
+    "title": "AI Specialist",
+    "matchId": "CAND_0051486",
+    "latentSignalPercent": 90.6,
+    "matchScore": 73,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "5.9 YoE as a AI Specialist. Decent technical foundation with skills including Fine-tuning LLMs, Microservices, Tally. Based in Bhubaneswar, Odisha. Notice period is 120 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Fine-tuning LLMs",
+      "Microservices",
+      "Tally"
+    ],
+    "technical_projects": [
+      "AI Specialist",
+      "Junior ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 76
+  },
+  {
+    "id": "CAND_0057736",
+    "name": "Deepak Dutta",
+    "title": "Computer Vision Engineer",
+    "matchId": "CAND_0057736",
+    "latentSignalPercent": 99,
+    "matchScore": 73,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.2 YoE as a Computer Vision Engineer. Decent technical foundation with skills including Weaviate, Information Retrieval, CNN. Based in Coimbatore, Tamil Nadu. Notice period is 90 days (slight concern). Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Weaviate",
+      "Information Retrieval",
+      "CNN"
+    ],
+    "technical_projects": [
+      "Computer Vision Engineer",
+      "AI Specialist"
+    ],
+    "jobId": "mock-1",
+    "rank": 77
+  },
+  {
+    "id": "CAND_0044222",
+    "name": "Dev Shah",
+    "title": "AI Engineer",
+    "matchId": "CAND_0044222",
+    "latentSignalPercent": 71.3,
+    "matchScore": 73,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7.7 YoE as a AI Engineer. Decent technical foundation with skills including Vector Search, LlamaIndex, OpenSearch. Based in Vizag, Andhra Pradesh. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Vector Search",
+      "LlamaIndex",
+      "OpenSearch"
+    ],
+    "technical_projects": [
+      "AI Engineer",
+      "AI Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 78
+  },
+  {
+    "id": "CAND_0088335",
+    "name": "Shreya Sharma",
+    "title": "AI Research Engineer",
+    "matchId": "CAND_0088335",
+    "latentSignalPercent": 51.6,
+    "matchScore": 72,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.4 YoE as a AI Research Engineer. Decent technical foundation with skills including Hugging Face Transformers, Flask, Data Science. Based in Noida, Uttar Pradesh. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Hugging Face Transformers",
+      "Flask",
+      "Data Science"
+    ],
+    "technical_projects": [
+      "AI Research Engineer",
+      "ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 79
+  },
+  {
+    "id": "CAND_0070202",
+    "name": "Ayaan Mishra",
+    "title": "Machine Learning Engineer",
+    "matchId": "CAND_0070202",
+    "latentSignalPercent": 72.4,
+    "matchScore": 72,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "5.1 YoE as a Machine Learning Engineer. Decent technical foundation with skills including Microservices, Object Detection, OpenCV. Based in Jaipur, Rajasthan. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Microservices",
+      "Object Detection",
+      "OpenCV"
+    ],
+    "technical_projects": [
+      "Machine Learning Engineer",
+      "Search Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 80
+  },
+  {
+    "id": "CAND_0039383",
+    "name": "Riya Malhotra",
+    "title": "Applied ML Engineer",
+    "matchId": "CAND_0039383",
+    "latentSignalPercent": 89,
+    "matchScore": 72,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "7.1 YoE as a Applied ML Engineer. Decent technical foundation with skills including GANs, FAISS, ASR. Based in Gurgaon, Haryana. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "GANs",
+      "FAISS",
+      "ASR"
+    ],
+    "technical_projects": [
+      "Applied ML Engineer",
+      "Machine Learning Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 81
+  },
+  {
+    "id": "CAND_0073620",
+    "name": "Ira Goyal",
+    "title": "AI Research Engineer",
+    "matchId": "CAND_0073620",
+    "latentSignalPercent": 83.6,
+    "matchScore": 72,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "4.4 YoE as a AI Research Engineer. Strong technical fit with vector databases and embeddings experience (e.g. TTS, ASR, LoRA). Based in Noida, Uttar Pradesh. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "TTS",
+      "ASR",
+      "LoRA"
+    ],
+    "technical_projects": [
+      "AI Research Engineer",
+      "Data Scientist"
+    ],
+    "jobId": "mock-1",
+    "rank": 82
+  },
+  {
+    "id": "CAND_0000422",
+    "name": "Anil Shah",
+    "title": "AI Research Engineer",
+    "matchId": "CAND_0000422",
+    "latentSignalPercent": 83.3,
+    "matchScore": 72,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "6.3 YoE as a AI Research Engineer. Decent technical foundation with skills including MLflow, Python, Photoshop. Based in Kolkata, West Bengal. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "MLflow",
+      "Python",
+      "Photoshop"
+    ],
+    "technical_projects": [
+      "AI Research Engineer",
+      "Data Scientist"
+    ],
+    "jobId": "mock-1",
+    "rank": 83
+  },
+  {
+    "id": "CAND_0065514",
+    "name": "Krishna Chopra",
+    "title": "ML Engineer",
+    "matchId": "CAND_0065514",
+    "latentSignalPercent": 65,
+    "matchScore": 72,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.6 YoE as a ML Engineer. Decent technical foundation with skills including LangChain, Vector Search, Pinecone. Based in Pune, Maharashtra. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "LangChain",
+      "Vector Search",
+      "Pinecone"
+    ],
+    "technical_projects": [
+      "ML Engineer",
+      "Junior ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 84
+  },
+  {
+    "id": "CAND_0005649",
+    "name": "Riya Kapoor",
+    "title": "Senior Data Scientist",
+    "matchId": "CAND_0005649",
+    "latentSignalPercent": 57.8,
+    "matchScore": 72,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7.4 YoE as a Senior Data Scientist. Decent technical foundation with skills including Haystack, Redis, Prompt Engineering. Based in Delhi, Delhi. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Haystack",
+      "Redis",
+      "Prompt Engineering"
+    ],
+    "technical_projects": [
+      "Senior Data Scientist",
+      "Recommendation Systems Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 85
+  },
+  {
+    "id": "CAND_0042029",
+    "name": "Dhruv Joshi",
+    "title": "Senior Data Scientist",
+    "matchId": "CAND_0042029",
+    "latentSignalPercent": 53,
+    "matchScore": 72,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.5 YoE as a Senior Data Scientist. Decent technical foundation with skills including YOLO, PyTorch, NLP. Based in Delhi, Delhi. Notice period is 45 days.",
+    "unstructured_skills_narrative": [
+      "YOLO",
+      "PyTorch",
+      "NLP"
+    ],
+    "technical_projects": [
+      "Senior Data Scientist",
+      "Machine Learning Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 86
+  },
+  {
+    "id": "CAND_0043304",
+    "name": "Aarohi Goyal",
+    "title": "Junior ML Engineer",
+    "matchId": "CAND_0043304",
+    "latentSignalPercent": 91.9,
+    "matchScore": 72,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "6.5 YoE as a Junior ML Engineer. Decent technical foundation with skills including LangChain, Sentence Transformers, Machine Learning. Based in Trivandrum, Kerala. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "LangChain",
+      "Sentence Transformers",
+      "Machine Learning"
+    ],
+    "technical_projects": [
+      "Junior ML Engineer",
+      "Junior ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 87
+  },
+  {
+    "id": "CAND_0094025",
+    "name": "Anil Bhatia",
+    "title": "Data Scientist",
+    "matchId": "CAND_0094025",
+    "latentSignalPercent": 71.4,
+    "matchScore": 72,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "6.4 YoE as a Data Scientist. Decent technical foundation with skills including Qdrant, Hugging Face Transformers, Time Series. Based in Chandigarh, Chandigarh. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Qdrant",
+      "Hugging Face Transformers",
+      "Time Series"
+    ],
+    "technical_projects": [
+      "Data Scientist",
+      "Junior ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 88
+  },
+  {
+    "id": "CAND_0054123",
+    "name": "Tanvi Banerjee",
+    "title": "Applied ML Engineer",
+    "matchId": "CAND_0054123",
+    "latentSignalPercent": 51.2,
+    "matchScore": 72,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "4.7 YoE as a Applied ML Engineer. Strong technical fit with vector databases and embeddings experience (e.g. LangChain, pgvector, Python). Based in Gurgaon, Haryana. Notice period is 60 days. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "LangChain",
+      "pgvector",
+      "Python"
+    ],
+    "technical_projects": [
+      "Applied ML Engineer",
+      "AI Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 89
+  },
+  {
+    "id": "CAND_0065786",
+    "name": "Advaith Pandey",
+    "title": "AI Specialist",
+    "matchId": "CAND_0065786",
+    "latentSignalPercent": 92.3,
+    "matchScore": 72,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "4.9 YoE as a AI Specialist. Decent technical foundation with skills including Databricks, LoRA, Learning to Rank. Based in Indore, Madhya Pradesh. Notice period is 45 days. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Databricks",
+      "LoRA",
+      "Learning to Rank"
+    ],
+    "technical_projects": [
+      "AI Specialist",
+      "Junior ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 90
+  },
+  {
+    "id": "CAND_0030953",
+    "name": "Dhruv Hegde",
+    "title": "Search Engineer",
+    "matchId": "CAND_0030953",
+    "latentSignalPercent": 85.2,
+    "matchScore": 72,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7.8 YoE as a Search Engineer. Decent technical foundation with skills including TTS, MLOps, Learning to Rank. Based in Chennai, Tamil Nadu. Notice period is 45 days.",
+    "unstructured_skills_narrative": [
+      "TTS",
+      "MLOps",
+      "Learning to Rank"
+    ],
+    "technical_projects": [
+      "Search Engineer",
+      "NLP Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 91
+  },
+  {
+    "id": "CAND_0043228",
+    "name": "Kiara Sen",
+    "title": "Applied ML Engineer",
+    "matchId": "CAND_0043228",
+    "latentSignalPercent": 88.3,
+    "matchScore": 72,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.8 YoE as a Applied ML Engineer. Decent technical foundation with skills including BigQuery, NLP, ASR. Based in Chennai, Tamil Nadu. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "BigQuery",
+      "NLP",
+      "ASR"
+    ],
+    "technical_projects": [
+      "Applied ML Engineer",
+      "Applied ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 92
+  },
+  {
+    "id": "CAND_0054703",
+    "name": "Sai Shetty",
+    "title": "Computer Vision Engineer",
+    "matchId": "CAND_0054703",
+    "latentSignalPercent": 87.7,
+    "matchScore": 72,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "6.8 YoE as a Computer Vision Engineer. Decent technical foundation with skills including Hadoop, Image Classification, ASR. Based in Vizag, Andhra Pradesh. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Hadoop",
+      "Image Classification",
+      "ASR"
+    ],
+    "technical_projects": [
+      "Computer Vision Engineer",
+      "Data Scientist"
+    ],
+    "jobId": "mock-1",
+    "rank": 93
+  },
+  {
+    "id": "CAND_0006418",
+    "name": "Rahul Mukherjee",
+    "title": "Machine Learning Engineer",
+    "matchId": "CAND_0006418",
+    "latentSignalPercent": 73.5,
+    "matchScore": 72,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "5.7 YoE as a Machine Learning Engineer. Decent technical foundation with skills including Kubernetes, gRPC, Semantic Search. Based in Gurgaon, Haryana. Notice period is 60 days. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Kubernetes",
+      "gRPC",
+      "Semantic Search"
+    ],
+    "technical_projects": [
+      "Machine Learning Engineer",
+      "AI Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 94
+  },
+  {
+    "id": "CAND_0037944",
+    "name": "Suresh Singh",
+    "title": "Senior Data Scientist",
+    "matchId": "CAND_0037944",
+    "latentSignalPercent": 73.3,
+    "matchScore": 71,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "4.9 YoE as a Senior Data Scientist. Strong technical fit with vector databases and embeddings experience (e.g. Next.js, Feature Engineering, Vector Search). Based in Jaipur, Rajasthan. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Next.js",
+      "Feature Engineering",
+      "Vector Search"
+    ],
+    "technical_projects": [
+      "Senior Data Scientist",
+      "Applied ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 95
+  },
+  {
+    "id": "CAND_0047542",
+    "name": "Anil Nair",
+    "title": "Senior Software Engineer (ML)",
+    "matchId": "CAND_0047542",
+    "latentSignalPercent": 78.6,
+    "matchScore": 71,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "5 YoE as a Senior Software Engineer (ML). Decent technical foundation with skills including Learning to Rank, REST APIs, MongoDB. Based in Chennai, Tamil Nadu. Notice period is 45 days.",
+    "unstructured_skills_narrative": [
+      "Learning to Rank",
+      "REST APIs",
+      "MongoDB"
+    ],
+    "technical_projects": [
+      "Senior Software Engineer (ML)",
+      "Computer Vision Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 96
+  },
+  {
+    "id": "CAND_0064270",
+    "name": "Anil Rao",
+    "title": "Applied ML Engineer",
+    "matchId": "CAND_0064270",
+    "latentSignalPercent": 70.1,
+    "matchScore": 71,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "4.2 YoE as a Applied ML Engineer. Decent technical foundation with skills including LlamaIndex, BentoML, PyTorch. Based in Pune, Maharashtra. Notice period is 45 days. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "LlamaIndex",
+      "BentoML",
+      "PyTorch"
+    ],
+    "technical_projects": [
+      "Applied ML Engineer",
+      "AI Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 97
+  },
+  {
+    "id": "CAND_0082973",
+    "name": "Rajesh Agarwal",
+    "title": "AI Specialist",
+    "matchId": "CAND_0082973",
+    "latentSignalPercent": 48,
+    "matchScore": 71,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "6.4 YoE as a AI Specialist. Strong technical fit with vector databases and embeddings experience (e.g. Go, ASR, Image Classification). Based in Chandigarh, Chandigarh. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Go",
+      "ASR",
+      "Image Classification"
+    ],
+    "technical_projects": [
+      "AI Specialist",
+      "Senior Software Engineer (ML)"
+    ],
+    "jobId": "mock-1",
+    "rank": 98
+  },
+  {
+    "id": "CAND_0066035",
+    "name": "Vikram Reddy",
+    "title": "Data Scientist",
+    "matchId": "CAND_0066035",
+    "latentSignalPercent": 71.8,
+    "matchScore": 71,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.7 YoE as a Data Scientist. Decent technical foundation with skills including Statistical Modeling, PostgreSQL, Information Retrieval. Based in Kolkata, West Bengal. Notice period is 45 days.",
+    "unstructured_skills_narrative": [
+      "Statistical Modeling",
+      "PostgreSQL",
+      "Information Retrieval"
+    ],
+    "technical_projects": [
+      "Data Scientist",
+      "AI Specialist"
+    ],
+    "jobId": "mock-1",
+    "rank": 99
+  },
+  {
+    "id": "CAND_0061175",
+    "name": "Reyansh Chatterjee",
+    "title": "AI Research Engineer",
+    "matchId": "CAND_0061175",
+    "latentSignalPercent": 54.1,
+    "matchScore": 71,
+    "isHiddenGem": true,
+    "omittedKeywords": [
+      "Pinecone",
+      "PyTorch",
+      "LLMs",
+      "Weaviate"
+    ],
+    "latentValueRationale": "Demonstrates strong applied software/data engineering experience at a product company, building high-throughput pipelines. While lacking high-level AI framework labels (omitting Pinecone, PyTorch, LLMs, Weaviate), their foundational engineering and retrieval capabilities represent a massive latent talent resource.",
+    "alignmentProof": "6.7 YoE as a AI Research Engineer. Strong technical fit with vector databases and embeddings experience (e.g. Python, Milvus, Recommendation Systems). Based in Gurgaon, Haryana. Notice period is 120 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Python",
+      "Milvus",
+      "Recommendation Systems"
+    ],
+    "technical_projects": [
+      "AI Research Engineer",
+      "Junior ML Engineer"
+    ],
+    "jobId": "mock-1",
+    "rank": 100
+  }
+]

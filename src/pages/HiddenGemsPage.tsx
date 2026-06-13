@@ -1,190 +1,266 @@
+import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import AppShell from '../components/layout/AppShell'
 import { useHiddenGems } from '../hooks/useHiddenGems'
 import type { Candidate } from '../types'
+import rankedRaw from '../lib/ranked_candidates_mock.json'
 
-const MOCK_GEMS: Candidate[] = [
-  {
-    id: 'hg1', name: 'Elias Thorne', title: 'Distinguished Systems Architect', matchId: 'HG_0821',
-    latentSignalPercent: 98.4, matchScore: 94, isHiddenGem: true,
-    omittedKeywords: ['Kubernetes', 'Microservices', 'Cloud Native'],
-    latentValueRationale: 'Engineered a custom high-availability orchestrator for a proprietary edge-compute network. While lacking K8s keywords, his design handles containerized lifecycle management at scales exceeding standard enterprise deployments. Container isolation model demonstrates conceptual equivalence at the kernel scheduling level—the abstraction is owned rather than borrowed.',
-    alignmentProof: '',
-    unstructured_skills_narrative: ['Custom orchestration engines', 'Edge compute architecture'],
-    technical_projects: ['High-availability edge orchestrator', 'Distributed consensus implementation'],
-    jobId: 'mock-1', createdAt: null as any,
-  },
-  {
-    id: 'hg2', name: 'Sloane Varkas', title: 'Backend Performance Lead', matchId: 'HG_0944',
-    latentSignalPercent: 96.8, matchScore: 91, isHiddenGem: true,
-    omittedKeywords: ['Python', 'React', 'AWS Lambda'],
-    latentValueRationale: 'Deep specialization in low-latency concurrent processing using Erlang/Elixir for fintech messaging cores. Superior architectural alignment with real-time stream processing needs, despite missing common modern cloud stack buzzwords. Actor model concurrency maps precisely to the serverless execution model. Throughput benchmarks: 4.2M messages/sec sustained over 72h.',
-    alignmentProof: '',
-    unstructured_skills_narrative: ['Erlang/Elixir concurrency', 'Fintech messaging'],
-    technical_projects: ['Real-time stream processing engine', 'Low-latency fintech core'],
-    jobId: 'mock-1', createdAt: null as any,
-  },
-  {
-    id: 'hg3', name: 'Julian Mercer', title: 'ML Infrastructure Engineer', matchId: 'HG_0712',
-    latentSignalPercent: 94.2, matchScore: 89, isHiddenGem: true,
-    omittedKeywords: ['PyTorch', 'NLP', 'LLM'],
-    latentValueRationale: 'Led development of high-throughput linear algebra kernels in C++ for proprietary signal processing hardware. While resume bypasses high-level AI framework labels, foundational math-layer expertise is the core execution intent of ML infrastructure roles. CUDA kernel optimization work directly applicable to training pipeline acceleration targets.',
-    alignmentProof: '',
-    unstructured_skills_narrative: ['Linear algebra kernels', 'CUDA optimization'],
-    technical_projects: ['Signal processing hardware driver', 'Custom ML kernel library'],
-    jobId: 'mock-1', createdAt: null as any,
-  },
-  {
-    id: 'hg4', name: 'Kira Chen', title: 'Security Operations Lead', matchId: 'HG_0631',
-    latentSignalPercent: 91.0, matchScore: 87, isHiddenGem: true,
-    omittedKeywords: ['Cybersecurity', 'PenTesting', 'SOC 2'],
-    latentValueRationale: 'Specializes in formal verification of cryptographic protocols and zero-knowledge proofs. Legacy filters looking for Security Engineer tags miss her entirely—contributions are categorized under Applied Mathematics in academic circles. ZK proof work directly underpins the zero-trust access model required for compliance infrastructure.',
-    alignmentProof: '',
-    unstructured_skills_narrative: ['Formal verification', 'Zero-knowledge proofs'],
-    technical_projects: ['Cryptographic protocol verifier', 'ZK proof library'],
-    jobId: 'mock-1', createdAt: null as any,
-  },
-  {
-    id: 'hg5', name: 'Tariq Osei', title: 'Data Systems Researcher', matchId: 'HG_0589',
-    latentSignalPercent: 88.5, matchScore: 84, isHiddenGem: true,
-    omittedKeywords: ['SQL', 'Snowflake', 'dbt'],
-    latentValueRationale: 'Published researcher in columnar storage engine design with peer-reviewed work on predicate pushdown optimization. Resume reflects academic framing, not tooling keywords. However, the optimization strategies he has authored are the underlying principles that power the exact data warehouse stack the role targets.',
-    alignmentProof: '',
-    unstructured_skills_narrative: ['Columnar storage design', 'Query optimization research'],
-    technical_projects: ['Custom storage engine prototype', 'Predicate pushdown benchmark suite'],
-    jobId: 'mock-1', createdAt: null as any,
-  },
-]
+const MOCK_GEMS: Candidate[] = (rankedRaw as any[])
+  .filter((r: any) => r.isHiddenGem)
+  .map((r: any) => ({
+    id: r.id,
+    name: r.name,
+    title: r.title,
+    matchId: r.matchId,
+    latentSignalPercent: r.latentSignalPercent ?? 0,
+    matchScore: r.matchScore ?? 0,
+    isHiddenGem: true,
+    omittedKeywords: r.omittedKeywords ?? [],
+    latentValueRationale: r.latentValueRationale ?? r.alignmentProof ?? '',
+    alignmentProof: r.alignmentProof ?? '',
+    unstructured_skills_narrative: r.unstructured_skills_narrative ?? [],
+    technical_projects: r.technical_projects ?? [],
+    jobId: r.jobId ?? 'india-challenge',
+    rank: r.rank,
+    createdAt: null as any,
+  }))
 
 export default function HiddenGemsPage() {
   const { gems, loading } = useHiddenGems(null)
   const displayGems = gems.length > 0 ? gems : MOCK_GEMS
+  const [selectedGemId, setSelectedGemId] = useState<string | null>(null)
+
+  const activeGem = displayGems.find(g => g.id === selectedGemId) || displayGems[0]
 
   return (
     <AppShell>
-      {/* Page path header */}
-      <div className="border-b border-white/5 px-6 md:px-8 py-4 flex items-center justify-between">
-        <p className="console-path">
-          CONSOLE <span className="text-white/15 mx-1">//</span>
-          LATENT_INTENT_DISCOVER <span className="text-white/15 mx-1">//</span>
-          <span className="text-[#C7A36A]">HG_INDEX</span>
-        </p>
-        <div className="flex items-center gap-4">
-          <span className="font-geist-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest">
-            HG_RECORDS: <span className="text-[#F5F5F5]">{displayGems.length.toString().padStart(3, '0')}</span>
-          </span>
-          <span className="font-geist-mono text-[9px] text-[#C7A36A] uppercase tracking-widest">
-            FILTER: KEYWORD_OMISSION_DETECTED
-          </span>
+      {/* ─── PAGE TITLE & STORYTELLING BREADCRUMB ──────────────────────────── */}
+      <div className="border border-white/5 bg-[#11131b]/40 backdrop-blur-sm rounded-lg p-5 mb-8">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div>
+            <p className="font-mono text-[9px] text-[#C7A36A] uppercase tracking-widest mb-1">
+              CONSOLE // LATENT_INTENT_DISCOVER // HG_INDEX
+            </p>
+            <h1 className="font-geist text-lg font-medium text-[#F5F5F5]">
+              Hidden Gems Index
+            </h1>
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="font-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest">
+              GEMS_UNCOVERED: <span className="text-[#779165] font-semibold text-glow-green">{displayGems.length.toString().padStart(2, '0')}</span>
+            </span>
+          </div>
+        </div>
+        
+        {/* Storytelling explanation */}
+        <div className="mt-4 p-4 rounded bg-[#C7A36A]/5 border border-[#C7A36A]/10 text-xs text-[#A1A1A1] leading-relaxed">
+          <p className="font-semibold text-[#F5F5F5] mb-1">What is a Hidden Gem?</p>
+          These candidates score in the top 25th percentile for practical capabilities and behavioral traits but have a low density of standard keyword matching on their resumes. Traditional ATS software filters them out immediately. TalentOS identifies them through semantic analysis of their verified technical projects and unstructured skills narratives.
         </div>
       </div>
 
-      {/* Column header */}
-      <div className="console-col-header hidden md:grid grid-cols-12 px-6 md:px-8 py-3">
-        <div className="col-span-3">HG_ID // CANDIDATE</div>
-        <div className="col-span-3 pl-6">OMITTED_KEYWORD_DEVIATIONS</div>
-        <div className="col-span-6 pl-6">LATENT_CAPABILITY_INFERENCE</div>
-      </div>
+      {/* ─── SPLIT VIEW WORKSPACE ─────────────────────────────────────────── */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        {/* Left Side: Gem List (Lg col-5) */}
+        <div className="lg:col-span-5 space-y-4">
+          <h2 className="font-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest px-1">
+            // UNCONVENTIONAL_TALENT_FEED
+          </h2>
+          
+          <div className="space-y-3 max-h-[600px] overflow-y-auto pr-2">
+            {loading ? (
+              Array.from({ length: 4 }).map((_, i) => (
+                <div key={i} className="glass-card p-5 rounded-lg animate-pulse space-y-2">
+                  <div className="h-4 bg-white/5 rounded-sm w-3/4" />
+                  <div className="h-2.5 bg-white/5 rounded-sm w-1/2" />
+                  <div className="h-2 bg-white/5 rounded-sm w-1/4" />
+                </div>
+              ))
+            ) : (
+              displayGems.map((gem) => {
+                const isActive = (selectedGemId === null && activeGem?.id === gem.id) || selectedGemId === gem.id
+                return (
+                  <div
+                    key={gem.id}
+                    onClick={() => setSelectedGemId(gem.id)}
+                    className={`glass-card p-5 rounded-lg cursor-pointer transition-all ${
+                      isActive 
+                        ? 'border-[#C7A36A]/40 bg-[#C7A36A]/3 shadow-[0_0_15px_rgba(199,163,106,0.04)]' 
+                        : 'hover:bg-white/1'
+                    }`}
+                  >
+                    <div className="flex justify-between items-start mb-2">
+                      <div>
+                        <h3 className="font-geist text-xs font-semibold text-[#F5F5F5]">{gem.name}</h3>
+                        <p className="font-geist text-[10px] text-[#A1A1A1] mt-0.5">{gem.title}</p>
+                      </div>
+                      <span className="font-mono text-[9px] text-[#779165] bg-[#779165]/10 border border-[#779165]/20 px-1.5 py-0.5 rounded uppercase tracking-widest font-semibold text-glow-green">
+                        {gem.latentSignalPercent.toFixed(0)}% SIG
+                      </span>
+                    </div>
 
-      {/* Gem rows */}
-      <div>
-        {loading
-          ? Array.from({ length: 5 }).map((_, i) => (
-              <div key={i} className="console-row grid grid-cols-12 px-6 md:px-8 py-8 gap-0">
-                <div className="col-span-3 flex items-start gap-3">
-                  <div className="h-3 w-16 bg-white/5 rounded-sm animate-pulse" />
-                  <div className="flex flex-col gap-2">
-                    <div className="h-2.5 w-24 bg-white/5 rounded-sm animate-pulse" />
-                    <div className="h-2 w-16 bg-white/5 rounded-sm animate-pulse" />
+                    <div className="flex flex-wrap gap-1.5 mt-3">
+                      {gem.unstructured_skills_narrative.slice(0, 3).map(skill => (
+                        <span key={skill} className="font-mono text-[8px] text-[#A1A1A1]/60 border border-white/5 px-1.5 py-0.5 uppercase tracking-wider rounded-sm">
+                          {skill}
+                        </span>
+                      ))}
+                      {gem.unstructured_skills_narrative.length > 3 && (
+                        <span className="font-mono text-[8px] text-[#A1A1A1]/40 px-1.5 py-0.5 uppercase tracking-wider">
+                          +{gem.unstructured_skills_narrative.length - 3}
+                        </span>
+                      )}
+                    </div>
                   </div>
-                </div>
-                <div className="col-span-3 pl-6 space-y-2">
-                  <div className="h-2 w-20 bg-white/5 rounded-sm animate-pulse" />
-                  <div className="h-2 w-16 bg-white/5 rounded-sm animate-pulse" />
-                  <div className="h-2 w-24 bg-white/5 rounded-sm animate-pulse" />
-                </div>
-                <div className="col-span-6 pl-6 space-y-2">
-                  <div className="h-2 w-full bg-white/5 rounded-sm animate-pulse" />
-                  <div className="h-2 w-4/5 bg-white/5 rounded-sm animate-pulse" />
-                  <div className="h-2 w-3/5 bg-white/5 rounded-sm animate-pulse" />
-                </div>
-              </div>
-            ))
-          : displayGems.map((gem, idx) => (
-              <div
-                key={gem.id}
-                className="console-row grid grid-cols-1 md:grid-cols-12 px-6 md:px-8 py-8 border-b border-white/5 gap-6 md:gap-0"
+                )
+              })
+            )}
+          </div>
+        </div>
+
+        {/* Right Side: Advanced Storytelling Visualizer (Lg col-7) */}
+        <div className="lg:col-span-7">
+          <AnimatePresence mode="wait">
+            {activeGem && (
+              <motion.div
+                key={activeGem.id}
+                initial={{ opacity: 0, x: 10 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -10 }}
+                transition={{ duration: 0.25 }}
+                className="glass-card p-6 rounded-lg border border-white/5 space-y-6 relative overflow-hidden"
               >
-                {/* Cols 1–3: Identity */}
-                <div className="col-span-1 md:col-span-3 flex items-start gap-3">
-                  <div className="shrink-0 mt-0.5">
-                    <span className="console-idx">
-                      {gem.matchId}
+                {/* Glow Overlay */}
+                <div className="absolute right-0 top-0 w-64 h-64 bg-radial from-[#C7A36A]/3 to-transparent blur-[40px] pointer-events-none -z-10" />
+
+                {/* Identity header */}
+                <div className="border-b border-white/5 pb-4 flex justify-between items-start">
+                  <div>
+                    <h3 className="font-geist text-sm font-semibold text-[#F5F5F5]">{activeGem.name}</h3>
+                    <p className="font-geist text-xs text-[#A1A1A1] mt-0.5">{activeGem.title}</p>
+                    <p className="font-mono text-[9px] text-[#A1A1A1]/40 mt-1 uppercase tracking-widest">
+                      ID: {activeGem.matchId}
+                    </p>
+                  </div>
+                  <div className="text-right">
+                    <span className="font-mono text-[9px] text-[#A1A1A1] block uppercase tracking-widest">
+                      Latent Capability Score
                     </span>
-                    <span className="block font-geist-mono text-[8px] text-[#779165] uppercase tracking-widest mt-1">
-                      {gem.latentSignalPercent.toFixed(1)}%_SIG
+                    <span className="font-display text-3xl font-medium text-[#779165] text-glow-green">
+                      {activeGem.latentSignalPercent.toFixed(1)}%
                     </span>
                   </div>
-                  <div>
-                    <p className="font-geist text-xs font-medium text-[#F5F5F5] leading-tight">{gem.name}</p>
-                    <p className="font-geist text-[11px] text-[#A1A1A1] mt-0.5">{gem.title}</p>
-                    {gem.unstructured_skills_narrative.length > 0 && (
+                </div>
+
+                {/* Why ATS Missed Them comparison panel */}
+                <div className="space-y-3">
+                  <h4 className="font-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest">
+                    // THE_ATS_GAP // COMPARATIVE_ANALYSIS
+                  </h4>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {/* Left: Traditional ATS (Red/Failure) */}
+                    <div className="p-4 rounded-lg bg-red-500/3 border border-red-500/10 space-y-2">
+                      <div className="flex items-center gap-2 text-red-400">
+                        <span className="material-symbols-outlined text-sm">cancel</span>
+                        <span className="font-mono text-[9px] uppercase tracking-widest font-semibold">
+                          TRADITIONAL_ATS
+                        </span>
+                      </div>
+                      <p className="font-mono text-[20px] font-semibold text-red-400/80">0 Matches</p>
+                      <p className="font-geist text-[10px] text-[#A1A1A1] leading-relaxed">
+                        Filtered out automatically because the resume omitted core keyword strings:
+                      </p>
                       <div className="flex flex-wrap gap-1.5 mt-2">
-                        {gem.unstructured_skills_narrative.map(skill => (
-                          <span key={skill} className="font-geist-mono text-[8px] text-[#A1A1A1]/60 border border-white/5 px-1.5 py-0.5 uppercase tracking-widest">
-                            {skill}
+                        {activeGem.omittedKeywords.map(kw => (
+                          <span key={kw} className="font-mono text-[8px] text-red-400/60 border border-red-400/10 px-1.5 py-0.5 rounded line-through">
+                            {kw}
                           </span>
                         ))}
                       </div>
-                    )}
+                    </div>
+
+                    {/* Right: TalentOS (Green/Success) */}
+                    <div className="p-4 rounded-lg bg-[#779165]/3 border border-[#779165]/10 space-y-2">
+                      <div className="flex items-center gap-2 text-[#779165]">
+                        <span className="material-symbols-outlined text-sm">check_circle</span>
+                        <span className="font-mono text-[9px] uppercase tracking-widest font-semibold">
+                          TALENTOS_SEMANTIC
+                        </span>
+                      </div>
+                      <p className="font-mono text-[20px] font-semibold text-[#779165]">Match Found</p>
+                      <p className="font-geist text-[10px] text-[#A1A1A1] leading-relaxed">
+                        Mapped equivalence between candidate experience and required capabilities:
+                      </p>
+                      <p className="font-geist text-[10px] text-[#779165] italic">
+                        "Demonstrates deep, equivalent proficiency through verified technical output."
+                      </p>
+                    </div>
                   </div>
                 </div>
 
-                {/* Cols 4–6: Omitted keyword deviations */}
-                <div className="col-span-1 md:col-span-3 md:pl-6 flex flex-col justify-start gap-1">
-                  {/* Mobile label */}
-                  <p className="font-geist-mono text-[9px] uppercase tracking-widest text-[#A1A1A1] mb-2 md:hidden">
-                    // OMITTED_KEYWORDS
+                {/* Latent capability narrative */}
+                <div className="space-y-2.5">
+                  <h4 className="font-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest">
+                    // CAPABILITY_INFERENCE_NARRATIVE
+                  </h4>
+                  <p className="font-geist text-xs text-[#A1A1A1] leading-relaxed p-4 rounded-lg bg-white/1 border border-white/5">
+                    {activeGem.latentValueRationale}
                   </p>
-                  {gem.omittedKeywords.map(kw => (
-                    <div key={kw} className="flex items-center gap-2">
-                      <span className="font-geist-mono text-[9px] text-[#A1A1A1]/40">—</span>
-                      <span className="console-strikethrough">{kw}</span>
-                    </div>
-                  ))}
                 </div>
 
-                {/* Cols 7–12: Latent inference narrative */}
-                <div className="col-span-1 md:col-span-6 md:pl-6 flex flex-col justify-start">
-                  {/* Mobile label */}
-                  <p className="font-geist-mono text-[9px] uppercase tracking-widest text-[#A1A1A1] mb-2 md:hidden">
-                    // CAPABILITY_INFERENCE
-                  </p>
-                  <p className="font-geist text-[11px] text-[#F5F5F5] leading-relaxed">
-                    {gem.latentValueRationale}
-                  </p>
-                  {gem.technical_projects.length > 0 && (
-                    <div className="mt-4 space-y-1">
-                      <p className="font-geist-mono text-[9px] uppercase tracking-widest text-[#A1A1A1]">
-                        // VERIFIED_PROJECTS
-                      </p>
-                      {gem.technical_projects.map(proj => (
-                        <div key={proj} className="flex items-center gap-2">
-                          <span className="font-geist-mono text-[9px] text-[#C7A36A]">›</span>
-                          <span className="font-geist-mono text-[10px] text-[#A1A1A1]">{proj}</span>
+                {/* Skill confidence levels (simulated radar/bar indicators) */}
+                <div className="space-y-4">
+                  <h4 className="font-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest">
+                    // CAPABILITY_DYNAMICS // CONFIDENCE_LEVELS
+                  </h4>
+
+                  <div className="space-y-3">
+                    {[
+                      { skill: 'RAG Pipeline Integration', conf: 94 },
+                      { skill: 'Distributed Infrastructure Design', conf: 88 },
+                      { skill: 'Performance Optimization & Latency', conf: 82 },
+                    ].map(item => (
+                      <div key={item.skill} className="space-y-1">
+                        <div className="flex justify-between items-center text-[10px]">
+                          <span className="font-geist font-medium text-[#F5F5F5]">{item.skill}</span>
+                          <span className="font-mono text-[#779165] font-semibold">{item.conf}% CONFIDENCE</span>
+                        </div>
+                        <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
+                          <motion.div
+                            initial={{ width: 0 }}
+                            animate={{ width: `${item.conf}%` }}
+                            className="h-full bg-gradient-to-r from-[#779165]/40 to-[#779165]"
+                          />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Verified Technical Projects */}
+                {activeGem.technical_projects.length > 0 && (
+                  <div className="space-y-3 border-t border-white/5 pt-4">
+                    <h4 className="font-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest">
+                      // VERIFIED_ENGINEERING_PROJECTS
+                    </h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                      {activeGem.technical_projects.map(proj => (
+                        <div key={proj} className="p-3 rounded-lg bg-[#0b0c10]/40 border border-white/5 flex gap-2.5 items-start">
+                          <span className="material-symbols-outlined text-[#C7A36A] text-xs mt-0.5">deployed_code</span>
+                          <span className="font-mono text-[10px] text-[#F5F5F5] leading-snug">{proj}</span>
                         </div>
                       ))}
                     </div>
-                  )}
-                </div>
-              </div>
-            ))}
-      </div>
+                  </div>
+                )}
 
-      {/* Footer status */}
-      <div className="border-t border-white/5 px-6 md:px-8 py-3">
-        <span className="font-geist-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest">
-          // END_OF_LATENT_INTENT_INDEX // SEMANTIC_FILTER: ACTIVE // KEYWORD_OMISSION_THRESHOLD: 2+
-        </span>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+
       </div>
     </AppShell>
   )

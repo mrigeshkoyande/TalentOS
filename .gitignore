@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Challenge / Large / Generated Files
+candidates.jsonl
+submission.csv
+push.bat
+powershell.bat
+r.isHiddenGem)
+

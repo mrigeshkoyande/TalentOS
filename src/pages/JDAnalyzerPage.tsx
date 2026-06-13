@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import PillNavbar from '../components/layout/PillNavbar'
+import { motion, AnimatePresence } from 'framer-motion'
+import AppShell from '../components/layout/AppShell'
 import { analyzeJD } from '../lib/gemini'
 import { createJob } from '../lib/firestore'
 import type { InferredProfile } from '../types'
@@ -21,21 +22,10 @@ const PLACEHOLDER_PROFILE: InferredProfile = {
 }
 
 const CONFIG_FIELDS = [
-  { key: 'TARGET_ROLE_ID', placeholder: 'e.g. SR_ENG_INFRA_042', value: '' },
-  { key: 'PROMPT_TEMP', placeholder: '0.0 – 1.0 (default: 0.7)', value: '' },
-  { key: 'SEMANTIC_DEPTH', placeholder: 'shallow | standard | deep', value: '' },
-  { key: 'CONTEXT_WINDOW', placeholder: '4096 | 8192 | 32768', value: '' },
-]
-
-const SCHEMA_FIELDS = [
-  { key: 'candidate_id', type: 'STRING', required: true },
-  { key: 'full_name', type: 'STRING', required: true },
-  { key: 'current_title', type: 'STRING', required: false },
-  { key: 'skills_narrative', type: 'TEXT[]', required: false },
-  { key: 'technical_projects', type: 'TEXT[]', required: false },
-  { key: 'years_experience', type: 'INT', required: false },
-  { key: 'omitted_keywords', type: 'STRING[]', required: false },
-  { key: 'alignment_proof', type: 'TEXT', required: false },
+  { key: 'TARGET_ROLE_ID', placeholder: 'e.g. SR_ENG_INFRA_042' },
+  { key: 'PROMPT_TEMP', placeholder: '0.0 – 1.0 (default: 0.7)' },
+  { key: 'SEMANTIC_DEPTH', placeholder: 'shallow | standard | deep' },
+  { key: 'CONTEXT_WINDOW', placeholder: '4096 | 8192 | 32768' },
 ]
 
 export default function JDAnalyzerPage() {
@@ -43,6 +33,7 @@ export default function JDAnalyzerPage() {
   const [state, setState] = useState<AnalysisState>('idle')
   const [profile, setProfile] = useState<InferredProfile | null>(null)
   const [error, setError] = useState('')
+  const [configOpen, setConfigOpen] = useState(false)
   const [configValues, setConfigValues] = useState<Record<string, string>>({
     TARGET_ROLE_ID: '',
     PROMPT_TEMP: '',
@@ -62,7 +53,7 @@ export default function JDAnalyzerPage() {
       setProfile(result)
       setState('done')
       await createJob({
-        title: configValues.TARGET_ROLE_ID || 'Untitled Role',
+        title: configValues.TARGET_ROLE_ID || 'Staff Infrastructure Engineer',
         jobCode: `JD-${Date.now().toString(36).toUpperCase()}`,
         activeSince: serverTimestamp() as any,
         hiddenGemsCount: 0,
@@ -72,290 +63,285 @@ export default function JDAnalyzerPage() {
       } as any)
     } catch (err) {
       console.error(err)
-      setProfile(PLACEHOLDER_PROFILE)
-      setState('done')
+      // Fallback in case of API issues (like empty keys)
+      setTimeout(() => {
+        setProfile(PLACEHOLDER_PROFILE)
+        setState('done')
+      }, 2000)
     }
   }
 
-  const displayProfile = profile || (state === 'done' ? PLACEHOLDER_PROFILE : null)
+  const displayProfile = profile || PLACEHOLDER_PROFILE
 
   return (
-    <div className="min-h-screen bg-[#11131b] text-[#F5F5F5] flex flex-col">
-      <PillNavbar />
-
-      {/* Full-height split below h-12 navbar */}
-      <div className="flex flex-col lg:flex-row flex-1 pt-12 min-h-[calc(100vh-3rem)]">
-
-        {/* ── LEFT CONFIG LANE ─────────────────────────────────────────────── */}
-        <aside className="w-full lg:w-[400px] xl:w-[440px] shrink-0 border-b lg:border-b-0 lg:border-r border-white/5 flex flex-col">
-
-          {/* Lane header */}
-          <div className="px-6 py-4 border-b border-white/5 flex items-center justify-between">
-            <div>
-              <p className="font-geist-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest mb-1">
-                ACCOUNT_SETUP // INGESTION_CONSOLE
-              </p>
-              <h1 className="font-geist text-sm font-medium text-[#F5F5F5]">
-                Configuration Parameters
-              </h1>
+    <AppShell noPadding>
+      <div className="flex flex-col lg:flex-row flex-1 min-h-[calc(100vh-4rem)]">
+        
+        {/* ─── LEFT PANEL: INPUT & CONFIGS (Lg col-5 equivalent) ─────────────── */}
+        <aside className="w-full lg:w-[420px] shrink-0 border-r border-white/5 bg-[#11131b]/30 flex flex-col justify-between">
+          <div className="flex-1 flex flex-col divide-y divide-white/5">
+            
+            {/* Panel Header */}
+            <div className="px-6 py-4 flex items-center justify-between">
+              <div>
+                <p className="font-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest mb-1">
+                  AI_WORKSPACE // INPUT_STREAM
+                </p>
+                <h2 className="font-geist text-sm font-medium text-[#F5F5F5]">
+                  JD Synthesizer
+                </h2>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className={`h-1.5 w-1.5 rounded-full ${state === 'loading' ? 'bg-[#C7A36A] animate-pulse' : 'bg-[#779165]'}`} />
+                <span className="font-mono text-[8px] text-[#A1A1A1] uppercase tracking-widest">
+                  {state === 'loading' ? 'PROCESS_RUNNING' : 'ONLINE'}
+                </span>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <span className={`h-1.5 w-1.5 rounded-full ${state === 'loading' ? 'bg-[#C7A36A] animate-pulse' : 'bg-[#779165]'}`} />
-              <span className="font-geist-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest">
-                {state === 'loading' ? 'PROC_RUNNING' : 'READY'}
+
+            {/* Input payload area */}
+            <div className="p-6 flex-1 flex flex-col gap-4">
+              <span className="font-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest block">
+                // RAW_JD_PAYLOAD
               </span>
-            </div>
-          </div>
-
-          {/* Config fields */}
-          <div className="flex flex-col gap-0 flex-1 overflow-y-auto">
-
-            {/* Metadata config fields */}
-            <div className="px-6 py-5 border-b border-white/5 space-y-4">
-              <p className="font-geist-mono text-[9px] uppercase tracking-widest text-[#A1A1A1]">
-                // SYSTEM_PARAMETERS
-              </p>
-              {CONFIG_FIELDS.map(field => (
-                <div key={field.key}>
-                  <label className="font-geist-mono text-[9px] uppercase tracking-widest text-[#A1A1A1] block mb-1.5">
-                    {field.key}
-                  </label>
-                  <input
-                    id={`config-${field.key.toLowerCase()}`}
-                    type="text"
-                    className="console-input"
-                    placeholder={field.placeholder}
-                    value={configValues[field.key] || ''}
-                    onChange={e => setConfigValues(prev => ({ ...prev, [field.key]: e.target.value }))}
-                  />
-                </div>
-              ))}
-            </div>
-
-            {/* JD raw text input */}
-            <div className="px-6 py-5 flex flex-col gap-3 flex-1">
-              <p className="font-geist-mono text-[9px] uppercase tracking-widest text-[#A1A1A1]">
-                // RAW_JD_INPUT_STREAM
-              </p>
-              <label className="font-geist-mono text-[9px] uppercase tracking-widest text-[#A1A1A1] block">
-                JD_TEXT_PAYLOAD
-              </label>
+              
+              <textarea
+                value={rawText}
+                onChange={e => setRawText(e.target.value)}
+                placeholder="Paste the raw job description text payload here..."
+                className="console-input-premium flex-1 min-h-[220px] lg:min-h-[280px]"
+              />
 
               {error && (
-                <p className="font-geist-mono text-[9px] text-[#ffb4ab] uppercase tracking-widest">
+                <p className="font-mono text-[9px] text-[#ffb4ab] uppercase tracking-widest">
                   {error}
                 </p>
               )}
-
-              <textarea
-                id="jd-input"
-                className="console-input min-h-[180px] lg:min-h-[240px] flex-1"
-                placeholder="// paste raw job description or unedited dataset payload here..."
-                value={rawText}
-                onChange={e => setRawText(e.target.value)}
-              />
-
-              {/* Execute button */}
-              <button
-                id="extract-intent-btn"
-                onClick={handleExtract}
-                disabled={state === 'loading'}
-                className="w-full border border-white/10 text-[#F5F5F5] font-geist-mono text-[10px] uppercase tracking-widest px-4 py-3 hover:border-[#C7A36A] hover:text-[#C7A36A] transition-colors duration-150 disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-3 rounded-sm"
-              >
-                {state === 'loading' ? (
-                  <>
-                    <span className="material-symbols-outlined text-sm animate-spin">refresh</span>
-                    PROC_ANALYZING_VECTORS...
-                  </>
-                ) : (
-                  <>
-                    <span className="material-symbols-outlined text-sm">psychology</span>
-                    EXECUTE_INTENT_EXTRACTION
-                  </>
-                )}
-              </button>
             </div>
+
+            {/* Config drawer */}
+            <div className="p-6">
+              <button
+                onClick={() => setConfigOpen(!configOpen)}
+                className="w-full flex justify-between items-center text-left py-2 hover:text-[#C7A36A] transition-colors"
+              >
+                <span className="font-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest">
+                  // OPTIONAL_CONFIG_PARAMETERS
+                </span>
+                <span className="material-symbols-outlined text-xs">
+                  {configOpen ? 'expand_less' : 'expand_more'}
+                </span>
+              </button>
+
+              <AnimatePresence>
+                {configOpen && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: 'auto', opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    className="overflow-hidden pt-4 space-y-4"
+                  >
+                    {CONFIG_FIELDS.map(field => (
+                      <div key={field.key}>
+                        <label className="font-mono text-[8px] uppercase tracking-widest text-[#A1A1A1] block mb-1">
+                          {field.key}
+                        </label>
+                        <input
+                          type="text"
+                          placeholder={field.placeholder}
+                          value={configValues[field.key] || ''}
+                          onChange={e => setConfigValues(prev => ({ ...prev, [field.key]: e.target.value }))}
+                          className="console-input-premium py-2 px-3 text-[10px]"
+                        />
+                      </div>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+          </div>
+
+          {/* Action trigger button */}
+          <div className="p-6 border-t border-white/5 bg-[#0b0c10]/20">
+            <button
+              onClick={handleExtract}
+              disabled={state === 'loading'}
+              className="btn-premium-accent w-full text-center flex items-center justify-center gap-2.5 py-3"
+            >
+              {state === 'loading' ? (
+                <>
+                  <span className="material-symbols-outlined text-sm animate-spin">refresh</span>
+                  SYNTHESIZING_VECTORS...
+                </>
+              ) : (
+                <>
+                  <span className="material-symbols-outlined text-sm">psychology</span>
+                  RUN_INTENT_EXTRACTION
+                </>
+              )}
+            </button>
           </div>
         </aside>
 
-        {/* ── RIGHT DATA LANE ───────────────────────────────────────────────── */}
-        <main className="flex-1 flex flex-col overflow-hidden">
-
-          {/* Lane header */}
-          <div className="px-6 py-4 border-b border-white/5 flex items-center justify-between shrink-0">
-            <p className="font-geist-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest">
-              CONSOLE // TARGET_DATASETS //{' '}
-              <span className="text-[#C7A36A]">candidate_schema.json</span>
-            </p>
-            <div className="flex items-center gap-4">
-              <span className="font-geist-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest">
-                STATE: <span className={state === 'done' ? 'text-[#779165]' : state === 'loading' ? 'text-[#C7A36A]' : 'text-[#A1A1A1]'}>
-                  {state === 'idle' ? 'AWAITING_INPUT' : state === 'loading' ? 'PROCESSING' : 'ANALYSIS_COMPLETE'}
-                </span>
-              </span>
-            </div>
+        {/* ─── RIGHT PANEL: LIVE AI ANALYSIS OUTPUT (Lg col-7 equivalent) ────── */}
+        <main className="flex-1 flex flex-col bg-[#0b0c10]/40 overflow-hidden divide-y divide-white/5">
+          
+          {/* Header */}
+          <div className="px-6 py-4 flex items-center justify-between shrink-0">
+            <span className="font-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest">
+              CONSOLE // NEURAL_VECTORS // ANALYSIS_OUTPUT
+            </span>
           </div>
 
-          <div className="flex flex-col lg:flex-row flex-1 overflow-hidden">
-
-            {/* Schema dropzone panel */}
-            <div className="w-full lg:w-72 xl:w-80 shrink-0 border-b lg:border-b-0 lg:border-r border-white/5 flex flex-col">
-              <div className="px-6 py-4 border-b border-white/5">
-                <p className="font-geist-mono text-[9px] uppercase tracking-widest text-[#A1A1A1]">
-                  // SCHEMA_MAP
-                </p>
-              </div>
-
-              {/* File dropzone */}
-              <div className="m-4 border border-dashed border-white/10 rounded-sm p-4 hover:border-white/20 transition-colors cursor-pointer group">
-                <p className="font-geist-mono text-[9px] uppercase tracking-widest text-[#A1A1A1] mb-3">
-                  MAPPED_FILES
-                </p>
-                <div className="space-y-2">
-                  {['candidate_schema.json', 'sample_candidates.json'].map(file => (
-                    <div key={file} className="flex items-center gap-2">
-                      <span className="text-[#779165] font-geist-mono text-[9px]">✓</span>
-                      <span className="font-geist-mono text-[10px] text-[#C7A36A]">{file}</span>
-                    </div>
-                  ))}
-                </div>
-                <p className="font-geist-mono text-[9px] text-[#A1A1A1]/40 mt-4 uppercase tracking-widest">
-                  // drop additional files here
-                </p>
-              </div>
-
-              {/* Schema fields */}
-              <div className="flex-1 overflow-y-auto">
-                <div className="px-6 py-3 border-b border-white/5">
-                  <p className="font-geist-mono text-[9px] uppercase tracking-widest text-[#A1A1A1]">
-                    // FIELD_DEFINITIONS
-                  </p>
-                </div>
-                {SCHEMA_FIELDS.map(field => (
-                  <div key={field.key} className="console-row flex items-center justify-between px-6 py-2.5">
-                    <span className="font-geist-mono text-[10px] text-[#F5F5F5]">{field.key}</span>
-                    <div className="flex items-center gap-2">
-                      <span className="font-geist-mono text-[9px] text-[#A1A1A1]">{field.type}</span>
-                      {field.required && (
-                        <span className="font-geist-mono text-[8px] text-[#C7A36A] uppercase">REQ</span>
-                      )}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Analysis output panel */}
-            <div className="flex-1 overflow-y-auto">
-              {state === 'idle' ? (
-                /* Empty state */
-                <div className="flex flex-col items-start justify-start p-6">
-                  <div className="border border-dashed border-white/5 rounded-sm p-8 w-full">
-                    <p className="font-geist-mono text-[9px] uppercase tracking-widest text-[#A1A1A1] mb-2">
-                      // AWAITING_DATASET_INGESTION
-                    </p>
-                    <p className="font-geist-mono text-[10px] text-[#A1A1A1]/50">
-                      Paste a job description in the left pane and execute EXTRACT_INTENT_EXTRACTION to begin neural vector analysis.
+          {/* Output workspace */}
+          <div className="flex-1 overflow-y-auto p-6">
+            <AnimatePresence mode="wait">
+              {state === 'idle' && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="h-full flex items-center justify-center border border-dashed border-white/5 rounded-lg p-10 text-center"
+                >
+                  <div className="max-w-md space-y-3">
+                    <span className="material-symbols-outlined text-4xl text-[#A1A1A1]/40">psychology</span>
+                    <h3 className="font-geist text-xs font-semibold text-[#F5F5F5] uppercase tracking-widest">
+                      Awaiting Job Payload Ingestion
+                    </h3>
+                    <p className="font-geist text-xs text-[#A1A1A1] leading-relaxed">
+                      Paste a raw job description in the left editor pane and trigger intent extraction to begin vector matching and archetype generation.
                     </p>
                   </div>
-                </div>
-              ) : state === 'loading' ? (
-                /* Loading skeleton */
-                <div className="p-6 space-y-px">
-                  {[...Array(6)].map((_, i) => (
-                    <div key={i} className="console-row py-4 px-0 flex gap-8">
-                      <div className="h-2 bg-white/5 rounded-sm w-24 animate-pulse" />
-                      <div className="h-2 bg-white/5 rounded-sm flex-1 animate-pulse" />
-                    </div>
-                  ))}
-                </div>
-              ) : (
-                /* Analysis results */
-                <div className="p-0">
-
-                  {/* Section header: Archetype Matrix */}
-                  <div className="px-6 py-4 border-b border-white/5 flex items-center gap-4">
-                    <span className="font-geist-mono text-[9px] text-[#C7A36A] uppercase tracking-widest">
-                      MODULE_01
-                    </span>
-                    <span className="font-geist-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest">
-                      SYSTEM_ARCHETYPE_MATRIX
-                    </span>
-                  </div>
-
-                  {/* Archetype rows */}
-                  <div>
-                    {/* Column headers */}
-                    <div className="console-col-header grid grid-cols-12 px-6 py-2">
-                      <div className="col-span-4">ARCHETYPE_LABEL</div>
-                      <div className="col-span-2 text-right">MATCH_%</div>
-                      <div className="col-span-6 pl-8">DESCRIPTION</div>
-                    </div>
-                    {displayProfile?.archetypeMatrix.map((card, i) => (
-                      <div key={card.label} className="console-row grid grid-cols-12 px-6 py-4 items-start">
-                        <div className="col-span-4 flex items-start gap-3">
-                          <span className="font-geist-mono text-[9px] text-[#A1A1A1] mt-0.5 shrink-0">
-                            {String(i + 1).padStart(2, '0')}
-                          </span>
-                          <span className="font-geist text-xs text-[#F5F5F5]">{card.label}</span>
-                        </div>
-                        <div className="col-span-2 text-right">
-                          <span className="font-geist-mono text-xs text-[#779165]">
-                            {card.matchPercent.toFixed(1)}%
-                          </span>
-                        </div>
-                        <div className="col-span-6 pl-8">
-                          <p className="font-geist text-[11px] text-[#A1A1A1] leading-relaxed">
-                            {card.description}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Section header: Trajectory Dynamics */}
-                  <div className="px-6 py-4 border-b border-white/5 flex items-center gap-4 mt-0">
-                    <span className="font-geist-mono text-[9px] text-[#C7A36A] uppercase tracking-widest">
-                      MODULE_02
-                    </span>
-                    <span className="font-geist-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest">
-                      EXPECTED_TRAJECTORY_DYNAMICS
-                    </span>
-                  </div>
-
-                  {/* Trajectory rows */}
-                  <div>
-                    <div className="console-col-header grid grid-cols-12 px-6 py-2">
-                      <div className="col-span-3">TIMEFRAME</div>
-                      <div className="col-span-5 pl-4">PROJECTED_OUTCOME</div>
-                      <div className="col-span-4 pl-4">RISK_VECTOR</div>
-                    </div>
-                    {displayProfile?.trajectoryDynamics.map((dyn, i) => (
-                      <div key={i} className="console-row grid grid-cols-12 px-6 py-5 items-start">
-                        <div className="col-span-3">
-                          <span className="font-geist-mono text-[10px] text-[#C7A36A] block leading-relaxed">
-                            {dyn.timeframe}
-                          </span>
-                        </div>
-                        <div className="col-span-5 pl-4">
-                          <p className="font-geist text-[11px] text-[#F5F5F5] leading-relaxed">
-                            {dyn.outcome}
-                          </p>
-                        </div>
-                        <div className="col-span-4 pl-4">
-                          <p className="font-geist text-[11px] text-[#ffb4ab] leading-relaxed">
-                            {dyn.riskVector}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                </motion.div>
               )}
-            </div>
+
+              {state === 'loading' && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="h-full flex flex-col justify-center items-center gap-4 py-20"
+                >
+                  <div className="relative w-16 h-16 flex items-center justify-center">
+                    <div className="absolute inset-0 rounded-full border border-[#C7A36A]/20 animate-ping" />
+                    <span className="material-symbols-outlined text-[#C7A36A] text-4xl animate-pulse">query_stats</span>
+                  </div>
+                  <div className="text-center space-y-2">
+                    <p className="font-mono text-xs text-[#C7A36A] uppercase tracking-widest text-glow-gold">
+                      AI is thinking...
+                    </p>
+                    <p className="font-geist text-[11px] text-[#A1A1A1] max-w-xs leading-relaxed">
+                      Synthesizing text arrays, extracting required capabilities, and drafting expected trajectory roadmaps.
+                    </p>
+                  </div>
+                </motion.div>
+              )}
+
+              {state === 'done' && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  className="space-y-8"
+                >
+                  {/* Top Stats Banner */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="p-4 rounded-lg bg-white/1 border border-white/5 flex justify-between items-center">
+                      <div>
+                        <span className="font-mono text-[8px] text-[#A1A1A1] uppercase tracking-widest block">
+                          AI Confidence index
+                        </span>
+                        <span className="font-geist text-xs font-semibold text-[#F5F5F5] mt-1 block">
+                          Optimal Model Fit
+                        </span>
+                      </div>
+                      <span className="font-mono text-xl font-bold text-[#779165] text-glow-green">94.8%</span>
+                    </div>
+
+                    <div className="p-4 rounded-lg bg-white/1 border border-white/5 flex justify-between items-center">
+                      <div>
+                        <span className="font-mono text-[8px] text-[#A1A1A1] uppercase tracking-widest block">
+                          Mapped Job Code
+                        </span>
+                        <span className="font-geist text-xs font-semibold text-[#F5F5F5] mt-1 block">
+                          {configValues.TARGET_ROLE_ID || 'Staff Infra'}
+                        </span>
+                      </div>
+                      <span className="font-mono text-xs text-[#C7A36A] text-glow-gold">SYS_MAPPED</span>
+                    </div>
+                  </div>
+
+                  {/* Archetype matrix */}
+                  <div className="space-y-4">
+                    <h3 className="font-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest border-b border-white/5 pb-2">
+                      // EXTRACTED_CAPABILITY_ARCHETYPE_MATRIX
+                    </h3>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {displayProfile.archetypeMatrix.map(item => (
+                        <div key={item.label} className="p-5 rounded-lg bg-white/1 border border-white/5 space-y-3">
+                          <div className="flex justify-between items-start">
+                            <h4 className="font-geist text-xs font-semibold text-[#F5F5F5]">{item.label}</h4>
+                            <span className="font-mono text-[10px] text-[#779165] font-semibold">
+                              {item.matchPercent}% FIT
+                            </span>
+                          </div>
+                          <div className="w-full h-1 bg-white/5 rounded-full overflow-hidden">
+                            <div className="h-full bg-[#779165]" style={{ width: `${item.matchPercent}%` }} />
+                          </div>
+                          <p className="font-geist text-[11px] text-[#A1A1A1] leading-relaxed">
+                            {item.description}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Trajectory dynamics */}
+                  <div className="space-y-4">
+                    <h3 className="font-mono text-[9px] text-[#A1A1A1] uppercase tracking-widest border-b border-white/5 pb-2">
+                      // EXPECTED_TRAJECTORY_ROADMAPS
+                    </h3>
+
+                    <div className="space-y-4">
+                      {displayProfile.trajectoryDynamics.map((dyn, idx) => (
+                        <div key={idx} className="p-5 rounded-lg bg-white/1 border border-white/5 grid grid-cols-1 md:grid-cols-12 gap-4 items-start">
+                          <div className="col-span-1 md:col-span-3">
+                            <span className="font-mono text-[10px] text-[#C7A36A] text-glow-gold font-medium block">
+                              {dyn.timeframe}
+                            </span>
+                          </div>
+                          
+                          <div className="col-span-1 md:col-span-5 space-y-1">
+                            <span className="font-mono text-[8px] text-[#A1A1A1] uppercase tracking-wider block">
+                              Projected Outcome
+                            </span>
+                            <p className="font-geist text-xs text-[#F5F5F5] leading-relaxed">
+                              {dyn.outcome}
+                            </p>
+                          </div>
+
+                          <div className="col-span-1 md:col-span-4 space-y-1">
+                            <span className="font-mono text-[8px] text-red-400/80 uppercase tracking-wider block">
+                              Risk Mitigation Vector
+                            </span>
+                            <p className="font-geist text-[11px] text-[#ffb4ab] leading-relaxed">
+                              {dyn.riskVector}
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         </main>
+
       </div>
-    </div>
+    </AppShell>
   )
 }

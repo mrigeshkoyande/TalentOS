@@ -1,0 +1,100 @@
+# Redrob Hackathon — Submission Metadata
+# Team: TalentOS / India_runs_data_and_ai_challenge submission
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "TalentOS"
+
+primary_contact:
+  name: "TalentOS Team"
+  email: "hetve@talentos.dev"
+  phone: "+91-XXXXXXXXXX"
+
+team_members:
+  - name: "TalentOS Team Lead"
+    email: "hetve@talentos.dev"
+    role: "Team Lead / ML Engineer"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/mrigeshkoyande/TalentOS"
+
+sandbox_link: "https://github.com/mrigeshkoyande/TalentOS"
+# Note: rank.cjs is runnable on any Node.js 18+ environment with no external deps.
+
+reproduce_command: "node rank.cjs"
+# Reads candidates.jsonl from the repo root and writes:
+#   submission.csv              (top-100 ranked candidates)
+#   src/lib/ranked_candidates_mock.json  (structured UI data)
+# Completes in ~45 seconds on a standard laptop CPU with 16 GB RAM.
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Windows 11 / Node.js 24"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "N/A (Node.js 24.14.1 used instead)"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Gemini (Antigravity IDE)"  # Architecture discussion, code review, scoring model design
+  - "None other"
+
+ai_usage_summary: |
+  Gemini (via Antigravity IDE) was used as a pair-programming assistant for:
+  - Designing the multi-signal composite scoring model
+  - Anomaly/honeypot detection heuristics (zero-duration skills, future certifications,
+    experience-title mismatches)
+  - Code review and debugging of the Node.js ranker
+  No candidate profile data was processed by any remote LLM during ranking.
+  The ranking algorithm is entirely deterministic and CPU-only.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+methodology_summary: |
+  Rule-based composite ranker implemented in Node.js (rank.cjs). Candidate quality
+  is assessed across three weighted signal groups:
+
+  1. EXPERIENCE (30%): Total years of experience with diminishing returns above 12 years.
+     Penalizes consulting-only backgrounds. Rewards explicit team-lead and growth-stage tenure.
+
+  2. SKILLS (45%): Skill density score combining skill-count, domain-relevance keywords
+     (AI/ML/Data Engineering tier list), and skill-endorsement trust multiplier. Rewards
+     specialised and validated technical skills over broad keyword lists. An endorsement-
+     and-duration trust multiplier on skills catches lazy keyword stuffing.
+
+  3. BEHAVIORAL SIGNALS (25%): Rewards recent activity, short notice period, open-to-work
+     status, recruiter engagement rate, and publication/open-source activity. Penalises
+     inactive profiles and implausibly long notice periods.
+
+  Honeypot / anomaly detection filters are applied BEFORE scoring. Candidates with
+  zero-duration skill entries, future-dated certifications, impossible experience-age
+  ratios, or non-engineering primary roles are excluded entirely.
+
+  Hidden Gems are flagged when a candidate scores in the top quartile on SKILLS+BEHAVIORAL
+  but holds fewer than the median number of canonical keyword matches — indicating
+  genuine competence masked by unconventional resume language.
+
+  Runtime: ~45 seconds for 100,000 candidates on a consumer laptop CPU.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true   # 93 honeypots detected and excluded
+  reproduction_tested: true
