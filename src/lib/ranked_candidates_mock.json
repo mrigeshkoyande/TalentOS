@@ -1,0 +1,2302 @@
+[
+  {
+    "id": "CAND_0001001",
+    "name": "Atharva Chopra",
+    "title": "Staff ML Engineer",
+    "matchId": "CAND_0001001",
+    "latentSignalPercent": 0.98,
+    "matchScore": 84,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff ML Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 1
+  },
+  {
+    "id": "CAND_0001002",
+    "name": "Kabir Singh",
+    "title": "Lead NLP Architect",
+    "matchId": "CAND_0001002",
+    "latentSignalPercent": 0.98,
+    "matchScore": 83,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead NLP Architect with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 2
+  },
+  {
+    "id": "CAND_0001003",
+    "name": "Ananya Singh",
+    "title": "Principal Search Engineer",
+    "matchId": "CAND_0001003",
+    "latentSignalPercent": 0.98,
+    "matchScore": 83,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Principal Search Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 3
+  },
+  {
+    "id": "CAND_0001004",
+    "name": "Diya Singh",
+    "title": "Senior Retrieval Engineer",
+    "matchId": "CAND_0001004",
+    "latentSignalPercent": 0.98,
+    "matchScore": 82,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior Retrieval Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 4
+  },
+  {
+    "id": "CAND_0001005",
+    "name": "Saanvi Das",
+    "title": "Staff Backend & AI Engineer",
+    "matchId": "CAND_0001005",
+    "latentSignalPercent": 0.98,
+    "matchScore": 82,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff Backend & AI Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 5
+  },
+  {
+    "id": "CAND_0001006",
+    "name": "Aadya Das",
+    "title": "AI Infrastructure Lead",
+    "matchId": "CAND_0001006",
+    "latentSignalPercent": 0.98,
+    "matchScore": 81,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "AI Infrastructure Lead with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 6
+  },
+  {
+    "id": "CAND_0001007",
+    "name": "Kiara Das",
+    "title": "Lead Embeddings Engineer",
+    "matchId": "CAND_0001007",
+    "latentSignalPercent": 0.98,
+    "matchScore": 81,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead Embeddings Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 7
+  },
+  {
+    "id": "CAND_0001008",
+    "name": "Pari Banerjee",
+    "title": "Senior AI Engineer",
+    "matchId": "CAND_0001008",
+    "latentSignalPercent": 0.98,
+    "matchScore": 80,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior AI Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 8
+  },
+  {
+    "id": "CAND_0001009",
+    "name": "Priyanka Banerjee",
+    "title": "Staff ML Engineer",
+    "matchId": "CAND_0001009",
+    "latentSignalPercent": 0.98,
+    "matchScore": 80,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff ML Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 9
+  },
+  {
+    "id": "CAND_0001010",
+    "name": "Sneh Banerjee",
+    "title": "Lead NLP Architect",
+    "matchId": "CAND_0001010",
+    "latentSignalPercent": 0.98,
+    "matchScore": 79,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead NLP Architect with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 10
+  },
+  {
+    "id": "CAND_0001011",
+    "name": "Kunal Koyande",
+    "title": "Principal Search Engineer",
+    "matchId": "CAND_0001011",
+    "latentSignalPercent": 0.98,
+    "matchScore": 79,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Principal Search Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 11
+  },
+  {
+    "id": "CAND_0001012",
+    "name": "Vikram Koyande",
+    "title": "Senior Retrieval Engineer",
+    "matchId": "CAND_0001012",
+    "latentSignalPercent": 0.98,
+    "matchScore": 78,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior Retrieval Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 12
+  },
+  {
+    "id": "CAND_0001013",
+    "name": "Tanmay Koyande",
+    "title": "Staff Backend & AI Engineer",
+    "matchId": "CAND_0001013",
+    "latentSignalPercent": 0.98,
+    "matchScore": 78,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff Backend & AI Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 13
+  },
+  {
+    "id": "CAND_0001014",
+    "name": "Neha Kulkarni",
+    "title": "AI Infrastructure Lead",
+    "matchId": "CAND_0001014",
+    "latentSignalPercent": 0.98,
+    "matchScore": 77,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "AI Infrastructure Lead with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 14
+  },
+  {
+    "id": "CAND_0001015",
+    "name": "Pooja Kulkarni",
+    "title": "Lead Embeddings Engineer",
+    "matchId": "CAND_0001015",
+    "latentSignalPercent": 0.98,
+    "matchScore": 77,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead Embeddings Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 15
+  },
+  {
+    "id": "CAND_0001016",
+    "name": "Meera Kulkarni",
+    "title": "Senior AI Engineer",
+    "matchId": "CAND_0001016",
+    "latentSignalPercent": 0.98,
+    "matchScore": 76,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior AI Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 16
+  },
+  {
+    "id": "CAND_0001017",
+    "name": "Karan Patil",
+    "title": "Staff ML Engineer",
+    "matchId": "CAND_0001017",
+    "latentSignalPercent": 0.98,
+    "matchScore": 76,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff ML Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 17
+  },
+  {
+    "id": "CAND_0001018",
+    "name": "Simran Patil",
+    "title": "Lead NLP Architect",
+    "matchId": "CAND_0001018",
+    "latentSignalPercent": 0.98,
+    "matchScore": 75,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead NLP Architect with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 18
+  },
+  {
+    "id": "CAND_0001019",
+    "name": "Rajesh Patil",
+    "title": "Principal Search Engineer",
+    "matchId": "CAND_0001019",
+    "latentSignalPercent": 0.98,
+    "matchScore": 75,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Principal Search Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 19
+  },
+  {
+    "id": "CAND_0001020",
+    "name": "Aarav Sharma",
+    "title": "Senior Retrieval Engineer",
+    "matchId": "CAND_0001020",
+    "latentSignalPercent": 0.98,
+    "matchScore": 74,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior Retrieval Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 20
+  },
+  {
+    "id": "CAND_0001021",
+    "name": "Vihaan Sharma",
+    "title": "Staff Backend & AI Engineer",
+    "matchId": "CAND_0001021",
+    "latentSignalPercent": 0.98,
+    "matchScore": 74,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff Backend & AI Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 21
+  },
+  {
+    "id": "CAND_0001022",
+    "name": "Aditya Sharma",
+    "title": "AI Infrastructure Lead",
+    "matchId": "CAND_0001022",
+    "latentSignalPercent": 0.98,
+    "matchScore": 73,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "AI Infrastructure Lead with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 22
+  },
+  {
+    "id": "CAND_0001023",
+    "name": "Sai Verma",
+    "title": "Lead Embeddings Engineer",
+    "matchId": "CAND_0001023",
+    "latentSignalPercent": 0.98,
+    "matchScore": 73,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead Embeddings Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 23
+  },
+  {
+    "id": "CAND_0001024",
+    "name": "Arjun Verma",
+    "title": "Senior AI Engineer",
+    "matchId": "CAND_0001024",
+    "latentSignalPercent": 0.98,
+    "matchScore": 72,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior AI Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 24
+  },
+  {
+    "id": "CAND_0001025",
+    "name": "Reyansh Verma",
+    "title": "Staff ML Engineer",
+    "matchId": "CAND_0001025",
+    "latentSignalPercent": 0.98,
+    "matchScore": 72,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff ML Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 25
+  },
+  {
+    "id": "CAND_0001026",
+    "name": "Muhammad Patel",
+    "title": "Lead NLP Architect",
+    "matchId": "CAND_0001026",
+    "latentSignalPercent": 0.98,
+    "matchScore": 71,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead NLP Architect with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 26
+  },
+  {
+    "id": "CAND_0001027",
+    "name": "Rohan Patel",
+    "title": "Principal Search Engineer",
+    "matchId": "CAND_0001027",
+    "latentSignalPercent": 0.98,
+    "matchScore": 70,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Principal Search Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 27
+  },
+  {
+    "id": "CAND_0001028",
+    "name": "Krishna Patel",
+    "title": "Senior Retrieval Engineer",
+    "matchId": "CAND_0001028",
+    "latentSignalPercent": 0.98,
+    "matchScore": 70,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior Retrieval Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 28
+  },
+  {
+    "id": "CAND_0001029",
+    "name": "Ishaan Reddy",
+    "title": "Staff Backend & AI Engineer",
+    "matchId": "CAND_0001029",
+    "latentSignalPercent": 0.98,
+    "matchScore": 69,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff Backend & AI Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 29
+  },
+  {
+    "id": "CAND_0001030",
+    "name": "Shaurya Reddy",
+    "title": "AI Infrastructure Lead",
+    "matchId": "CAND_0001030",
+    "latentSignalPercent": 0.98,
+    "matchScore": 69,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "AI Infrastructure Lead with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 30
+  },
+  {
+    "id": "CAND_0001031",
+    "name": "Atharva Reddy",
+    "title": "Lead Embeddings Engineer",
+    "matchId": "CAND_0001031",
+    "latentSignalPercent": 0.98,
+    "matchScore": 68,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead Embeddings Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 31
+  },
+  {
+    "id": "CAND_0000031",
+    "name": "Ela Singh",
+    "title": "Recommendation Systems Engineer",
+    "matchId": "CAND_0000031",
+    "latentSignalPercent": 83.4,
+    "matchScore": 68,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6 YoE as a Recommendation Systems Engineer. Decent technical foundation with skills including Go, MLflow, FAISS. Based in Hyderabad, Telangana. Notice period is 60 days. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 32
+  },
+  {
+    "id": "CAND_0001032",
+    "name": "Kabir Nair",
+    "title": "Senior AI Engineer",
+    "matchId": "CAND_0001032",
+    "latentSignalPercent": 0.98,
+    "matchScore": 68,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior AI Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 33
+  },
+  {
+    "id": "CAND_0001033",
+    "name": "Ananya Nair",
+    "title": "Staff ML Engineer",
+    "matchId": "CAND_0001033",
+    "latentSignalPercent": 0.98,
+    "matchScore": 67,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff ML Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 34
+  },
+  {
+    "id": "CAND_0001034",
+    "name": "Diya Nair",
+    "title": "Lead NLP Architect",
+    "matchId": "CAND_0001034",
+    "latentSignalPercent": 0.98,
+    "matchScore": 67,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead NLP Architect with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 35
+  },
+  {
+    "id": "CAND_0001035",
+    "name": "Saanvi Rao",
+    "title": "Principal Search Engineer",
+    "matchId": "CAND_0001035",
+    "latentSignalPercent": 0.98,
+    "matchScore": 66,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Principal Search Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 36
+  },
+  {
+    "id": "CAND_0001036",
+    "name": "Aadya Rao",
+    "title": "Senior Retrieval Engineer",
+    "matchId": "CAND_0001036",
+    "latentSignalPercent": 0.98,
+    "matchScore": 66,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior Retrieval Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 37
+  },
+  {
+    "id": "CAND_0001037",
+    "name": "Kiara Rao",
+    "title": "Staff Backend & AI Engineer",
+    "matchId": "CAND_0001037",
+    "latentSignalPercent": 0.98,
+    "matchScore": 65,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff Backend & AI Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 38
+  },
+  {
+    "id": "CAND_0001038",
+    "name": "Pari Iyer",
+    "title": "AI Infrastructure Lead",
+    "matchId": "CAND_0001038",
+    "latentSignalPercent": 0.98,
+    "matchScore": 65,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "AI Infrastructure Lead with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 39
+  },
+  {
+    "id": "CAND_0001039",
+    "name": "Priyanka Iyer",
+    "title": "Lead Embeddings Engineer",
+    "matchId": "CAND_0001039",
+    "latentSignalPercent": 0.98,
+    "matchScore": 64,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead Embeddings Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 40
+  },
+  {
+    "id": "CAND_0001040",
+    "name": "Sneh Iyer",
+    "title": "Senior AI Engineer",
+    "matchId": "CAND_0001040",
+    "latentSignalPercent": 0.98,
+    "matchScore": 64,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior AI Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 41
+  },
+  {
+    "id": "CAND_0001041",
+    "name": "Kunal Kaur",
+    "title": "Staff ML Engineer",
+    "matchId": "CAND_0001041",
+    "latentSignalPercent": 0.98,
+    "matchScore": 63,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff ML Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 42
+  },
+  {
+    "id": "CAND_0001042",
+    "name": "Vikram Kaur",
+    "title": "Lead NLP Architect",
+    "matchId": "CAND_0001042",
+    "latentSignalPercent": 0.98,
+    "matchScore": 63,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead NLP Architect with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 43
+  },
+  {
+    "id": "CAND_0001043",
+    "name": "Tanmay Kaur",
+    "title": "Principal Search Engineer",
+    "matchId": "CAND_0001043",
+    "latentSignalPercent": 0.98,
+    "matchScore": 62,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Principal Search Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 44
+  },
+  {
+    "id": "CAND_0001044",
+    "name": "Neha Gupta",
+    "title": "Senior Retrieval Engineer",
+    "matchId": "CAND_0001044",
+    "latentSignalPercent": 0.98,
+    "matchScore": 62,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior Retrieval Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 45
+  },
+  {
+    "id": "CAND_0001045",
+    "name": "Pooja Gupta",
+    "title": "Staff Backend & AI Engineer",
+    "matchId": "CAND_0001045",
+    "latentSignalPercent": 0.98,
+    "matchScore": 61,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff Backend & AI Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 46
+  },
+  {
+    "id": "CAND_0001046",
+    "name": "Meera Gupta",
+    "title": "AI Infrastructure Lead",
+    "matchId": "CAND_0001046",
+    "latentSignalPercent": 0.98,
+    "matchScore": 61,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "AI Infrastructure Lead with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 47
+  },
+  {
+    "id": "CAND_0001047",
+    "name": "Karan Malhotra",
+    "title": "Lead Embeddings Engineer",
+    "matchId": "CAND_0001047",
+    "latentSignalPercent": 0.98,
+    "matchScore": 60,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead Embeddings Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 48
+  },
+  {
+    "id": "CAND_0001048",
+    "name": "Simran Malhotra",
+    "title": "Senior AI Engineer",
+    "matchId": "CAND_0001048",
+    "latentSignalPercent": 0.98,
+    "matchScore": 60,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior AI Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 49
+  },
+  {
+    "id": "CAND_0001049",
+    "name": "Rajesh Malhotra",
+    "title": "Staff ML Engineer",
+    "matchId": "CAND_0001049",
+    "latentSignalPercent": 0.98,
+    "matchScore": 59,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff ML Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 50
+  },
+  {
+    "id": "CAND_0001050",
+    "name": "Aarav Mehta",
+    "title": "Lead NLP Architect",
+    "matchId": "CAND_0001050",
+    "latentSignalPercent": 0.98,
+    "matchScore": 59,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead NLP Architect with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 51
+  },
+  {
+    "id": "CAND_0001051",
+    "name": "Vihaan Mehta",
+    "title": "Principal Search Engineer",
+    "matchId": "CAND_0001051",
+    "latentSignalPercent": 0.98,
+    "matchScore": 58,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Principal Search Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 52
+  },
+  {
+    "id": "CAND_0001052",
+    "name": "Aditya Mehta",
+    "title": "Senior Retrieval Engineer",
+    "matchId": "CAND_0001052",
+    "latentSignalPercent": 0.98,
+    "matchScore": 58,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior Retrieval Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 53
+  },
+  {
+    "id": "CAND_0001053",
+    "name": "Sai Deshmukh",
+    "title": "Staff Backend & AI Engineer",
+    "matchId": "CAND_0001053",
+    "latentSignalPercent": 0.98,
+    "matchScore": 57,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff Backend & AI Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 54
+  },
+  {
+    "id": "CAND_0001054",
+    "name": "Arjun Deshmukh",
+    "title": "AI Infrastructure Lead",
+    "matchId": "CAND_0001054",
+    "latentSignalPercent": 0.98,
+    "matchScore": 57,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "AI Infrastructure Lead with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 55
+  },
+  {
+    "id": "CAND_0001055",
+    "name": "Reyansh Deshmukh",
+    "title": "Lead Embeddings Engineer",
+    "matchId": "CAND_0001055",
+    "latentSignalPercent": 0.98,
+    "matchScore": 56,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead Embeddings Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 56
+  },
+  {
+    "id": "CAND_0001056",
+    "name": "Muhammad Joshi",
+    "title": "Senior AI Engineer",
+    "matchId": "CAND_0001056",
+    "latentSignalPercent": 0.98,
+    "matchScore": 56,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior AI Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 57
+  },
+  {
+    "id": "CAND_0001057",
+    "name": "Rohan Joshi",
+    "title": "Staff ML Engineer",
+    "matchId": "CAND_0001057",
+    "latentSignalPercent": 0.98,
+    "matchScore": 55,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff ML Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 58
+  },
+  {
+    "id": "CAND_0001058",
+    "name": "Krishna Joshi",
+    "title": "Lead NLP Architect",
+    "matchId": "CAND_0001058",
+    "latentSignalPercent": 0.98,
+    "matchScore": 55,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead NLP Architect with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 59
+  },
+  {
+    "id": "CAND_0001059",
+    "name": "Ishaan Chopra",
+    "title": "Principal Search Engineer",
+    "matchId": "CAND_0001059",
+    "latentSignalPercent": 0.98,
+    "matchScore": 54,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Principal Search Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 60
+  },
+  {
+    "id": "CAND_0001060",
+    "name": "Shaurya Chopra",
+    "title": "Senior Retrieval Engineer",
+    "matchId": "CAND_0001060",
+    "latentSignalPercent": 0.98,
+    "matchScore": 54,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior Retrieval Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 61
+  },
+  {
+    "id": "CAND_0001061",
+    "name": "Atharva Chopra",
+    "title": "Staff Backend & AI Engineer",
+    "matchId": "CAND_0001061",
+    "latentSignalPercent": 0.98,
+    "matchScore": 53,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff Backend & AI Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 62
+  },
+  {
+    "id": "CAND_0001062",
+    "name": "Kabir Singh",
+    "title": "AI Infrastructure Lead",
+    "matchId": "CAND_0001062",
+    "latentSignalPercent": 0.98,
+    "matchScore": 53,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "AI Infrastructure Lead with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 63
+  },
+  {
+    "id": "CAND_0001063",
+    "name": "Ananya Singh",
+    "title": "Lead Embeddings Engineer",
+    "matchId": "CAND_0001063",
+    "latentSignalPercent": 0.98,
+    "matchScore": 52,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead Embeddings Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 64
+  },
+  {
+    "id": "CAND_0001064",
+    "name": "Diya Singh",
+    "title": "Senior AI Engineer",
+    "matchId": "CAND_0001064",
+    "latentSignalPercent": 0.98,
+    "matchScore": 52,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior AI Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 65
+  },
+  {
+    "id": "CAND_0001065",
+    "name": "Saanvi Das",
+    "title": "Staff ML Engineer",
+    "matchId": "CAND_0001065",
+    "latentSignalPercent": 0.98,
+    "matchScore": 51,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff ML Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 66
+  },
+  {
+    "id": "CAND_0001066",
+    "name": "Aadya Das",
+    "title": "Lead NLP Architect",
+    "matchId": "CAND_0001066",
+    "latentSignalPercent": 0.98,
+    "matchScore": 51,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead NLP Architect with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 67
+  },
+  {
+    "id": "CAND_0001067",
+    "name": "Kiara Das",
+    "title": "Principal Search Engineer",
+    "matchId": "CAND_0001067",
+    "latentSignalPercent": 0.98,
+    "matchScore": 50,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Principal Search Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 68
+  },
+  {
+    "id": "CAND_0001068",
+    "name": "Pari Banerjee",
+    "title": "Senior Retrieval Engineer",
+    "matchId": "CAND_0001068",
+    "latentSignalPercent": 0.98,
+    "matchScore": 50,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior Retrieval Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 69
+  },
+  {
+    "id": "CAND_0001069",
+    "name": "Priyanka Banerjee",
+    "title": "Staff Backend & AI Engineer",
+    "matchId": "CAND_0001069",
+    "latentSignalPercent": 0.98,
+    "matchScore": 49,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff Backend & AI Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 70
+  },
+  {
+    "id": "CAND_0000001",
+    "name": "Ira Vora",
+    "title": "Backend Engineer",
+    "matchId": "CAND_0000001",
+    "latentSignalPercent": 86.9,
+    "matchScore": 49,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.9 YoE as a Backend Engineer. Decent technical foundation with skills including Tailwind, NLP, Image Classification. Based in Toronto. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 71
+  },
+  {
+    "id": "CAND_0001070",
+    "name": "Sneh Banerjee",
+    "title": "AI Infrastructure Lead",
+    "matchId": "CAND_0001070",
+    "latentSignalPercent": 0.98,
+    "matchScore": 49,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "AI Infrastructure Lead with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 72
+  },
+  {
+    "id": "CAND_0001071",
+    "name": "Kunal Koyande",
+    "title": "Lead Embeddings Engineer",
+    "matchId": "CAND_0001071",
+    "latentSignalPercent": 0.98,
+    "matchScore": 48,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead Embeddings Engineer with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 73
+  },
+  {
+    "id": "CAND_0001072",
+    "name": "Vikram Koyande",
+    "title": "Senior AI Engineer",
+    "matchId": "CAND_0001072",
+    "latentSignalPercent": 0.98,
+    "matchScore": 48,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Senior AI Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 74
+  },
+  {
+    "id": "CAND_0001073",
+    "name": "Tanmay Koyande",
+    "title": "Staff ML Engineer",
+    "matchId": "CAND_0001073",
+    "latentSignalPercent": 0.98,
+    "matchScore": 47,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Staff ML Engineer with 8.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 75
+  },
+  {
+    "id": "CAND_0001074",
+    "name": "Neha Kulkarni",
+    "title": "Lead NLP Architect",
+    "matchId": "CAND_0001074",
+    "latentSignalPercent": 0.98,
+    "matchScore": 47,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Lead NLP Architect with 6.0 yrs experience; matched 4/4 required foundational AI stack categories and 2/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 76
+  },
+  {
+    "id": "CAND_0001075",
+    "name": "Pooja Kulkarni",
+    "title": "Principal Search Engineer",
+    "matchId": "CAND_0001075",
+    "latentSignalPercent": 0.98,
+    "matchScore": 46,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "Principal Search Engineer with 7.0 yrs experience; matched 4/4 required foundational AI stack categories and 1/2 desired categories. Highly active and responsive to recruiters.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 77
+  },
+  {
+    "id": "CAND_0000038",
+    "name": "Myra Trivedi",
+    "title": "Java Developer",
+    "matchId": "CAND_0000038",
+    "latentSignalPercent": 35.8,
+    "matchScore": 42,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.7 YoE as a Java Developer. Decent technical foundation with skills including Kubeflow, Django, Redux. Based in Coimbatore, Tamil Nadu. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 78
+  },
+  {
+    "id": "CAND_0000021",
+    "name": "Rahul Joshi",
+    "title": "Project Manager",
+    "matchId": "CAND_0000021",
+    "latentSignalPercent": 58.5,
+    "matchScore": 42,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "14.5 YoE as a Project Manager. Decent technical foundation with skills including Hadoop, PostgreSQL, Kafka. Based in Bhubaneswar, Odisha. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 79
+  },
+  {
+    "id": "CAND_0000014",
+    "name": "Atharv Joshi",
+    "title": "Frontend Engineer",
+    "matchId": "CAND_0000014",
+    "latentSignalPercent": 61.9,
+    "matchScore": 41,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "8.4 YoE as a Frontend Engineer. Decent technical foundation with skills including FAISS, BigQuery, React. Based in Hyderabad, Telangana. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 80
+  },
+  {
+    "id": "CAND_0000044",
+    "name": "Vihaan Naidu",
+    "title": "Frontend Engineer",
+    "matchId": "CAND_0000044",
+    "latentSignalPercent": 30.6,
+    "matchScore": 39,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "5.7 YoE as a Frontend Engineer. Decent technical foundation with skills including Hadoop, JavaScript, Databricks. Based in Indore, Madhya Pradesh. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 81
+  },
+  {
+    "id": "CAND_0000032",
+    "name": "Pranav Agarwal",
+    "title": ".NET Developer",
+    "matchId": "CAND_0000032",
+    "latentSignalPercent": 35.4,
+    "matchScore": 39,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "8.1 YoE as a .NET Developer. Decent technical foundation with skills including Speech Recognition, Project Management, REST APIs. Based in Gurgaon, Haryana. Notice period is 150 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 82
+  },
+  {
+    "id": "CAND_0000025",
+    "name": "Anika Kumar",
+    "title": "Frontend Engineer",
+    "matchId": "CAND_0000025",
+    "latentSignalPercent": 70.7,
+    "matchScore": 36,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7.3 YoE as a Frontend Engineer. Decent technical foundation with skills including JavaScript, Spark, GCP. Based in Vizag, Andhra Pradesh. Notice period is 120 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 83
+  },
+  {
+    "id": "CAND_0000015",
+    "name": "Rahul Agarwal",
+    "title": "Software Engineer",
+    "matchId": "CAND_0000015",
+    "latentSignalPercent": 79.4,
+    "matchScore": 35,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "5.4 YoE as a Software Engineer. Decent technical foundation with skills including PyTorch, Content Writing, Weights & Biases. Based in Trivandrum, Kerala. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 84
+  },
+  {
+    "id": "CAND_0000020",
+    "name": "Aditya Iyengar",
+    "title": "Mechanical Engineer",
+    "matchId": "CAND_0000020",
+    "latentSignalPercent": 73,
+    "matchScore": 35,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.3 YoE as a Mechanical Engineer. Decent technical foundation with skills including GraphQL, TypeScript, Flask. Based in Ahmedabad, Gujarat. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 85
+  },
+  {
+    "id": "CAND_0000046",
+    "name": "Dev Nair",
+    "title": "Mechanical Engineer",
+    "matchId": "CAND_0000046",
+    "latentSignalPercent": 74.8,
+    "matchScore": 35,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7.8 YoE as a Mechanical Engineer. Decent technical foundation with skills including Agile, Scrum, SAP. Based in London. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 86
+  },
+  {
+    "id": "CAND_0000019",
+    "name": "Myra Mishra",
+    "title": "Project Manager",
+    "matchId": "CAND_0000019",
+    "latentSignalPercent": 38.6,
+    "matchScore": 35,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.5 YoE as a Project Manager. Decent technical foundation with skills including Figma, GraphQL, Six Sigma. Based in Trivandrum, Kerala. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 87
+  },
+  {
+    "id": "CAND_0000007",
+    "name": "Vihaan Bose",
+    "title": "Civil Engineer",
+    "matchId": "CAND_0000007",
+    "latentSignalPercent": 74.6,
+    "matchScore": 35,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "5.5 YoE as a Civil Engineer. Decent technical foundation with skills including Content Writing, MongoDB, Sales. Based in Gurgaon, Haryana. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 88
+  },
+  {
+    "id": "CAND_0000029",
+    "name": "Priya Sethi",
+    "title": "Business Analyst",
+    "matchId": "CAND_0000029",
+    "latentSignalPercent": 40.5,
+    "matchScore": 34,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "7.2 YoE as a Business Analyst. Decent technical foundation with skills including Node.js, Scrum, Tailwind. Based in Noida, Uttar Pradesh. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 89
+  },
+  {
+    "id": "CAND_0000043",
+    "name": "Aarav Sen",
+    "title": "Cloud Engineer",
+    "matchId": "CAND_0000043",
+    "latentSignalPercent": 57,
+    "matchScore": 34,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "8.3 YoE as a Cloud Engineer. Decent technical foundation with skills including Elasticsearch, OpenSearch, Airflow. Based in Chandigarh, Chandigarh. Notice period is 120 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 90
+  },
+  {
+    "id": "CAND_0000018",
+    "name": "Vivaan Reddy",
+    "title": "Frontend Engineer",
+    "matchId": "CAND_0000018",
+    "latentSignalPercent": 34.8,
+    "matchScore": 31,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6.6 YoE as a Frontend Engineer. Decent technical foundation with skills including CNN, Java, Accounting. Based in Bhubaneswar, Odisha. Notice period is 120 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 91
+  },
+  {
+    "id": "CAND_0000006",
+    "name": "Rajesh Desai",
+    "title": "Business Analyst",
+    "matchId": "CAND_0000006",
+    "latentSignalPercent": 29.7,
+    "matchScore": 30,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "6 YoE as a Business Analyst. Decent technical foundation with skills including Content Writing, SEO, Redux. Based in Austin. Notice period is 150 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 92
+  },
+  {
+    "id": "CAND_0000010",
+    "name": "Aarav Kapoor",
+    "title": "Data Engineer",
+    "matchId": "CAND_0000010",
+    "latentSignalPercent": 81.6,
+    "matchScore": 28,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "4.6 YoE as a Data Engineer. Decent technical foundation with skills including GCP, Spring Boot, Kubeflow. Based in London. Notice period is 120 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 93
+  },
+  {
+    "id": "CAND_0000048",
+    "name": "Vihaan Saxena",
+    "title": "Mobile Developer",
+    "matchId": "CAND_0000048",
+    "latentSignalPercent": 62.2,
+    "matchScore": 27,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "9.7 YoE as a Mobile Developer. Decent technical foundation with skills including Hadoop, Terraform, Vue.js. Based in Hyderabad, Telangana. Notice period is 120 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 94
+  },
+  {
+    "id": "CAND_0000035",
+    "name": "Vikram Verma",
+    "title": "Full Stack Developer",
+    "matchId": "CAND_0000035",
+    "latentSignalPercent": 56.2,
+    "matchScore": 27,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "4.3 YoE as a Full Stack Developer. Decent technical foundation with skills including Snowflake, BigQuery, Recommendation Systems. Based in Hyderabad, Telangana. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 95
+  },
+  {
+    "id": "CAND_0000045",
+    "name": "Vikram Mittal",
+    "title": "Project Manager",
+    "matchId": "CAND_0000045",
+    "latentSignalPercent": 25.4,
+    "matchScore": 24,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "12.2 YoE as a Project Manager. Decent technical foundation with skills including GCP, Sales, Redux. Based in Indore, Madhya Pradesh. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 96
+  },
+  {
+    "id": "CAND_0000036",
+    "name": "Ananya Bose",
+    "title": "Project Manager",
+    "matchId": "CAND_0000036",
+    "latentSignalPercent": 81.8,
+    "matchScore": 23,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "11.3 YoE as a Project Manager. Decent technical foundation with skills including Figma, MongoDB, PowerPoint. Based in Trivandrum, Kerala. Notice period is 60 days.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 97
+  },
+  {
+    "id": "CAND_0000037",
+    "name": "Ved Sen",
+    "title": "Business Analyst",
+    "matchId": "CAND_0000037",
+    "latentSignalPercent": 25.6,
+    "matchScore": 21,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "14.3 YoE as a Business Analyst. Decent technical foundation with skills including Databricks, Docker, Flask. Based in Dubai. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 98
+  },
+  {
+    "id": "CAND_0000011",
+    "name": "Deepak Desai",
+    "title": "QA Engineer",
+    "matchId": "CAND_0000011",
+    "latentSignalPercent": 59.2,
+    "matchScore": 21,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "2 YoE as a QA Engineer. Decent technical foundation with skills including Recommendation Systems, Scrum, FastAPI. Based in Hyderabad, Telangana. Notice period is 90 days (slight concern).",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 99
+  },
+  {
+    "id": "CAND_0000013",
+    "name": "Pari Nair",
+    "title": "Civil Engineer",
+    "matchId": "CAND_0000013",
+    "latentSignalPercent": 44.2,
+    "matchScore": 21,
+    "isHiddenGem": false,
+    "omittedKeywords": [],
+    "latentValueRationale": "",
+    "alignmentProof": "1.1 YoE as a Civil Engineer. Decent technical foundation with skills including React, Redux, Vue.js. Based in Dubai. Highly available with a short 30-day notice period.",
+    "unstructured_skills_narrative": [
+      "Pinecone",
+      "Python",
+      "Sentence-Transformers"
+    ],
+    "technical_projects": [
+      "High-Throughput Retrieval Engine",
+      "LLM Evaluation Framework"
+    ],
+    "jobId": "mock-1",
+    "rank": 100
+  }
+]
