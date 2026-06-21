@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TalentOS | Recruiter Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@100..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#0c0e16",
+                        "on-background": "#e2e1ed",
+                        "surface-container-highest": "#33343d",
+                        "on-error-container": "#ffdad6",
+                        "surface-bright": "#373942",
+                        "secondary-fixed-dim": "#a4cbeb",
+                        "primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "primary-fixed": "#e2e2e2",
+                        "surface-variant": "#33343d",
+                        "on-primary-fixed-variant": "#454747",
+                        "secondary": "#a4cbeb",
+                        "secondary-fixed": "#cae6ff",
+                        "secondary-container": "#214a66",
+                        "on-surface": "#e2e1ed",
+                        "surface-container": "#1e1f27",
+                        "on-secondary-fixed": "#001e2f",
+                        "outline-variant": "#444748",
+                        "on-tertiary-container": "#636565",
+                        "error-container": "#93000a",
+                        "surface-dim": "#11131b",
+                        "on-tertiary": "#2f3131",
+                        "tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#214a66",
+                        "tertiary-fixed": "#e2e2e2",
+                        "tertiary-container": "#e2e2e2",
+                        "primary-container": "#e2e2e2",
+                        "on-primary-fixed": "#1a1c1c",
+                        "inverse-on-surface": "#2f3039",
+                        "surface-tint": "#c6c6c7",
+                        "on-primary-container": "#636565",
+                        "on-error": "#690005",
+                        "outline": "#8e9192",
+                        "inverse-surface": "#e2e1ed",
+                        "surface-container-high": "#282932",
+                        "on-primary": "#2f3131",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "surface-container-low": "#1a1b23",
+                        "inverse-primary": "#5d5f5f",
+                        "surface": "#11131b",
+                        "error": "#ffb4ab",
+                        "background": "#11131b",
+                        "primary-fixed-dim": "#c6c6c7",
+                        "on-secondary-container": "#93bad9",
+                        "on-surface-variant": "#c4c7c8",
+                        "on-secondary": "#01344e",
+                        "on-tertiary-fixed": "#1a1c1c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "container-max": "1440px",
+                        "gutter": "24px",
+                        "unit": "4px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "display-md": ["Instrument Serif"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "display-lg": ["Instrument Serif"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-md": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #0E0E0E;
+            color: #e2e1ed;
+            overflow-x: hidden;
+        }
+        .cinematic-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.6;
+            pointer-events: none;
+            object-fit: cover;
+        }
+        .liquid-glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .liquid-glass:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .active-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: white;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .pipeline-row:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+        @keyframes shimmer {
+            0% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+            100% { opacity: 0.3; }
+        }
+        .ai-shimmer {
+            animation: shimmer 3s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md selection:bg-primary selection:text-surface">
+<div class="cinematic-bg">
+<img alt="Cinematic neural network" class="w-full h-full object-cover" data-alt="A mesmerizing cinematic visualization of a high-tech neural network with flowing streams of purple and white data particles. The background is a deep obsidian void with subtle light rays emanating from the core data structures, creating a sense of immense depth and computational power. The aesthetic is clean and futuristic, perfectly matching a high-end hiring intelligence platform's dark mode theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNvWbjtOz5TSLXsB5vnj_jwd1cZIJc672kGIhzS_9UzBOrVIJK129ETSmqgja7XDHjZBR_uLztyMjBzA4S02kfV_IaRGfCG2GpuV-MdEl93iZi8pJc7b4XwyaamTT8m4QDLMYId5zv7ahNIn4rULYGEOxTLZe52dTlzSqXVaV7_Cz639-9roRILz3fDXuNM_uItLKCikKf-ljV4KG2QVWfAKFs2cGQPLs90JjmSGPz8-hATEgERQsyARn2TH7h4A1gMWZSdJC0IJs"/>
+</div>
+<nav class="fixed top-6 left-0 right-0 z-50 flex justify-center px-6">
+<div class="pill-navbar rounded-full px-4 py-2 flex items-center gap-8 max-w-fit bg-white/5 backdrop-blur-xl border border-white/10">
+<div class="flex items-center gap-3">
+<img alt="TalentOS Logo" class="h-8 w-8" src="https://lh3.googleusercontent.com/aida/ADBb0ui2vg-tLxJ_JIwFUI3wjlNsmgeAFpkEBiQlLPPlhreZ8bw8NPwYxOufzPhURIWQW3_J0rLRFqgoSthwNg6foGHx_nM2RaiTqOIi09fOsyoOsAyMBbF0gEKFec1FYeZIjDdjdxLc5U3T0_91xnu9e6BxnSAAxrg_KnyaEsMYU50uNIABpLJ7LoNBtIExkqRnawykZSZe8mbVsvQhwNh_ldf_WqegvNpu3_FmiHRAo7mHfIQgxFmUD0EWhPE"/>
+<span class="font-display-md text-2xl tracking-tighter text-primary">TalentOS</span>
+</div>
+<div class="hidden md:flex items-center gap-6">
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Job Analyzer</a>
+<a class="font-label-sm text-primary relative active-link" href="#">Ranking Engine</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Hidden Gems</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Shortlists</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex gap-2 mr-2">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">notifications</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">settings</span>
+</div>
+<button class="liquid-glass rounded-full px-5 py-2 font-label-sm text-primary uppercase tracking-widest text-[11px] bg-white/5 border border-white/10 active:scale-95 transition-transform">
+                    Enter Interface →
+                </button>
+</div>
+</div>
+</nav>
+<main class="relative min-h-screen flex flex-col items-center pt-44 px-margin-desktop max-w-container-max mx-auto w-full z-10">
+<div class="w-full mb-12 flex justify-between items-end">
+<h1 class="font-display-md text-5xl text-primary tracking-tight italic">Active Pipelines</h1>
+<div class="flex items-center gap-4 pb-2">
+<span class="font-label-sm text-on-surface-variant uppercase tracking-widest text-[10px]">Sorting by: Intelligence Score</span>
+<span class="material-symbols-outlined text-on-surface-variant">filter_list</span>
+</div>
+</div>
+<div class="w-full border border-white/5 bg-background/40 backdrop-blur-sm rounded-sm divide-y divide-white/5 shadow-2xl overflow-hidden">
+<div class="pipeline-row grid grid-cols-12 items-center p-6 bg-transparent transition-all duration-300">
+<div class="col-span-4 flex items-center gap-4">
+<div class="w-2 h-2 rounded-full bg-secondary ai-shimmer shadow-[0_0_8px_rgba(164,203,235,0.6)]"></div>
+<div>
+<p class="font-headline-lg text-primary text-xl">Staff Infrastructure Engineer</p>
+<p class="font-label-sm text-on-surface-variant uppercase text-[10px] tracking-widest mt-1">ID: SF-INF-224</p>
+</div>
+</div>
+<div class="col-span-3">
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Active Since</p>
+<p class="text-on-surface font-body-md">Oct 12, 2023</p>
+</div>
+<div class="col-span-3">
+<p class="font-display-md text-base text-secondary italic">12 Hidden Gems Flagged</p>
+</div>
+<div class="col-span-2 flex justify-end">
+<button class="font-label-sm text-primary uppercase tracking-widest text-[11px] hover:translate-x-2 transition-transform flex items-center gap-2">
+                        View Pipeline <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="pipeline-row grid grid-cols-12 items-center p-6 bg-transparent transition-all duration-300">
+<div class="col-span-4 flex items-center gap-4">
+<div class="w-2 h-2 rounded-full bg-primary/20"></div>
+<div>
+<p class="font-headline-lg text-primary text-xl">Senior Product Designer</p>
+<p class="font-label-sm text-on-surface-variant uppercase text-[10px] tracking-widest mt-1">ID: PD-SR-109</p>
+</div>
+</div>
+<div class="col-span-3">
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Active Since</p>
+<p class="text-on-surface font-body-md">Nov 04, 2023</p>
+</div>
+<div class="col-span-3">
+<p class="font-display-md text-base text-secondary italic">8 Hidden Gems Flagged</p>
+</div>
+<div class="col-span-2 flex justify-end">
+<button class="font-label-sm text-primary uppercase tracking-widest text-[11px] hover:translate-x-2 transition-transform flex items-center gap-2">
+                        View Pipeline <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="pipeline-row grid grid-cols-12 items-center p-6 bg-transparent transition-all duration-300">
+<div class="col-span-4 flex items-center gap-4">
+<div class="w-2 h-2 rounded-full bg-secondary ai-shimmer shadow-[0_0_8px_rgba(164,203,235,0.6)]"></div>
+<div>
+<p class="font-headline-lg text-primary text-xl">Principal Security Architect</p>
+<p class="font-label-sm text-on-surface-variant uppercase text-[10px] tracking-widest mt-1">ID: SEC-PR-004</p>
+</div>
+</div>
+<div class="col-span-3">
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Active Since</p>
+<p class="text-on-surface font-body-md">Nov 18, 2023</p>
+</div>
+<div class="col-span-3">
+<p class="font-display-md text-base text-secondary italic">4 Hidden Gems Flagged</p>
+</div>
+<div class="col-span-2 flex justify-end">
+<button class="font-label-sm text-primary uppercase tracking-widest text-[11px] hover:translate-x-2 transition-transform flex items-center gap-2">
+                        View Pipeline <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="pipeline-row grid grid-cols-12 items-center p-6 bg-transparent transition-all duration-300">
+<div class="col-span-4 flex items-center gap-4">
+<div class="w-2 h-2 rounded-full bg-secondary ai-shimmer shadow-[0_0_8px_rgba(164,203,235,0.6)]"></div>
+<div>
+<p class="font-headline-lg text-primary text-xl">Head of Engineering</p>
+<p class="font-label-sm text-on-surface-variant uppercase text-[10px] tracking-widest mt-1">ID: ENG-H-502</p>
+</div>
+</div>
+<div class="col-span-3">
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Active Since</p>
+<p class="text-on-surface font-body-md">Dec 01, 2023</p>
+</div>
+<div class="col-span-3">
+<p class="font-display-md text-base text-secondary italic">19 Hidden Gems Flagged</p>
+</div>
+<div class="col-span-2 flex justify-end">
+<button class="font-label-sm text-primary uppercase tracking-widest text-[11px] hover:translate-x-2 transition-transform flex items-center gap-2">
+                        View Pipeline <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="pipeline-row grid grid-cols-12 items-center p-6 bg-transparent transition-all duration-300">
+<div class="col-span-4 flex items-center gap-4">
+<div class="w-2 h-2 rounded-full bg-primary/20"></div>
+<div>
+<p class="font-headline-lg text-primary text-xl">ML Platform Engineer</p>
+<p class="font-label-sm text-on-surface-variant uppercase text-[10px] tracking-widest mt-1">ID: ML-PLAT-992</p>
+</div>
+</div>
+<div class="col-span-3">
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Active Since</p>
+<p class="text-on-surface font-body-md">Dec 12, 2023</p>
+</div>
+<div class="col-span-3">
+<p class="font-display-md text-base text-secondary italic">11 Hidden Gems Flagged</p>
+</div>
+<div class="col-span-2 flex justify-end">
+<button class="font-label-sm text-primary uppercase tracking-widest text-[11px] hover:translate-x-2 transition-transform flex items-center gap-2">
+                        View Pipeline <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="w-full mt-12 grid grid-cols-3 gap-gutter">
+<div class="liquid-glass border border-white/5 p-6 rounded-lg">
+<p class="font-label-sm text-on-surface-variant uppercase tracking-widest text-[10px] mb-2">Total Candidates</p>
+<div class="flex items-baseline gap-2">
+<span class="font-display-md text-4xl text-primary">1,248</span>
+<span class="text-secondary text-sm font-label-sm">+12%</span>
+</div>
+</div>
+<div class="liquid-glass border border-white/5 p-6 rounded-lg">
+<p class="font-label-sm text-on-surface-variant uppercase tracking-widest text-[10px] mb-2">Hidden Gems Total</p>
+<div class="flex items-baseline gap-2">
+<span class="font-display-md text-4xl text-primary">54</span>
+<span class="text-secondary text-sm font-label-sm">High Quality</span>
+</div>
+</div>
+<div class="liquid-glass border border-white/5 p-6 rounded-lg">
+<p class="font-label-sm text-on-surface-variant uppercase tracking-widest text-[10px] mb-2">Avg. Response Rate</p>
+<div class="flex items-baseline gap-2">
+<span class="font-display-md text-4xl text-primary">68%</span>
+<span class="text-secondary text-sm font-label-sm">↑ Active</span>
+</div>
+</div>
+</div>
+</main>
+<footer class="w-full mt-24 bg-surface-dim border-t border-outline-variant/20 relative z-10">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="flex flex-col items-start gap-4">
+<div class="flex items-center gap-3">
+<img alt="TalentOS Logo" class="h-6 w-6 opacity-80" src="https://lh3.googleusercontent.com/aida/ADBb0ui2vg-tLxJ_JIwFUI3wjlNsmgeAFpkEBiQlLPPlhreZ8bw8NPwYxOufzPhURIWQW3_J0rLRFqgoSthwNg6foGHx_nM2RaiTqOIi09fOsyoOsAyMBbF0gEKFec1FYeZIjDdjdxLc5U3T0_91xnu9e6BxnSAAxrg_KnyaEsMYU50uNIABpLJ7LoNBtIExkqRnawykZSZe8mbVsvQhwNh_ldf_WqegvNpu3_FmiHRAo7mHfIQgxFmUD0EWhPE"/>
+<span class="font-display-md text-xl text-primary">TalentOS Intelligence</span>
+</div>
+<p class="font-label-sm text-on-surface-variant text-[11px] tracking-wide">© 2024 TalentOS Intelligence. All rights reserved.</p>
+</div>
+<div class="flex gap-8 mt-8 md:mt-0">
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Security</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Help Center</a>
+</div>
+</div>
+</footer>
+<script>
+        document.querySelectorAll('.pipeline-row').forEach(row => {
+            row.addEventListener('mouseenter', () => {
+                row.style.transform = 'scale(1.005)';
+            });
+            row.addEventListener('mouseleave', () => {
+                row.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body></html>
