@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TalentOS | Job Description Analyzer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#e2e2e2",
+                        "on-tertiary-container": "#636565",
+                        "on-surface": "#e2e1ed",
+                        "on-error": "#690005",
+                        "inverse-on-surface": "#2f3039",
+                        "surface-tint": "#c6c6c7",
+                        "outline": "#8e9192",
+                        "error": "#ffb4ab",
+                        "surface-container-highest": "#33343d",
+                        "surface": "#11131b",
+                        "error-container": "#93000a",
+                        "surface-container-low": "#1a1b23",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "background": "#11131b",
+                        "on-secondary-fixed": "#001e2f",
+                        "on-error-container": "#ffdad6",
+                        "surface-bright": "#373942",
+                        "surface-variant": "#33343d",
+                        "secondary-container": "#214a66",
+                        "primary-fixed": "#e2e2e2",
+                        "on-primary": "#2f3131",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "primary": "#ffffff",
+                        "outline-variant": "#444748",
+                        "on-primary-fixed-variant": "#454747",
+                        "surface-container-lowest": "#0c0e16",
+                        "tertiary": "#ffffff",
+                        "surface-dim": "#11131b",
+                        "on-secondary-fixed-variant": "#214a66",
+                        "surface-container": "#1e1f27",
+                        "on-surface-variant": "#c4c7c8",
+                        "on-primary-container": "#636565",
+                        "secondary": "#a4cbeb",
+                        "inverse-primary": "#5d5f5f",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-tertiary": "#2f3131",
+                        "primary-container": "#e2e2e2",
+                        "on-secondary-container": "#93bad9",
+                        "secondary-fixed": "#cae6ff",
+                        "inverse-surface": "#e2e1ed",
+                        "on-background": "#e2e1ed",
+                        "surface-container-high": "#282932",
+                        "primary-fixed-dim": "#c6c6c7",
+                        "on-secondary": "#01344e",
+                        "secondary-fixed-dim": "#a4cbeb",
+                        "on-primary-fixed": "#1a1c1c",
+                        "tertiary-fixed-dim": "#c6c6c7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1440px",
+                        "gutter": "24px",
+                        "unit": "4px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "display-md": ["Instrument Serif"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Instrument Serif"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "display-md": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #0E0E0E;
+            color: #e2e1ed;
+            overflow-x: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .liquid-glass {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .liquid-glass:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+        }
+        .neural-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+            object-fit: cover;
+        }
+        .shimmer {
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite linear;
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md min-h-screen flex flex-col">
+<!-- Cinematic Neural Background -->
+<img alt="" class="neural-bg" src="https://lh3.googleusercontent.com/aida/ADBb0ujStU1Ld34i0c8fevFuryw-WwJrNzWAirG3UoM-F6v2oxpz7H_M3mi6S3Dq1utoAC9wIhZxAG8r1ysDryyREfB7cUJ-uM6toxalAZoUJRHFNJQHn6suXu1PoOVXR3XcqxhxnfdufxQAxO7kJW-KflLD_qvYnI1KCVt4fFzLMdoHtTDPpCyOcln9ErZvda5epGLke337kwt5ePQXHT-QALsXoAPoGHo8VadOVWM4WUtaU1TKHm0p_D_mSZs"/>
+<!-- Navigation Header -->
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between max-w-container-max mx-auto px-margin-desktop py-6">
+<div class="bg-surface/40 backdrop-blur-xl rounded-full px-6 py-2 border border-white/10 shadow-2xl flex items-center justify-between w-full">
+<div class="flex items-center gap-3">
+<img alt="TalentOS Logo" class="h-8 w-8" src="https://lh3.googleusercontent.com/aida/ADBb0ui2vg-tLxJ_JIwFUI3wjlNsmgeAFpkEBiQlLPPlhreZ8bw8NPwYxOufzPhURIWQW3_J0rLRFqgoSthwNg6foGHx_nM2RaiTqOIi09fOsyoOsAyMBbF0gEKFec1FYeZIjDdjdxLc5U3T0_91xnu9e6BxnSAAxrg_KnyaEsMYU50uNIABpLJ7LoNBtIExkqRnawykZSZe8mbVsvQhwNh_ldf_WqegvNpu3_FmiHRAo7mHfIQgxFmUD0EWhPE"/>
+<span class="font-display-md text-display-md text-primary tracking-tighter leading-none" style="font-size: 24px;">TalentOS</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md text-primary font-bold border-b border-primary pb-1 transition-all duration-300" href="#">Job Analyzer</a>
+<a class="font-body-md text-body-md text-on-surface-variant font-medium hover:text-primary hover:bg-white/5 transition-all duration-300 px-2 py-1 rounded-md" href="#">Ranking Engine</a>
+<a class="font-body-md text-body-md text-on-surface-variant font-medium hover:text-primary hover:bg-white/5 transition-all duration-300 px-2 py-1 rounded-md" href="#">Hidden Gems</a>
+<a class="font-body-md text-body-md text-on-surface-variant font-medium hover:text-primary hover:bg-white/5 transition-all duration-300 px-2 py-1 rounded-md" href="#">Shortlists</a>
+</nav>
+<button class="liquid-glass rounded-full px-6 py-2 uppercase text-label-sm font-label-sm text-primary tracking-wider active:scale-95 transition-transform flex items-center gap-2">
+                Enter Interface 
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</header>
+<!-- Main Workspace Area -->
+<main class="flex-grow pt-24 grid grid-cols-1 lg:grid-cols-2 border-t border-white/5 h-screen overflow-hidden">
+<!-- Left Pane: Ingestion -->
+<section class="bg-background/20 backdrop-blur-sm border-r border-white/5 flex flex-col p-8 relative">
+<div class="flex items-center justify-between mb-6">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Input Stream</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Raw Dataset</h2>
+</div>
+<div class="flex gap-2">
+<span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SYSTEM READY</span>
+</div>
+</div>
+<div class="flex-grow relative group">
+<textarea class="w-full h-full bg-transparent border-none focus:ring-0 text-on-surface font-body-md text-body-lg placeholder:text-on-surface-variant/30 resize-none" placeholder="Paste raw job descriptions or unedited candidate dataset elements here..."></textarea>
+<div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0E0E0E]/40 to-transparent pointer-events-none"></div>
+</div>
+<div class="mt-8">
+<button class="w-full bg-primary text-[#0E0E0E] font-bold py-4 rounded-lg flex items-center justify-center gap-3 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)] active:scale-[0.98]">
+<span class="material-symbols-outlined">psychology</span>
+                    EXTRACT INTENT
+                </button>
+</div>
+</section>
+<!-- Right Pane: Output -->
+<section class="bg-[#12141d]/60 backdrop-blur-md flex flex-col overflow-y-auto">
+<!-- Header -->
+<div class="p-8 border-b border-white/5">
+<h1 class="font-display-md text-display-md lg:text-[48px] text-primary">Inferred Intent Profile</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-lg">Neural decomposition of requirements into systemic capabilities and performance trajectory markers.</p>
+</div>
+<!-- Content Area -->
+<div class="p-8 space-y-12">
+<!-- Section 01 -->
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="font-label-sm text-label-sm text-primary tracking-tighter">01 /</span>
+<h3 class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface-variant">System Archetype Matrix</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="liquid-glass p-6 rounded-lg space-y-4">
+<div class="flex justify-between items-start">
+<span class="font-body-md text-body-md font-bold text-primary">Architectural Governance</span>
+<span class="text-secondary font-label-sm">84% Match</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[84%]"></div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Deep integration with legacy infrastructure transition and scalable design patterns.</p>
+</div>
+<div class="liquid-glass p-6 rounded-lg space-y-4">
+<div class="flex justify-between items-start">
+<span class="font-body-md text-body-md font-bold text-primary">Velocity Management</span>
+<span class="text-secondary font-label-sm">62% Match</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[62%]"></div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Emphasis on rapid prototyping cycles and iterative delivery within agile frames.</p>
+</div>
+</div>
+</div>
+<div class="h-px w-full bg-white/5"></div>
+<!-- Section 02 -->
+<div class="space-y-6 pb-20">
+<div class="flex items-center gap-4">
+<span class="font-label-sm text-label-sm text-primary tracking-tighter">02 /</span>
+<h3 class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface-variant">Expected Trajectory Dynamics</h3>
+</div>
+<div class="grid grid-cols-1 gap-6">
+<div class="liquid-glass p-8 rounded-lg relative overflow-hidden group">
+<div class="absolute inset-0 shimmer opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-2">
+<h4 class="font-label-sm text-label-sm text-on-surface-variant uppercase">Initial 90 Days</h4>
+<p class="font-body-md text-body-md text-primary">Refactoring core data pipelines and establishing AI observability protocols.</p>
+</div>
+<div class="space-y-2">
+<h4 class="font-label-sm text-label-sm text-on-surface-variant uppercase">Key Outcome</h4>
+<p class="font-body-md text-body-md text-primary">30% reduction in technical debt across the neural inference layer.</p>
+</div>
+<div class="space-y-2">
+<h4 class="font-label-sm text-label-sm text-on-surface-variant uppercase">Risk Vector</h4>
+<p class="font-body-md text-body-md text-error">Moderate bottleneck in cross-functional data siloing.</p>
+</div>
+</div>
+</div>
+<!-- Empty State / Suggestion -->
+<div class="border-2 border-dashed border-white/5 p-8 rounded-lg flex flex-col items-center justify-center text-center space-y-4">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant/30">analytics</span>
+<div>
+<p class="font-body-md text-body-md text-on-surface-variant">Waiting for further dataset ingestion...</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant/40 uppercase mt-1">Refine input to generate granular dynamics</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Simple Footer (Overlay style) -->
+<footer class="fixed bottom-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-t border-white/5 py-4">
+<div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-body-md text-body-md text-on-surface-variant text-xs">© 2024 TalentOS Intelligence. All rights reserved.</span>
+<div class="flex gap-6">
+<a class="font-body-md text-body-md text-on-surface-variant text-xs hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant text-xs hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant text-xs hover:text-primary transition-colors" href="#">API Documentation</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for the textarea to simulate "AI Scanning"
+        const textarea = document.querySelector('textarea');
+        const extractBtn = document.querySelector('button.bg-primary');
+        
+        extractBtn.addEventListener('click', () => {
+            if (textarea.value.trim() === "") {
+                textarea.classList.add('border-error/50');
+                setTimeout(() => textarea.classList.remove('border-error/50'), 1000);
+                return;
+            }
+            
+            extractBtn.innerHTML = `
+                <span class="material-symbols-outlined animate-spin">refresh</span>
+                ANALYZING NEURAL VECTORS...
+            `;
+            
+            setTimeout(() => {
+                extractBtn.innerHTML = `
+                    <span class="material-symbols-outlined">check_circle</span>
+                    EXTRACTION COMPLETE
+                `;
+                setTimeout(() => {
+                    extractBtn.innerHTML = `
+                        <span class="material-symbols-outlined">psychology</span>
+                        EXTRACT INTENT
+                    `;
+                }, 2000);
+            }, 1500);
+        });
+
+        // Add a parallax-ish movement to the background image
+        window.addEventListener('mousemove', (e) => {
+            const bg = document.querySelector('.neural-bg');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            bg.style.transform = `scale(1.05) translate(${x * 10}px, ${y * 10}px)`;
+        });
+    </script>
+</body></html>
