@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- TalentOS Logo Mark: Interconnected Neural "T" -->
+  <path d="M30 30H70V40H55V80H45V40H30V30Z" fill="#5E0ED7" />
+  
+  <!-- Neural Nodes -->
+  <circle cx="30" cy="30" r="4" fill="#5E0ED7" />
+  <circle cx="70" cy="30" r="4" fill="#5E0ED7" />
+  <circle cx="50" cy="30" r="4" fill="#5E0ED7" />
+  <circle cx="50" cy="80" r="4" fill="#5E0ED7" />
+  
+  <!-- Connecting Intelligence Paths (Subtle Nodes) -->
+  <circle cx="50" cy="55" r="2.5" fill="#5E0ED7" fill-opacity="0.6" />
+  <circle cx="40" cy="30" r="2" fill="#5E0ED7" fill-opacity="0.4" />
+  <circle cx="60" cy="30" r="2" fill="#5E0ED7" fill-opacity="0.4" />
+  
+  <!-- "Hidden Gem" Highlight -->
+  <path d="M50 22L53 28H47L50 22Z" fill="#5E0ED7" />
+</svg>
